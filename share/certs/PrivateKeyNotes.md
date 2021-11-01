@@ -1,6 +1,8 @@
 Code-signing private key notes
 ==
 
+WE HAVE NO CERTS  Y E T 
+
 The private keys for these certificates were generated on Gavin's main work machine,
 following the certificate authoritys' recommendations for generating certificate
 signing requests.
