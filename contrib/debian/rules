@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+# -*- mode: makefile; coding: utf-8 -*-
+
+#DEB_MAKE_CHECK_TARGET = test_bunkercoin
+#build/bunkercoind::
+#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_bunkercoin)
+
+DEB_INSTALL_EXAMPLES_bunkercoind += debian/examples/*
+DEB_INSTALL_MANPAGES_bunkercoind += debian/manpages/*
+
+%:
+	dh --with bash-completion $@
+
+override_dh_auto_build:
+	cd src; $(MAKE) -f makefile.unix bunkercoind
+	$(MAKE)
+
+override_dh_auto_clean:
+	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f bunkercoin-qt; fi
+	cd src; $(MAKE) -f makefile.unix clean
+
+override_dh_auto_configure:
+	qmake bunkercoin-qt.pro USE_QRCODE=1
+
+override_dh_auto_test:
+	cd src; $(MAKE) -f makefile.unix test_bunkercoin
+	src/test_bunkercoin
+
+# Ensure wrapper is set executable
+binary-post-install/bunkercoind:
+	chmod +x $(cdbs_curdestdir)usr/bin/bunkercoind
+binary-post-install/bunkercoin-qt:
+	chmod +x $(cdbs_curdestdir)usr/bin/bunkercoin-qt

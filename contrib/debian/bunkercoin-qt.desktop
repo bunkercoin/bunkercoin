@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Bunkercoin
+Comment=Bunkercoin P2P Cryptocurrency
+Exec=bunkercoin-qt %u
+Terminal=false
+Type=Application
+Icon=bunkercoin128
+MimeType=x-scheme-handler/bunkercoin;
+Categories=Office;Finance;
+Name[en_US]=bunkercoin-qt.desktop
