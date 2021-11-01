@@ -5,8 +5,8 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 # Delete old versions of libboost and OpenSSL
-sudo apt purge *boost*
-sudo apt purge libssl-dev libssl1.0-dev
+sudo apt purge *boost* -y
+sudo apt purge libssl-dev libssl1.0-dev-y
 
 # Go to home directory and make bin dirs
 cd $HOME
