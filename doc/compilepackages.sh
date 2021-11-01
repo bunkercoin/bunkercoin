@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#!/bin/bash// Copyright (c) 2021 The Bunkercoin core developers
-// Distributed under the MIT/X11 software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2021 The Bunkercoin core developers
+# Distributed under the MIT/X11 software license, see the accompanying
+# file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 # Delete old versions of libboost and OpenSSL
 sudo apt purge *boost*
