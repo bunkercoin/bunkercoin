@@ -1143,7 +1143,7 @@ static const int64_t nTargetTimespanNEW = 60 ; // Bunkercoin: every 1 minute
 static const int64_t nTargetSpacing = 60; // Bunkercoin: 1 minute
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
-static const int64_t nDiffChangeTarget = 145000; // Patch effective @ block 145000
+static const int64_t nDiffChangeTarget = 10; // Patch effective @ block 10
 //I don't really know what this does. If you know make an issue and put in an "@IdotMaster1"
 
 //
