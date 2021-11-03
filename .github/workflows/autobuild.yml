@@ -45,7 +45,7 @@ jobs:
 
       - name: Build depends
         ./contrib/compilepackages.sh
-      
+
       - name: Build Bunkercoin
         run: |
           ./autogen.sh
