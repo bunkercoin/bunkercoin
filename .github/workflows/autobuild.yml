@@ -43,12 +43,9 @@ jobs:
       - name: Get source code
         uses: actions/checkout@v2
 
-      - name: Build depends
-        run: |
-          ./contrib/compilepackages.sh
-
       - name: Build Bunkercoin
         run: |
+          ./contrib/compilepackages.sh
           ./autogen.sh
           ./configure ${{ matrix.config-opts }}
           make $MAKEJOBS
