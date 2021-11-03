@@ -26,7 +26,7 @@ jobs:
           - name: x86_64-linux
             host: x86_64-unknown-linux-gnu
             os: ubuntu-20.04
-            packages: libevent-dev
+            packages: libevent-dev libdb-dev libdb++-dev
             config-opts: '--enable-reduce-exports --without-miniupnpc --without-gui --with-incompatible-bdb --disable-bench --disable-tests'
             bdb-args: ""
             strip-command: "strip"
