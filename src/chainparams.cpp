@@ -31,9 +31,9 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0xb1;
-        pchMessageStart[1] = 0xb2;
-        pchMessageStart[2] = 0xc3;
+        pchMessageStart[0] = 0xc1;
+        pchMessageStart[1] = 0xa2;
+        pchMessageStart[2] = 0xd3;
         pchMessageStart[3] = 0xc4;
         vAlertPubKey = ParseHex("04a4d6c3e9c49129460799f5f8c0553e47977a80044eff5562a2faeea4f0513eeb941b33512767ce476dfc5f72e9e118dd3f85bd0a36234eb7963f84200edf8bd3");
         nDefaultPort = 14200;
