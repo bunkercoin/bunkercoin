@@ -57,7 +57,7 @@ jobs:
           
       - name: Strip built binaries
         run: |
-          ${{ matrix.strip-command }} src/qt/bunkercoin-qt* src/bunkercoin-cli* src/bunkercoind* src/bunkercoin-tx* src/bunkercoin-wallet*
+          ${{ matrix.strip-command }} src/bunkercoin-cli src/bunkercoind
           
       - name: Upload binaries
         uses: actions/upload-artifact@v2
