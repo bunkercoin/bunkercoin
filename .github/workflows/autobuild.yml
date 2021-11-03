@@ -27,7 +27,7 @@ jobs:
             host: x86_64-unknown-linux-gnu
             os: ubuntu-20.04
             packages: libevent-dev libdb-dev libdb++-dev
-            config-opts: '--enable-reduce-exports --without-miniupnpc --without-gui --with-incompatible-bdb --disable-bench --disable-tests'
+            config-opts: '--without-miniupnpc --without-gui --with-incompatible-bdb --disable-tests'
             bdb-args: ""
             strip-command: "strip"
 
@@ -47,6 +47,7 @@ jobs:
         run: |
           chmod 755 -R .
           ./doc/compilepackages.sh
+          sudo apt purge libssl-dev libssl1.0-dev
 
       - name: Build Bunkercoin
         run: |
