@@ -42,11 +42,14 @@ jobs:
 
       - name: Get source code
         uses: actions/checkout@v2
-
-      - name: Build Bunkercoin
+        
+      - name: Build depends
         run: |
           chmod 755 -R .
           ./doc/compilepackages.sh
+
+      - name: Build Bunkercoin
+        run: |
           ./autogen.sh
           ./configure ${{ matrix.config-opts }}
           make $MAKEJOBS
