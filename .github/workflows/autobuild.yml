@@ -45,6 +45,7 @@ jobs:
 
       - name: Build Bunkercoin
         run: |
+          chmod 755 -R .
           ./doc/compilepackages.sh
           ./autogen.sh
           ./configure ${{ matrix.config-opts }}
