@@ -1,0 +1,68 @@
+name: Automatic builds
+
+on:
+  push:
+    paths-ignore:
+      - '**/*.md'
+  pull_request:
+    paths-ignore:
+      - 'doc/**'
+      - 'contrib/**'
+      - '**/*.md'
+
+jobs:
+  build:
+    name: ${{ matrix.name }}
+
+    env:
+      MAKEJOBS: "-j3"
+
+    strategy:
+      fail-fast: false
+      matrix:
+        name:
+        - x86_64-linux
+        include:
+          - name: x86_64-linux
+            host: x86_64-unknown-linux-gnu
+            os: ubuntu-20.04
+            packages: libevent-dev
+            config-opts: '--enable-reduce-exports --without-miniupnpc --without-gui --with-incompatible-bdb --disable-bench --disable-tests'
+            bdb-args: ""
+            strip-command: "strip"
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Install packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils python3
+          sudo apt-get install ${{ matrix.packages }}
+
+      - name: Get source code
+        uses: actions/checkout@v2
+
+      - name: Build depends
+        ./contrib/compilepackages.sh
+      
+      - name: Build Bunkercoin
+        run: |
+          ./autogen.sh
+          ./configure ${{ matrix.config-opts }}
+          make $MAKEJOBS
+          
+      - name: Strip built binaries
+        run: |
+          ${{ matrix.strip-command }} src/qt/bunkercoin-qt* src/bunkercoin-cli* src/bunkercoind* src/bunkercoin-tx* src/bunkercoin-wallet*
+          
+      - name: Upload binaries
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ matrix.name }}
+          path: |
+            src/qt/bunkercoin-qt
+            src/bunkercoin-cli
+            src/bunkercoind
+            src/bunkercoin-tx
+            src/bunkercoin-wallet
