@@ -64,8 +64,5 @@ jobs:
         with:
           name: ${{ matrix.name }}
           path: |
-            src/qt/bunkercoin-qt
             src/bunkercoin-cli
             src/bunkercoind
-            src/bunkercoin-tx
-            src/bunkercoin-wallet
