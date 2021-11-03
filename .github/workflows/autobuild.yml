@@ -43,6 +43,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build Bunkercoin
+        uses: actions/checkout@v2
         run: |
           ./contrib/compilepackages.sh
           ./autogen.sh
