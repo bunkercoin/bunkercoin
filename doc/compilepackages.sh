@@ -22,12 +22,12 @@ tar -xf boost_1_65_1.tar.gz
 tar -xf openssl-1.0.2u.tar.gz
 
 # Build libboost
-cd boost_1_65_1
+cd $HOME/boost_1_65_1
 ./bootstrap.sh --prefix=$HOME/boost-bin
 ./b2 install
 
 # Build OpenSSL
-cd openssl-1.0.2u
+cd $HOME/openssl-1.0.2u
 ./config shared zlib --prefix=$HOME/ssl-bin
 make -j`nproc`
 make install
