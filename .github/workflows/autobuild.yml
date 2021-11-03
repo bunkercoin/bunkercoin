@@ -44,7 +44,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build depends
-        ./contrib/compilepackages.sh
+        run: |
+          ./contrib/compilepackages.sh
 
       - name: Build Bunkercoin
         run: |
