@@ -14,7 +14,7 @@ Development is ongoing and the development team as well as other volunteers can 
 
 ### How much bunkercoin's can exist?
 Approximately 100,000,000,000 coins.
-Each subsequent block will grant a random ammount of coins to encourage miners to continue to secure the network and make up for lost wallets on hard drives/lost encryption passwords/etc.
+Each subsequent block will grant a random amount of coins to encourage miners to continue to secure the network and make up for lost wallets on hard drives/lost encryption passwords/etc.
 
 ### How to get bunkercoin?
 Bunkercoin uses a simplified variant of the scrypt key derivation function as its proof of work with a target time of one minute per block and difficulty readjustment after every block. The block rewards are fixed and halve every 100,000 blocks. Starting with the 600,000th block, a permanent reward of 10,000 Bunkercoin per block will be paid. 
