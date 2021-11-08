@@ -1,4 +1,4 @@
-Bunkercoin 0.9.0rc1 BETA
+Bunkercoin 1.0.0 BETA
 
 Copyright (c) 2009-2014 Bitcoin Core Developers
 
