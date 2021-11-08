@@ -1,9 +1,11 @@
 Bunkercoin 1.0.0
 =====================
 
-* Copyright (c) 2009-2014 Bitcoin Developers
-* Copyright (c) 2011-2013 Litecoin Developers
-* Copyright (c) 2013-2014 Dogecoin Developers
+* Copyright (c) 2009-2021 Bitcoin Developers
+* Copyright (c) 2011-2021 Litecoin Developers
+* Copyright (c) 2013-2021 Dogecoin Developers
+* Copyright (c) 2021 Bunkercoin Developers
+
 
 
 Setup
@@ -37,9 +39,7 @@ Drag Bunkercoin-Qt to your applications folder, and then run Bunkercoin-Qt.
 
 ### Need Help?
 
-
-For help and more information.
-* Ask for help on the [/r/dogeducation subreddit](http://reddit.com/r/bunkercoin).
+Make an issue on Github and we will respond when we have time.
 
 Building
 ---------------------
