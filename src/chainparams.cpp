@@ -31,11 +31,11 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0xc1;
-        pchMessageStart[1] = 0xa2;
-        pchMessageStart[2] = 0xd3;
-        pchMessageStart[3] = 0xc4;
-        vAlertPubKey = ParseHex("04a4d6c3e9c49129460799f5f8c0553e47977a80044eff5562a2faeea4f0513eeb941b33512767ce476dfc5f72e9e118dd3f85bd0a36234eb7963f84200edf8bd3");
+        pchMessageStart[0] = 0xc8;
+        pchMessageStart[1] = 0xa0;
+        pchMessageStart[2] = 0xd1;
+        pchMessageStart[3] = 0xc6;
+        vAlertPubKey = ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f");
         nDefaultPort = 14200;
         nRPCPort = 22225;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
@@ -60,12 +60,12 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1635933561;
+        genesis.nTime    = 1637010383;
         genesis.nBits    = 0x1e0ffff0;
-        genesis.nNonce   = 205036;
+        genesis.nNonce   = 281894;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x2284fe60bdaf0d5b59038aee3356e115c9ca8a9cc98eec416d2fe08f9c483c87"));
+        assert(hashGenesisBlock == uint256("0xbc7cde9e78af769cbec566a76e992c7d7567f3aecc53384bec33644e024a607b"));
         assert(genesis.hashMerkleRoot == uint256("0xfdd3835249ad1a4e64cce2cd439089856d3fb947851e9ecb64dab2e7caf0e5df"));
 
         vSeeds.push_back(CDNSSeedData("NULL", "NULL"));
@@ -124,20 +124,20 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0xfc;
+        pchMessageStart[0] = 0xf2;
         pchMessageStart[1] = 0xc1;
-        pchMessageStart[2] = 0xb7;
-        pchMessageStart[3] = 0xdc;
+        pchMessageStart[2] = 0xb9;
+        pchMessageStart[3] = 0xd7;
         vAlertPubKey = ParseHex("042756726da3c7ef515d89212ee1705023d14be389e25fe15611585661b9a20021908b2b80a3c7200a0139dd2b26946606aab0eef9aa7689a6dc2c7eee237fa834");
         nDefaultPort = 44556;
         nRPCPort = 44555;
         strDataDir = "testnet3";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1635933561;
-        genesis.nNonce = 205036;
+        genesis.nTime = 1637010383;
+        genesis.nNonce = 281894;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x2284fe60bdaf0d5b59038aee3356e115c9ca8a9cc98eec416d2fe08f9c483c87"));
+        assert(hashGenesisBlock == uint256("0xbc7cde9e78af769cbec566a76e992c7d7567f3aecc53384bec33644e024a607b"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -166,19 +166,19 @@ static CTestNetParams testNetParams;
 class CRegTestParams : public CTestNetParams {
 public:
     CRegTestParams() {
-        pchMessageStart[0] = 0xfa;
-        pchMessageStart[1] = 0xbf;
-        pchMessageStart[2] = 0xb5;
-        pchMessageStart[3] = 0xda;
+        pchMessageStart[0] = 0xf1;
+        pchMessageStart[1] = 0xb5;
+        pchMessageStart[2] = 0xb4;
+        pchMessageStart[3] = 0xd8;
         nSubsidyHalvingInterval = 150;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
-        genesis.nTime = 1635933561;
-        genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 205036;
+        genesis.nTime = 1637010383;
+        genesis.nBits = 0x207fffff;
+        genesis.nNonce = 1;
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 18444;
         strDataDir = "regtest";
-        assert(hashGenesisBlock == uint256("0x2284fe60bdaf0d5b59038aee3356e115c9ca8a9cc98eec416d2fe08f9c483c87"));
+        assert(hashGenesisBlock == uint256("0x705d5b5f26eaaf9c3f9785769069b9830af085d3924623ff2cbf1d9f63f00c7e"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }
