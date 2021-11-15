@@ -3243,8 +3243,8 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
-        <translation>Sujungimo klausymas prijungčiai  &lt;port&gt; (pagal nutylėjimą: 22556 arba testnet: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
+        <translation>Sujungimo klausymas prijungčiai  &lt;port&gt; (pagal nutylėjimą: 14200 arba testnet: 44556)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3278,8 +3278,8 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>Klausymas JSON-RPC sujungimui prijungčiai &lt;port&gt; (pagal nutylėjimą: 22555 or testnet: 44555)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
+        <translation>Klausymas JSON-RPC sujungimui prijungčiai &lt;port&gt; (pagal nutylėjimą: 22225 or testnet: 44555)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3438,7 +3438,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bunkercoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
         <translation type="unfinished"/>
     </message>
     <message>

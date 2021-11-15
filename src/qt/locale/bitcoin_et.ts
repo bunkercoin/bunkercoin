@@ -3244,8 +3244,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
-        <translation>Kuula ühendusi pordil &lt;port&gt; (vaikeväärtus: 22556 või testnet: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
+        <translation>Kuula ühendusi pordil &lt;port&gt; (vaikeväärtus: 14200 või testnet: 44556)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3279,8 +3279,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>Kuula JSON-RPC ühendusel seda porti &lt;port&gt; (vaikeväärtus: 22555 või testnet: 44555)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
+        <translation>Kuula JSON-RPC ühendusel seda porti &lt;port&gt; (vaikeväärtus: 22225 või testnet: 44555)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3449,7 +3449,7 @@ nt: alertnotify=echo %%s | email -s &quot;Bunkercoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
         <translation type="unfinished"/>
     </message>
     <message>

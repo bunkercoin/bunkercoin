@@ -3246,8 +3246,8 @@ Adresse: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
-        <translation>Lytt etter tilkoblinger på &lt;port&gt; (standardverdi: 22556 eller testnet: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
+        <translation>Lytt etter tilkoblinger på &lt;port&gt; (standardverdi: 14200 eller testnet: 44556)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3281,8 +3281,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>Lytt etter JSON-RPC tilkoblinger på &lt;port&gt; (standardverdi: 22555 or testnet: 44555)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
+        <translation>Lytt etter JSON-RPC tilkoblinger på &lt;port&gt; (standardverdi: 22225 or testnet: 44555)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3450,8 +3450,8 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bunkercoin varsel&quot; adm
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>Koble til JSON-RPC på &lt;port&gt; (default: 22555 eller testnet: 44555)</translation>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
+        <translation>Koble til JSON-RPC på &lt;port&gt; (default: 22225 eller testnet: 44555)</translation>
     </message>
     <message>
         <location line="+2"/>

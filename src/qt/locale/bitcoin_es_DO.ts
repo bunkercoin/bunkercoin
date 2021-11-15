@@ -3265,8 +3265,8 @@ Dirección: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
-        <translation>Escuchar conexiones en &lt;puerto&gt; (predeterminado: 22556 o testnet: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
+        <translation>Escuchar conexiones en &lt;puerto&gt; (predeterminado: 14200 o testnet: 44556)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3300,8 +3300,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>Escuchar conexiones JSON-RPC en &lt;puerto&gt; (predeterminado: 22555 o testnet:44555)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
+        <translation>Escuchar conexiones JSON-RPC en &lt;puerto&gt; (predeterminado: 22225 o testnet:44555)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3473,8 +3473,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Bunkercoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>Conectar a JSON-RPC en &lt;puerto&gt; (predeterminado: 22555 o testnet: 44555)</translation>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
+        <translation>Conectar a JSON-RPC en &lt;puerto&gt; (predeterminado: 22225 o testnet: 44555)</translation>
     </message>
     <message>
         <location line="+2"/>

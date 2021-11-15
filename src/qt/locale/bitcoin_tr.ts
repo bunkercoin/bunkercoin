@@ -3245,8 +3245,8 @@ Adres: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
-        <translation>Bağlantılar için dinlenecek &lt;port&gt; (varsayılan: 22556 ya da testnet: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
+        <translation>Bağlantılar için dinlenecek &lt;port&gt; (varsayılan: 14200 ya da testnet: 44556)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3280,8 +3280,8 @@ Adres: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>JSON-RPC bağlantılarını &lt;port&gt; üzerinde dinle (varsayılan: 22555 veya tesnet: 44555)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
+        <translation>JSON-RPC bağlantılarını &lt;port&gt; üzerinde dinle (varsayılan: 22225 veya tesnet: 44555)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3450,8 +3450,8 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bunkercoin Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>&lt;port&gt; numarasında JSON-RPC&apos;ye bağlan (varsayılan: 22555 veya testnet: 44555)</translation>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
+        <translation>&lt;port&gt; numarasında JSON-RPC&apos;ye bağlan (varsayılan: 22225 veya testnet: 44555)</translation>
     </message>
     <message>
         <location line="+2"/>

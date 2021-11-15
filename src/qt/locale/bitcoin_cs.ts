@@ -3245,8 +3245,8 @@ Adresa: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
-        <translation>Čekat na spojení na &lt;portu&gt; (výchozí: 22556 nebo testnet: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
+        <translation>Čekat na spojení na &lt;portu&gt; (výchozí: 14200 nebo testnet: 44556)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3280,8 +3280,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>Čekat na JSON RPC spojení na &lt;portu&gt; (výchozí: 22555 nebo testnet: 44555)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
+        <translation>Čekat na JSON RPC spojení na &lt;portu&gt; (výchozí: 22225 nebo testnet: 44555)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3450,7 +3450,7 @@ například: alertnotify=echo %%s | mail -s &quot;Bunkercoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
         <translation type="unfinished"/>
     </message>
     <message>

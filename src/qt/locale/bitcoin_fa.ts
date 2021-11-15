@@ -3240,7 +3240,7 @@ Address: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
+        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
         <translation>پذیرش اتصالات روی پورت &lt;port&gt; (پیش‌فرض: 8833 یا شبکهٔ آزمایشی: 44556)</translation>
     </message>
     <message>
@@ -3275,8 +3275,8 @@ Address: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>پورت مورد شنود برای اتصالات JSON-RPC (پیش‌فرض: 22555 برای شبکهٔ تست 44555)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
+        <translation>پورت مورد شنود برای اتصالات JSON-RPC (پیش‌فرض: 22225 برای شبکهٔ تست 44555)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3435,7 +3435,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bunkercoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
         <translation type="unfinished"/>
     </message>
     <message>

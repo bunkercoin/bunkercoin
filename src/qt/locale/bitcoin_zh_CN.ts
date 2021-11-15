@@ -3262,8 +3262,8 @@ Address: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
-        <translation>监听端口连接 &lt;port&gt;（缺省: 22556 或测试网络: 44556）</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
+        <translation>监听端口连接 &lt;port&gt;（缺省: 14200 或测试网络: 44556）</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3297,8 +3297,8 @@ Address: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>JSON-RPC连接监听端口&lt;port&gt; (缺省：22555　testnet：44555)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
+        <translation>JSON-RPC连接监听端口&lt;port&gt; (缺省：22225　testnet：44555)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3471,8 +3471,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>连接到 JSON-RPC 于 &lt;port&gt;（默认: 22555，或测试网络: 44555）</translation>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
+        <translation>连接到 JSON-RPC 于 &lt;port&gt;（默认: 22225，或测试网络: 44555）</translation>
     </message>
     <message>
         <location line="+2"/>

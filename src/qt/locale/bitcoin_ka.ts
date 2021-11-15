@@ -3257,8 +3257,8 @@ Address: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
-        <translation>მიყურადება პორტზე &lt;port&gt; (ნაგულისხმევი: 22556 ან სატესტო ქსელში: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
+        <translation>მიყურადება პორტზე &lt;port&gt; (ნაგულისხმევი: 14200 ან სატესტო ქსელში: 44556)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3292,8 +3292,8 @@ Address: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation> JSON-RPC-შეერთებების მიყურადება პორტზე &lt;port&gt; (ნაგულისხმევი: 22555 ან სატესტო ქსელში: 44555)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
+        <translation> JSON-RPC-შეერთებების მიყურადება პორტზე &lt;port&gt; (ნაგულისხმევი: 22225 ან სატესტო ქსელში: 44555)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3462,8 +3462,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation> JSON-RPC-შეერთება პორტზე &lt;port&gt; (ნაგულისხმევი: 22555 ან სატესტო ქსელში: 44555)</translation>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22225 or testnet: 44555)</source>
+        <translation> JSON-RPC-შეერთება პორტზე &lt;port&gt; (ნაგულისხმევი: 22225 ან სატესტო ქსელში: 44555)</translation>
     </message>
     <message>
         <location line="+2"/>
