@@ -41,33 +41,33 @@ namespace Checkpoints
     // + Contains no strange transactions
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-        (     0, uint256("2284fe60bdaf0d5b59038aee3356e115c9ca8a9cc98eec416d2fe08f9c483c87"));
+        (     0, uint256("0xbc7cde9e78af769cbec566a76e992c7d7567f3aecc53384bec33644e024a607b"));
 	;
     static const CCheckpointData data = {
         &mapCheckpoints,
-        1635933561, // * UNIX timestamp of last checkpoint block
+        1637010383, // * UNIX timestamp of last checkpoint block
         0,    // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
-        500.0      // * estimated number of transactions per day after checkpoint
+        0      // * estimated number of transactions per day after checkpoint
     };
 
     static MapCheckpoints mapCheckpointsTestnet =
         boost::assign::map_list_of
-        (     0, uint256("0x6da75ebedb62bbeef5c5abba52ffa1d50e9b4c2d33921f50557212f03723d4d7"));
+        (     0, uint256("0xbc7cde9e78af769cbec566a76e992c7d7567f3aecc53384bec33644e024a607b"));
     static const CCheckpointData dataTestnet = {
         &mapCheckpointsTestnet,
-        1633618696,
+        1637010383,
         0,
-        200
+        0
     };
 
     static MapCheckpoints mapCheckpointsRegtest =
         boost::assign::map_list_of
-        ( 0, uint256("0x6da75ebedb62bbeef5c5abba52ffa1d50e9b4c2d33921f50557212f03723d4d7"))
+        ( 0, uint256("0x705d5b5f26eaaf9c3f9785769069b9830af085d3924623ff2cbf1d9f63f00c7e"))
         ;
     static const CCheckpointData dataRegtest = {
         &mapCheckpointsRegtest,
-        0,
+        1637010383,
         0,
         0
     };
