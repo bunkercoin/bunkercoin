@@ -22,7 +22,7 @@ using namespace boost::assign;
 
 unsigned int pnSeed[] =
 {
-	NULL, NULL
+	0x67f94638, 0x8c5201ec, 0x2c4ddd34, 0x90ca0db8
 };
 
 class CMainParams : public CChainParams {
@@ -68,6 +68,10 @@ public:
         assert(hashGenesisBlock == uint256("0xbc7cde9e78af769cbec566a76e992c7d7567f3aecc53384bec33644e024a607b"));
         assert(genesis.hashMerkleRoot == uint256("0xfdd3835249ad1a4e64cce2cd439089856d3fb947851e9ecb64dab2e7caf0e5df"));
 
+        vSeeds.push_back(CDNSSeedData("103.249.70.56", "103.249.70.56"));
+        vSeeds.push_back(CDNSSeedData("140.82.1.236", "140.82.1.236"));
+        vSeeds.push_back(CDNSSeedData("45.77.221.52", "45.77.221.52"));
+        vSeeds.push_back(CDNSSeedData("144.202.13.184", "144.202.13.184"));
         vSeeds.push_back(CDNSSeedData("NULL", "NULL"));
 
         // Workaround for Boost not being quite compatible with C++11;
