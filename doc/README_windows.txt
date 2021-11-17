@@ -11,10 +11,9 @@ cryptographic software written by Eric Young (eay@cryptsoft.com).
 
 Intro
 -----
-Bunkercoin is a free open source peer-to-peer electronic cash system that is
-completely decentralized, without the need for a central server or trusted
-parties.  Users hold the crypto keys to their own money and transact directly
-with each other, with the help of a P2P network to check for double-spending.
+Bunkercoin is a cryptocurrency like Bitcoin, although it does not 
+use SHA256 as its proof of work (POW). Taking development cues from Dogecoin and Bitcoin, 
+Bunkercoin currently employs a simplified variant of scrypt.
 
 
 Setup
