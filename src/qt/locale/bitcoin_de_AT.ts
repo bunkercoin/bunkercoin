@@ -3240,8 +3240,8 @@ Wohin: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
-        <translation>Auf Vabindungen am &lt;port&gt; lauschn (sunsta: 14200 bzw. testnet: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 14201 or testnet: 44556)</source>
+        <translation>Auf Vabindungen am &lt;port&gt; lauschn (sunsta: 14201 bzw. testnet: 44556)</translation>
     </message>
     <message>
         <location line="+5"/>

@@ -3250,8 +3250,8 @@ Indirizzo: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
-        <translation>Ascolta le connessioni JSON-RPC su &lt;porta&gt; (predefinita: 14200 o testnet: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 14201 or testnet: 44556)</source>
+        <translation>Ascolta le connessioni JSON-RPC su &lt;porta&gt; (predefinita: 14201 o testnet: 44556)</translation>
     </message>
     <message>
         <location line="+5"/>

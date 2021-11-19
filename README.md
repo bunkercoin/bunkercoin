@@ -51,4 +51,4 @@ The solid best way is to mine. Currently we recommend mining with a CPU to keep 
 
 ### Want to know the ports? Well here is the place to be!
 RPC 22225
-P2P 14200 
+P2P 14201 
