@@ -3240,8 +3240,8 @@ Alamat: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 14201 or testnet: 44556)</source>
-        <translation>Menerima hubungan pada &lt;port&gt; (standar: 14201 atau testnet: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
+        <translation>Menerima hubungan pada &lt;port&gt; (standar: 14200 atau testnet: 44556)</translation>
     </message>
     <message>
         <location line="+5"/>

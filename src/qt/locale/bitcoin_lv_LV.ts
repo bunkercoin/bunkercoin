@@ -3240,8 +3240,8 @@ Adrese: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 14201 or testnet: 44556)</source>
-        <translation>Gaidīt savienojumus portā &lt;port&gt; (pēc noklusēšanas: 14201 vai testnet: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
+        <translation>Gaidīt savienojumus portā &lt;port&gt; (pēc noklusēšanas: 14200 vai testnet: 44556)</translation>
     </message>
     <message>
         <location line="+5"/>

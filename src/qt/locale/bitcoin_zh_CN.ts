@@ -3262,8 +3262,8 @@ Address: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 14201 or testnet: 44556)</source>
-        <translation>监听端口连接 &lt;port&gt;（缺省: 14201 或测试网络: 44556）</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
+        <translation>监听端口连接 &lt;port&gt;（缺省: 14200 或测试网络: 44556）</translation>
     </message>
     <message>
         <location line="+5"/>

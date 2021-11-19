@@ -3257,8 +3257,8 @@ Address: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 14201 or testnet: 44556)</source>
-        <translation>在通訊埠 &lt;port&gt; 聽候連線(預設值: 14201, 或若是測試網路: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 14200 or testnet: 44556)</source>
+        <translation>在通訊埠 &lt;port&gt; 聽候連線(預設值: 14200, 或若是測試網路: 44556)</translation>
     </message>
     <message>
         <location line="+5"/>
