@@ -31,11 +31,11 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0xd1;
-        pchMessageStart[1] = 0xa8;
-        pchMessageStart[2] = 0xb4;
-        pchMessageStart[3] = 0xc5;
-        vAlertPubKey = ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f");
+        pchMessageStart[0] = 0xe8;
+        pchMessageStart[1] = 0xc9;
+        pchMessageStart[2] = 0xf0;
+        pchMessageStart[3] = 0xa1;
+        vAlertPubKey = ParseHex("04536744d5a57623b6602d8325383a580b1c00076a9e68fd75ff1f07240fb7408916e919cec8b8750a6e6aff08339db104106a75f976d5817490b9a1bdc2e0c727");
         nDefaultPort = 14200;
         nRPCPort = 22225;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
@@ -55,18 +55,18 @@ public:
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 88 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04536744d5a57623b6602d8325383a580b1c00076a9e68fd75ff1f07240fb7408916e919cec8b8750a6e6aff08339db104106a75f976d5817490b9a1bdc2e0c727") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1637010383;
+        genesis.nTime    = 1637347145;
         genesis.nBits    = 0x1e0ffff0;
-        genesis.nNonce   = 281894;
+        genesis.nNonce   = 467930;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0xbc7cde9e78af769cbec566a76e992c7d7567f3aecc53384bec33644e024a607b"));
-        assert(genesis.hashMerkleRoot == uint256("0xfdd3835249ad1a4e64cce2cd439089856d3fb947851e9ecb64dab2e7caf0e5df"));
+        assert(hashGenesisBlock == uint256("0x405d1f6dda6196fc4fc4f2d28a8a199a6206149556cc30ddfaa0a26c04c6c9c2"));
+        assert(genesis.hashMerkleRoot == uint256("0xd80699e741a6ad2478044ad7f71642f6263b0b3d9c0af2c531ca79c7f5648fec"));
 
         vSeeds.push_back(CDNSSeedData("103.249.70.56", "103.249.70.56"));
         vSeeds.push_back(CDNSSeedData("140.82.1.236", "140.82.1.236"));
@@ -132,16 +132,16 @@ public:
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xb9;
         pchMessageStart[3] = 0xd7;
-        vAlertPubKey = ParseHex("042756726da3c7ef515d89212ee1705023d14be389e25fe15611585661b9a20021908b2b80a3c7200a0139dd2b26946606aab0eef9aa7689a6dc2c7eee237fa834");
+        vAlertPubKey = ParseHex("04536744d5a57623b6602d8325383a580b1c00076a9e68fd75ff1f07240fb7408916e919cec8b8750a6e6aff08339db104106a75f976d5817490b9a1bdc2e0c727");
         nDefaultPort = 44556;
         nRPCPort = 44555;
         strDataDir = "testnet3";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1637010383;
-        genesis.nNonce = 281894;
+        genesis.nTime = 1637347145;
+        genesis.nNonce = 467930;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0xbc7cde9e78af769cbec566a76e992c7d7567f3aecc53384bec33644e024a607b"));
+        assert(hashGenesisBlock == uint256("0x405d1f6dda6196fc4fc4f2d28a8a199a6206149556cc30ddfaa0a26c04c6c9c2"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -170,19 +170,19 @@ static CTestNetParams testNetParams;
 class CRegTestParams : public CTestNetParams {
 public:
     CRegTestParams() {
-        pchMessageStart[0] = 0xf1;
-        pchMessageStart[1] = 0xb5;
-        pchMessageStart[2] = 0xb4;
-        pchMessageStart[3] = 0xd8;
+        pchMessageStart[0] = 0xf7;
+        pchMessageStart[1] = 0xb4;
+        pchMessageStart[2] = 0xa6;
+        pchMessageStart[3] = 0xc9;
         nSubsidyHalvingInterval = 150;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
-        genesis.nTime = 1637010383;
+        genesis.nTime = 1637347268;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 1;
+        genesis.nNonce = 2;
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 18444;
         strDataDir = "regtest";
-        assert(hashGenesisBlock == uint256("0x705d5b5f26eaaf9c3f9785769069b9830af085d3924623ff2cbf1d9f63f00c7e"));
+        assert(hashGenesisBlock == uint256("0xe08a885e4191632633276ee13f8627849340187fc267610038aa9fe478bc7fab"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }
