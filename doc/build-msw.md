@@ -22,10 +22,10 @@ for the build process to succeed.
 
 	name            default path               download
 	--------------------------------------------------------------------------------------------------------------------
-	OpenSSL         \openssl-1.0.1c-mgw        http://www.openssl.org/source/
-	Berkeley DB     \db-5.1.29.NC-mgw          http://www.oracle.com/technology/software/products/berkeley-db/index.html
-	Boost           \boost-1.55.0-mgw          http://www.boost.org/users/download/
-	miniupnpc       \miniupnpc-1.6-mgw         http://miniupnp.tuxfamily.org/files/
+	OpenSSL         \openssl-1.0.1u            http://www.openssl.org/source/
+	Berkeley DB     \db-5.1.29.NC              http://www.oracle.com/technology/software/products/berkeley-db/index.html
+	Boost           \boost-1.65.1          	   http://www.boost.org/users/download/
+	miniupnpc       \miniupnpc-2.0             http://miniupnp.free.fr/files/
     qt                                         http://download.qt-project.org/official_releases/qt/5.2/5.2.1/
     protobuf                                   http://protobuf.googlecode.com/files/protobuf-2.5.0.zip
     libpng                                     http://prdownloads.sourceforge.net/libpng/libpng-1.6.9.tar.gz?download
@@ -44,10 +44,10 @@ Their licenses:
 
 Versions used in this release:
 
-	OpenSSL      1.0.1c
+	OpenSSL      1.0.1u
 	Berkeley DB  5.1.29.NC
-	Boost        1.55.0
-	miniupnpc    1.6
+	Boost        1.65.1
+	miniupnpc    2.0
     qt           4.8.3
     protobuf     2.5.0
     libpng       1.6.9

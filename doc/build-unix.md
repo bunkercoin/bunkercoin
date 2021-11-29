@@ -44,10 +44,10 @@ Licenses of statically linked libraries:
 
 - Versions used in this release:
 -  GCC           4.3.3
--  OpenSSL       1.0.1c
+-  OpenSSL       1.0.1u
 -  Berkeley DB   5.1.29.NC
--  Boost         1.55
--  miniupnpc     1.6
+-  Boost         1.65.1
+-  miniupnpc     2.0
 -  qt            4.8.3
 -  protobuf      2.5.0
 -  libqrencode   3.2.0
@@ -72,7 +72,7 @@ for other Ubuntu & Debian:
 
 	sudo apt-get install libdb5.1-dev
 	sudo apt-get install libdb5.1++-dev
-	sudo apt-get install libboost1.55-all-dev
+	sudo apt-get install libboost1.65-all-dev
 
 Optional:
 
@@ -111,8 +111,8 @@ symbols, which reduces the executable size by about 90%.
 
 miniupnpc
 ---------
-	tar -xzvf miniupnpc-1.6.tar.gz
-	cd miniupnpc-1.6
+	tar -xzvf miniupnpc-2.0.tar.gz
+	cd miniupnpc-2.0
 	make
 	sudo su
 	make install

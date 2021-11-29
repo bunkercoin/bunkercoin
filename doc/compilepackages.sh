@@ -13,7 +13,8 @@ sudo apt purge miniupnpc -y
 cd $HOME
 mkdir boost-bin
 mkdir ssl-bin
-mkdir upnp-bin
+mkdir -p upnp-bin/include/miniupnpc
+mkdir -p upnp-bin/lib
 
 # Get source code
 wget https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65_1.tar.gz
@@ -39,7 +40,7 @@ make install
 # Build miniupnpc
 make -j`nproc`
 cp libminiupnpc.a $HOME/upnp-bin/lib
-cp *.h $HOME/upnp-bin/include/miniupnpd
+cp *.h $HOME/upnp-bin/include/miniupnpc
 
 # Install libboost
 cd $HOME/boost-bin

@@ -47,7 +47,6 @@ jobs:
         run: |
           chmod 755 -R .
           ./doc/compilepackages.sh
-          sudo apt purge libssl-dev libssl1.0-dev
 
       - name: Build Bunkercoin
         run: |
