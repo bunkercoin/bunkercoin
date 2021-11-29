@@ -1090,12 +1090,16 @@ void ThreadMapPort()
     char lanaddr[64];
 
 #ifndef UPNPDISCOVER_SUCCESS
-    /* miniupnpc 1.5 */
-    devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0);
+/* miniupnpc 1.5 */
+devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0);
+#elif MINIUPNPC_API_VERSION < 14
+/* miniupnpc 1.6 */
+int error = 0;
+devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0, 0, &error);
 #else
-    /* miniupnpc 1.6 */
-    int error = 0;
-    devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0, 0, &error);
+/* miniupnpc 1.9 */
+int error = 0;
+devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0, 0, 2, &error);
 #endif
 
     struct UPNPUrls urls;
