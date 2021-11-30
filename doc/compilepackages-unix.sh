@@ -27,7 +27,7 @@ wget "http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz"
 # Extract source code
 tar -xf boost_1_65_1.tar.gz
 tar -xf openssl-1.0.2u.tar.gz
-tar -xf miniupnpd-2.0.20180503.tar.gz
+tar -xf miniupnpc-2.0.20161216.tar.gz
 tar -xf db-5.1.29.NC.tar.gz
 
 # Build libboost
@@ -42,7 +42,7 @@ make -j`nproc`
 make install
 
 # Build miniupnpc
-cd $HOME/miniupnpd-2.0.20180503
+cd $HOME/miniupnpc-2.0.20161216
 make -j`nproc`
 cp libminiupnpc.a $HOME/upnp-bin/lib
 cp *.h $HOME/upnp-bin/include/miniupnpc
