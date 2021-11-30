@@ -21,7 +21,7 @@ mkdir db-bin
 # Get source code
 wget "https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65_1.tar.gz"
 wget "https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz"
-wget "http://miniupnp.free.fr/files/miniupnpd-2.0.20180503.tar.gz"
+wget "http://miniupnp.free.fr/files/miniupnpc-2.0.20161216.tar.gz"
 wget "http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz"
 
 # Extract source code
