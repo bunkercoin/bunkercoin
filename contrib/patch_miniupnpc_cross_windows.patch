@@ -1,0 +1,40 @@
+--- Makefile.mingw	2016-01-19 11:26:58.000000000 +0100
++++ Makefile.mingw.1	2021-11-30 13:50:37.930000000 +0100
+@@ -26,11 +26,11 @@
+ 	echo init > init
+ 
+ clean:
+-	del upnpc testminixml *.o
+-	del dll\*.o
+-	del *.exe
+-	del miniupnpc.dll
+-	del libminiupnpc.a
++	rm -f upnpc testminixml *.o
++	rm -f dll\*.o
++	rm -f *.exe
++	rm -f miniupnpc.dll
++	rm -f libminiupnpc.a
+ 
+ libminiupnpc.a:	$(OBJS)
+ 	$(AR) cr $@ $?
+@@ -40,7 +40,7 @@
+ 	$(PYTHON) setupmingw32.py install --skip-build
+ 
+ miniupnpc.dll:	libminiupnpc.a $(OBJSDLL)
+-	dllwrap -k --driver-name gcc \
++	x86_64-w64-mingw32-dllwrap -k --driver-name x86_64-w64-mingw32-gcc \
+ 	--def miniupnpc.def \
+ 	--output-def miniupnpc.dll.def \
+ 	--implib miniupnpc.lib -o $@ \
+@@ -74,8 +74,9 @@
+ 
+ wingenminiupnpcstrings.o:	wingenminiupnpcstrings.c
+ 
+-miniupnpcstrings.h: miniupnpcstrings.h.in wingenminiupnpcstrings
+-	wingenminiupnpcstrings $< $@
++miniupnpcstrings.h: miniupnpcstrings.h.in VERSION
++	sed 's|OS_STRING ".*"|OS_STRING "Windows/Mingw32"|' $< | \
++	sed 's|MINIUPNPC_VERSION_STRING ".*"|MINIUPNPC_VERSION_STRING "$(shell cat VERSION)"|' > $@
+ 
+ minixml.o:	minixml.c minixml.h
+ 

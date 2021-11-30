@@ -27,7 +27,7 @@ jobs:
             host: x86_64-unknown-linux-gnu
             os: ubuntu-20.04
             packages: libevent-dev
-            config-opts: '--without-gui --disable-tests'
+            config-opts: '--without-gui --disable-tests CPPFLAGS="-I$HOME/unix-bin/include" LDFLAGS="-L$HOME/unix-bin/lib"'
             bdb-args: ""
             strip-command: "strip"
 
@@ -46,7 +46,7 @@ jobs:
       - name: Build depends
         run: |
           chmod 755 -R .
-          ./doc/compilepackages-unix.sh
+          ./contrib/compilepackages-unix.sh
 
       - name: Build Bunkercoin
         run: |
