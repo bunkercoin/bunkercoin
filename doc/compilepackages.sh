@@ -38,6 +38,7 @@ make -j`nproc`
 make install
 
 # Build miniupnpc
+cd $HOME/miniupnpd-2.0.20180503
 make -j`nproc`
 cp libminiupnpc.a $HOME/upnp-bin/lib
 cp *.h $HOME/upnp-bin/include/miniupnpc
