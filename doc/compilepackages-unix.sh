@@ -49,7 +49,7 @@ cp *.h $HOME/upnp-bin/include/miniupnpc
 
 # Build Berkeley DB
 cd $HOME/db-5.1.29.NC/build_unix/
-sed -i 's/__atomic_compare_exchange/__atomic_compare_exchange_db/g' ../dbinc/atomic.h
+sed -i 's/__atomic_compare_exchange/__atomic_compare_exchange_db/g' ../src/dbinc/atomic.h
 ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$HOME/db-bin
 make -j`nproc`
 make install
