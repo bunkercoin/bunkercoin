@@ -60,3 +60,7 @@ cd $HOME/boost_1_55_0
 ./bootstrap.sh
 sed -i "s/using gcc ;/using gcc : x86_64 : x86_64-w64-mingw32-g++ ;/g" project-config.jam
 ./bjam install toolset=gcc-mingw --prefix=$HOME/mingw-bin target-os=windows variant=release
+
+# Install packages
+cd $HOME/mingw-bin
+sudo cp * -R /usr/x86_64-w64-mingw32

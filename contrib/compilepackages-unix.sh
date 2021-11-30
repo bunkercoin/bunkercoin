@@ -52,3 +52,7 @@ make install
 cd $HOME/boost_1_55_0
 ./bootstrap.sh --prefix=$HOME/unix-bin
 ./b2 install
+
+# Install packages
+cd $HOME/unix-bin
+sudo cp * -R /usr
