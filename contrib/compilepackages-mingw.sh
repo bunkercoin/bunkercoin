@@ -30,6 +30,8 @@ tar -xf miniupnpc-2.0.20161216.tar.gz
 tar -xf db-5.1.29.NC.tar.gz
 tar -xf boost_1_55_0.tar.gz
 
+rm -f openssl-1.0.2u.tar.gz miniupnpc-2.0.20161216.tar.gz db-5.1.29.NC.tar.gz boost_1_55_0.tar.gz
+
 # Build OpenSSL
 cd $HOME/openssl-1.0.2u
 ./Configure mingw64 --cross-compile-prefix=x86_64-w64-mingw32- --prefix=$HOME/mingw-bin
