@@ -22,8 +22,8 @@ jobs:
           - name: x86_64-linux
             host: x86_64-unknown-linux-gnu
             os: ubuntu-20.04
-            packages: libevent-dev
-            config-opts: '--without-gui --disable-tests'
+            packages: libevent-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools qtwayland5 libqrencode-dev protobuf-compiler
+            config-opts: '--disable-tests --enable-upnp-default --enable-natpmp-default'
             strip-command: "strip"
             build-deps-command: "./contrib/compilepackages-unix.sh"
           - name: x86_64-windows
@@ -34,7 +34,7 @@ jobs:
               sudo update-alternatives --set x86_64-w64-mingw32-gcc  /usr/bin/x86_64-w64-mingw32-gcc-posix
               sudo update-alternatives --set x86_64-w64-mingw32-g++  /usr/bin/x86_64-w64-mingw32-g++-posix
               sudo update-binfmts --import /usr/share/binfmts/wine
-            config-opts: '--without-gui --disable-tests --with-boost-libdir="/usr/x86_64-w64-mingw32/lib" --host=x86_64-w64-mingw32 '
+            config-opts: '--without-gui --disable-tests --with-boost-libdir="/usr/x86_64-w64-mingw32/lib" --host=x86_64-w64-mingw32 LDFLAGS="-lboost_log_setup -lboost_log -lboost_thread" --enable-upnp-default --enable-natpmp-default'
             strip-command: "x86_64-w64-mingw32-strip"
             build-deps-command: "./contrib/compilepackages-mingw.sh"
 
@@ -63,7 +63,7 @@ jobs:
           
       - name: Strip built binaries
         run: |
-          ${{ matrix.strip-command }} src/bunkercoin-cli src/bunkercoind src/bunkercoin-cli.exe src/bunkercoind.exe || (echo "your mom is fat as fuck")
+          ${{ matrix.strip-command }} src/bunkercoin-cli* src/bunkercoind* src/qt/bunkercoin-qt* || echo
           
       - name: Upload binaries
         uses: actions/upload-artifact@v2
@@ -72,5 +72,6 @@ jobs:
           path: |
             src/bunkercoin-cli
             src/bunkercoind
+            src/qt/bunkercoin-qt
             src/bunkercoin-cli.exe
             src/bunkercoind.exe
