@@ -21,7 +21,7 @@ jobs:
         include:
           - name: x86_64-linux
             host: x86_64-unknown-linux-gnu
-            os: ubuntu-20.04
+            os: ubuntu-18.04
             packages: libevent-dev libqt4-dev libprotobuf-dev protobuf-compiler
             config-opts: '--enable-upnp-default --with-gui=qt5 --disable-tests'
             strip-command: "strip"
