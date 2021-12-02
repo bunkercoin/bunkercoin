@@ -23,7 +23,7 @@ jobs:
             host: x86_64-unknown-linux-gnu
             os: ubuntu-20.04
             packages: libevent-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools qtwayland5 libqrencode-dev protobuf-compiler
-            config-opts: '--disable-tests --enable-upnp-default --enable-natpmp-default'
+            config-opts: '--disable-tests --enable-upnp-default --enable-natpmp-default --with-gui=qt5'
             strip-command: "strip"
             build-deps-command: "./contrib/compilepackages-unix.sh"
           - name: x86_64-windows
