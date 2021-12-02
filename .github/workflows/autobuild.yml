@@ -26,9 +26,9 @@ jobs:
         include:
           - name: x86_64-linux
             host: x86_64-unknown-linux-gnu
-            os: ubuntu-latest
+            os: ubuntu-20.04
             packages: libevent-dev
-            config-opts: '--without-gui --disable-tests --with-boost-libdir="/usr/lib"'
+            config-opts: '--without-gui --disable-tests'
             strip-command: "strip"
             build-deps-command: "./contrib/compilepackages-unix.sh"
           - name: x86_64-windows
@@ -68,7 +68,7 @@ jobs:
           
       - name: Strip built binaries
         run: |
-          ${{ matrix.strip-command }} src/bunkercoin-cli src/bunkercoind src/bunkercoin-cli.exe src/bunkercoind.exe
+          ${{ matrix.strip-command }} src/bunkercoin-cli src/bunkercoind src/bunkercoin-cli.exe src/bunkercoind.exe || (echo "your mom is fat as fuck")
           
       - name: Upload binaries
         uses: actions/upload-artifact@v2
