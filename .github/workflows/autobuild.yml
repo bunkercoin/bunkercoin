@@ -22,8 +22,8 @@ jobs:
           - name: x86_64-linux
             host: x86_64-unknown-linux-gnu
             os: ubuntu-20.04
-            packages: libevent-dev
-            config-opts: '--without-gui --disable-tests'
+            packages: libevent-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools qtwayland5 libqrencode-dev
+            config-opts: '--disable-tests'
             strip-command: "strip"
             build-deps-command: "./contrib/compilepackages-unix.sh"
           - name: x86_64-windows
