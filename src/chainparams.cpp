@@ -72,6 +72,7 @@ public:
         vSeeds.push_back(CDNSSeedData("140.82.1.236", "140.82.1.236"));
         vSeeds.push_back(CDNSSeedData("45.77.221.52", "45.77.221.52"));
         vSeeds.push_back(CDNSSeedData("144.202.13.184", "144.202.13.184"));
+        vSeeds.push_back(CDNSSeedData("bunkercoin.xyz", "seed.bunkercoin.xyz"));
         vSeeds.push_back(CDNSSeedData("NULL", "NULL"));
 
         // Workaround for Boost not being quite compatible with C++11;
