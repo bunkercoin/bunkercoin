@@ -59,8 +59,8 @@ make install
 cd $HOME/boost_1_65_1
 ./bootstrap.sh
 sed -i "s/using gcc ;/using gcc : x86_64 : x86_64-w64-mingw32-g++ ;/g" project-config.jam
-./bjam install toolset=gcc-mingw --prefix=$HOME/mingw-bin target-os=windows variant=release variant=release --without-mpi address-model=64 architecture=x86 release abi=ms binary-format=pe --with-thread
-wget "https://raw.githubusercontent.com/bunkercoin-project/bunkercoin/1.0-dev/contrib/boost_thread_windows/libboost_thread.a"
+./bjam install toolset=gcc-mingw --prefix=$HOME/mingw-bin target-os=windows variant=release address-model=64 architecture=x86 release abi=ms binary-format=pe
+wget "https://raw.githubusercontent.com/bunkercoin-project/bunkercoin/master/contrib/boost_thread_windows/libboost_thread.a"
 mv libboost_thread.a $HOME/mingw-bin/lib
 
 # Install packages
