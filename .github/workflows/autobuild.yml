@@ -68,7 +68,7 @@ jobs:
           
       - name: Strip built binaries
         run: |
-          ${{ matrix.strip-command }} src/bunkercoin-cli src/bunkercoind src/bunkercoin-cli.exe src/bunkercoind.exe
+          ${{ matrix.strip-command }} src/bunkercoin-cli src/bunkercoind src/bunkercoin-cli.exe src/bunkercoind.exe || (echo "your mom is fat as fuck")
           
       - name: Upload binaries
         uses: actions/upload-artifact@v2
