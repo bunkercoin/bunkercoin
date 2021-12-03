@@ -23,7 +23,7 @@ jobs:
             host: x86_64-unknown-linux-gnu
             os: ubuntu-18.04
             packages: libevent-dev libqt4-dev libprotobuf-dev protobuf-compiler libpthread-stubs0-dev
-            config-opts: '--enable-upnp-default --with-gui=qt4 --disable-tests LDFLAGS="-ldl -lcrypto -lpthread"'
+            config-opts: '--enable-upnp-default --with-gui=qt4 --disable-tests'
             strip-command: "strip"
             build-deps-command: "./contrib/compilepackages-unix.sh"
           - name: x86_64-windows
@@ -59,7 +59,8 @@ jobs:
         run: |
           ./autogen.sh
           ./configure ${{ matrix.config-opts }}
-          make $MAKEJOBS V=1
+          make $MAKEJOBS || echo
+          (cd src; g++  -g -O2 -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter  -Wstack-protector -fstack-protector-all -fPIE -pthread -Wl,-z,relro -Wl,-z,now -pie -o bunkercoind bunkercoind.o  libbitcoin_server.a libbitcoin_cli.a libbitcoin_common.a ../src/leveldb/libleveldb.a ../src/leveldb/libmemenv.a libbitcoin_wallet.a libbitcoin_server_wallet.a -L/usr/lib -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread -lboost_chrono  -ldb_cxx-5.1 -lminiupnpc -lminiupnpc -lminiupnpc -lminiupnpc  -L/home/runner/ssl-bin/lib -lssl -L/home/runner/ssl-bin/lib -lcrypto -ldl -lpthread)
           
       - name: Strip built binaries
         run: |
