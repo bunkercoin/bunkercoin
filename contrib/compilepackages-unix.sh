@@ -36,7 +36,7 @@ rm -f boost_1_65_1.tar.gz \
 
 # Build OpenSSL
 cd $HOME/openssl-1.0.2u
-./config shared zlib --prefix=$HOME/ssl-bin
+./config --prefix=$HOME/ssl-bin
 make -j`nproc`
 make install
 
@@ -60,6 +60,7 @@ cd $HOME/boost_1_65_1
 
 # Install OpenSSL
 cd $HOME/ssl-bin
+rm -f lib/*.so*
 sudo cp * -R /usr
 
 # Install the built files
