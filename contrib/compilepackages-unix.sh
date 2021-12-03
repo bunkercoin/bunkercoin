@@ -14,9 +14,8 @@ sudo apt purge libdb-dev libdb++-dev -y
 cd $HOME
 mkdir boost-bin
 mkdir ssl-bin
-mkdir -p upnp-bin/include/miniupnpc
-mkdir -p upnp-bin/lib
-mkdir db-bin
+mkdir -p unix-bin/include/miniupnpc
+mkdir -p unix-bin/lib
 
 # Get source code
 wget "https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65_1.tar.gz"
@@ -31,12 +30,10 @@ tar -xf miniupnpc-2.0.20161216.tar.gz
 tar -xf db-5.1.29.NC.tar.gz
 
 # Delete source code archives
-rm -f boost_1_65_1.tar.gz openssl-1.0.2u.tar.gz miniupnpc-2.0.20161216.tar.gz db-5.1.29.NC.tar.gz
-
-# Build libboost
-cd $HOME/boost_1_65_1
-./bootstrap.sh --prefix=$HOME/boost-bin
-./b2 install
+rm -f boost_1_65_1.tar.gz \
+    openssl-1.0.2u.tar.gz \
+    miniupnpc-2.0.20161216.tar.gz \
+    db-5.1.29.NC.tar.gz
 
 # Build OpenSSL
 cd $HOME/openssl-1.0.2u
@@ -47,15 +44,20 @@ make install
 # Build miniupnpc
 cd $HOME/miniupnpc-2.0.20161216
 make -j`nproc`
-cp libminiupnpc.a $HOME/upnp-bin/lib
-cp *.h $HOME/upnp-bin/include/miniupnpc
+cp libminiupnpc.a $HOME/unix-bin/lib
+cp *.h $HOME/unix-bin/include/miniupnpc
 
 # Build Berkeley DB
 cd $HOME/db-5.1.29.NC/build_unix/
 sed -i 's/__atomic_compare_exchange/__atomic_compare_exchange_db/g' ../src/dbinc/atomic.h
-../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$HOME/db-bin
+../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$HOME/unix-bin
 make -j`nproc`
 make install
+
+# Build libboost
+cd $HOME/boost_1_65_1
+./bootstrap.sh
+./bjam install --prefix=$HOME/boost-bin variant=release address-model=64 architecture=x86
 
 # Install libboost
 cd $HOME/boost-bin
@@ -65,10 +67,6 @@ sudo cp * -R /usr
 cd $HOME/ssl-bin
 sudo cp * -R /usr
 
-# Install miniupnpc
-cd $HOME/upnp-bin
-sudo cp * -R /usr
-
-# Install Berkeley DB
-cd $HOME/db-bin 
+# Install the built files
+cd $HOME/unix-bin 
 sudo cp * -R /usr
