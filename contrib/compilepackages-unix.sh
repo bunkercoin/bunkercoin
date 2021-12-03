@@ -64,4 +64,5 @@ sudo cp * -R /usr
 
 # Install the built files
 cd $HOME/unix-bin
+rm -f *.so*
 sudo cp * -R /usr
