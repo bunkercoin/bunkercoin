@@ -22,8 +22,8 @@ jobs:
           - name: x86_64-linux
             host: x86_64-unknown-linux-gnu
             os: ubuntu-18.04
-            packages: libevent-dev libqt4-dev libprotobuf-dev protobuf-compiler
-            config-opts: '--enable-upnp-default --with-gui=qt4 --disable-tests LDFLAGS="-ldl"'
+            packages: libevent-dev libqt4-dev libprotobuf-dev protobuf-compiler libpthread-stubs0-dev
+            config-opts: '--enable-upnp-default --with-gui=qt4 --disable-tests LDFLAGS="-ldl -lcrypto -lpthread"'
             strip-command: "strip"
             build-deps-command: "./contrib/compilepackages-unix.sh"
           - name: x86_64-windows
