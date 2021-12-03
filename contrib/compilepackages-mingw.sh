@@ -8,10 +8,10 @@
 # to see how to compile packages for Windows ON Windows check out compilepackges-mingw.bat
 
 # Delete old versions of libboost, OpenSSL, miniupnpc and Berkeley DB
-sudo apt purge *boost* -y
-sudo apt purge libssl-dev libssl1.0-dev -y
-sudo apt purge miniupnpc -y
-sudo apt purge libdb-dev libdb++-dev -y
+sudo apt purge *boost* \
+    libssl-dev libssl1.0-dev \
+    miniupnpc \
+    libdb-dev libdb++-dev -y
 
 # Go to home directory and make bin dirs
 cd $HOME
@@ -19,10 +19,10 @@ mkdir -p mingw-bin/include/miniupnpc
 mkdir -p mingw-bin/lib
 
 # Get source code
-wget "https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz"
-wget "http://miniupnp.free.fr/files/miniupnpc-2.0.20161216.tar.gz"
-wget "http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz"
-wget "https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65_1.tar.gz"
+wget "https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz" \
+    "http://miniupnp.free.fr/files/miniupnpc-2.0.20161216.tar.gz" \
+    "http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz" \
+    "https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65_1.tar.gz"
 
 # Extract source code
 tar -xf openssl-1.0.2u.tar.gz
@@ -30,7 +30,10 @@ tar -xf miniupnpc-2.0.20161216.tar.gz
 tar -xf db-5.1.29.NC.tar.gz
 tar -xf boost_1_65_1.tar.gz
 
-rm -f openssl-1.0.2u.tar.gz miniupnpc-2.0.20161216.tar.gz db-5.1.29.NC.tar.gz boost_1_55_0.tar.gz
+rm -f openssl-1.0.2u.tar.gz \
+    miniupnpc-2.0.20161216.tar.gz \
+    db-5.1.29.NC.tar.gz \
+    boost_1_55_0.tar.gz
 
 # Build OpenSSL
 cd $HOME/openssl-1.0.2u

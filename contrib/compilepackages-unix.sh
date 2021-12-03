@@ -5,23 +5,22 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 # Delete old versions of libboost, OpenSSL, miniupnpc and Berkeley DB
-sudo apt purge *boost* -y
-sudo apt purge libssl-dev libssl1.0-dev -y
-sudo apt purge miniupnpc -y
-sudo apt purge libdb-dev libdb++-dev -y
+sudo apt purge *boost* \
+    libssl-dev libssl1.0-dev \
+    miniupnpc \
+    libdb-dev libdb++-dev -y
 
 # Go to home directory and make bin dirs
-cd $HOME
-mkdir boost-bin
+cd $home
 mkdir ssl-bin
 mkdir -p unix-bin/include/miniupnpc
 mkdir -p unix-bin/lib
 
 # Get source code
-wget "https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65_1.tar.gz"
-wget "https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz"
-wget "http://miniupnp.free.fr/files/miniupnpc-2.0.20161216.tar.gz"
-wget "http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz"
+wget "https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65_1.tar.gz" \
+    "https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz" \
+    "http://miniupnp.free.fr/files/miniupnpc-2.0.20161216.tar.gz" \
+    "http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz"
 
 # Extract source code
 tar -xf boost_1_65_1.tar.gz
@@ -57,16 +56,13 @@ make install
 # Build libboost
 cd $HOME/boost_1_65_1
 ./bootstrap.sh
-./bjam install --prefix=$HOME/boost-bin variant=release address-model=64 architecture=x86
-
-# Install libboost
-cd $HOME/boost-bin
-sudo cp * -R /usr
+./bjam install --prefix=$HOME/unix-bin variant=release address-model=64 architecture=x86
 
 # Install OpenSSL
 cd $HOME/ssl-bin
 sudo cp * -R /usr
 
 # Install the built files
-cd $HOME/unix-bin 
+cd $HOME/unix-bin
+rm -f lib/*.so*
 sudo cp * -R /usr
