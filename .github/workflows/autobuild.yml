@@ -59,7 +59,8 @@ jobs:
         run: |
           ./autogen.sh
           ./configure ${{ matrix.config-opts }}
-          make $MAKEJOBS || (cd src; g++  -g -O2 -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter  -Wstack-protector -fstack-protector-all -fPIE -pthread -Wl,-z,relro -Wl,-z,now -pie -o bunkercoind bunkercoind.o  libbitcoin_server.a libbitcoin_cli.a libbitcoin_common.a ../src/leveldb/libleveldb.a ../src/leveldb/libmemenv.a libbitcoin_wallet.a libbitcoin_server_wallet.a -L/usr/lib -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread -lboost_chrono  -ldb_cxx-5.1 -lminiupnpc -lminiupnpc -lminiupnpc -lminiupnpc  -L/home/runner/ssl-bin/lib -lssl -L/home/runner/ssl-bin/lib -lcrypto -ldl -lpthread) && make $MAKEJOBS
+          make $MAKEJOBS || (cd src; g++  -g -O2 -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter  -Wstack-protector -fstack-protector-all -fPIE -pthread -Wl,-z,relro -Wl,-z,now -pie -o bunkercoind bunkercoind.o  libbitcoin_server.a libbitcoin_cli.a libbitcoin_common.a ../src/leveldb/libleveldb.a ../src/leveldb/libmemenv.a libbitcoin_wallet.a libbitcoin_server_wallet.a -L/usr/lib -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread -lboost_chrono  -ldb_cxx-5.1 -lminiupnpc -lminiupnpc -lminiupnpc -lminiupnpc  -L/home/runner/ssl-bin/lib -lssl -L/home/runner/ssl-bin/lib -lcrypto -ldl -lpthread)
+          make $MAKEJOBS
           
       - name: Strip built binaries
         run: |
