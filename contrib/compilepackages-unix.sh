@@ -4,11 +4,12 @@
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-# Delete old versions of libboost, OpenSSL, miniupnpc and Berkeley DB
+# Delete old versions of libboost, OpenSSL, miniupnpc, Berkeley DB and QT
 sudo apt purge *boost* \
     libssl-dev libssl1.0-dev \
     miniupnpc \
-    libdb-dev libdb++-dev -y
+    libdb-dev libdb++-dev \
+    libqt4-dev -y
 
 # Go to home directory and make bin dirs
 cd $home
@@ -20,19 +21,22 @@ mkdir -p unix-bin/lib
 wget "https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65_1.tar.gz" \
     "https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz" \
     "http://miniupnp.free.fr/files/miniupnpc-2.0.20161216.tar.gz" \
-    "http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz"
+    "http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz" \
+    "https://download.qt.io/archive/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz"
 
 # Extract source code
 tar -xf boost_1_65_1.tar.gz
 tar -xf openssl-1.0.2u.tar.gz
 tar -xf miniupnpc-2.0.20161216.tar.gz
 tar -xf db-5.1.29.NC.tar.gz
+tar -xf qt-everywhere-opensource-src-4.8.5.tar.gz
 
 # Delete source code archives
 rm -f boost_1_65_1.tar.gz \
     openssl-1.0.2u.tar.gz \
     miniupnpc-2.0.20161216.tar.gz \
-    db-5.1.29.NC.tar.gz
+    db-5.1.29.NC.tar.gz \
+    qt-everywhere-opensource-src-4.8.5.tar.gz
 
 # Build OpenSSL
 cd $HOME/openssl-1.0.2u
@@ -57,6 +61,9 @@ make install
 cd $HOME/boost_1_65_1
 ./bootstrap.sh
 ./bjam install --prefix=$HOME/unix-bin variant=release address-model=64 architecture=x86
+
+# Build QT
+cd $HOME/qt-everywhere-opensource-src-4.8.5
 
 # Install OpenSSL
 cd $HOME/ssl-bin
