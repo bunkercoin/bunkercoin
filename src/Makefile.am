@@ -158,7 +158,7 @@ bunkercoind_LDADD = \
   $(LIBLEVELDB) \
   $(LIBMEMENV)
 if ENABLE_WALLET
-bunkercoind_LDADD += libbitcoin_wallet.a libbitcoin_server_wallet.a
+bunkercoind_LDADD += libbitcoin_wallet.a libbitcoin_server_wallet.a -ldl
 endif
 bunkercoind_SOURCES = bunkercoind.cpp
 #
