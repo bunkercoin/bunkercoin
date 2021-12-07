@@ -158,7 +158,7 @@ bunkercoind_LDADD = \
   $(LIBLEVELDB) \
   $(LIBMEMENV)
 if ENABLE_WALLET
-bunkercoind_LDADD += libbitcoin_wallet.a libbitcoin_server_wallet.a -ldl
+bunkercoind_LDADD += libbitcoin_wallet.a libbitcoin_server_wallet.a
 endif
 bunkercoind_SOURCES = bunkercoind.cpp
 #
@@ -168,13 +168,14 @@ bunkercoind_SOURCES += bunkercoind-res.rc
 endif
 
 AM_CPPFLAGS += $(BDB_CPPFLAGS)
-bunkercoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
+bunkercoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) -ldl
 
 # bunkercoin-cli binary #
 bunkercoin_cli_LDADD = \
   libbitcoin_cli.a \
   libbitcoin_common.a \
-  $(BOOST_LIBS)
+  $(BOOST_LIBS) \
+  -ldl
 bunkercoin_cli_SOURCES = bunkercoin-cli.cpp
 #
 
