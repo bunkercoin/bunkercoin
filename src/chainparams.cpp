@@ -68,13 +68,8 @@ public:
         assert(hashGenesisBlock == uint256("0x405d1f6dda6196fc4fc4f2d28a8a199a6206149556cc30ddfaa0a26c04c6c9c2"));
         assert(genesis.hashMerkleRoot == uint256("0xd80699e741a6ad2478044ad7f71642f6263b0b3d9c0af2c531ca79c7f5648fec"));
 
-        vSeeds.push_back(CDNSSeedData("103.249.70.56", "103.249.70.56"));
-        vSeeds.push_back(CDNSSeedData("140.82.1.236", "140.82.1.236"));
-        vSeeds.push_back(CDNSSeedData("45.77.221.52", "45.77.221.52"));
-        vSeeds.push_back(CDNSSeedData("144.202.13.184", "144.202.13.184"));
         vSeeds.push_back(CDNSSeedData("bunkercoin.xyz", "seed.bunkercoin.xyz"));
-        vSeeds.push_back(CDNSSeedData("NULL", "NULL"));
-
+            
         // Workaround for Boost not being quite compatible with C++11;
         std::vector<unsigned char> pka = list_of(25);
         base58Prefixes[PUBKEY_ADDRESS] = pka;
