@@ -168,14 +168,13 @@ bunkercoind_SOURCES += bunkercoind-res.rc
 endif
 
 AM_CPPFLAGS += $(BDB_CPPFLAGS)
-bunkercoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) -ldl
+bunkercoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
 
 # bunkercoin-cli binary #
 bunkercoin_cli_LDADD = \
   libbitcoin_cli.a \
   libbitcoin_common.a \
-  $(BOOST_LIBS) \
-  -ldl
+  $(BOOST_LIBS)
 bunkercoin_cli_SOURCES = bunkercoin-cli.cpp
 #
 
