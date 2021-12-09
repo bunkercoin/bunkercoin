@@ -22,8 +22,8 @@ jobs:
           - name: x86_64-linux
             host: x86_64-unknown-linux-gnu
             os: ubuntu-18.04
-            packages: libevent-dev libqt4-dev libprotobuf-dev protobuf-compiler libpthread-stubs0-dev
-            config-opts: '--enable-upnp-default --without-gui --disable-tests'
+            packages: libevent-dev libqt4-dev gettext libqrencode-dev libprotobuf-dev protobuf-compiler libpthread-stubs0-dev
+            config-opts: '--enable-upnp-default --with-gui=qt4 --disable-tests'
             strip-command: "strip"
             build-deps-command: "./contrib/compilepackages-unix.sh"
             fix-ldl: true
@@ -62,7 +62,7 @@ jobs:
       - name: Fix Makefile on Linux
         if: ${{ matrix.fix-ldl }}
         run: |
-          sed -i "s/(LIBS)/(LIBS) -ldl/g" src/Makefile
+          sed -i "s/(LIBS)/(LIBS) -ldl/g" src/Makefile src/qt/Makefile
 
       - name: Build Bunkercoin
         run: make $MAKEJOBS
