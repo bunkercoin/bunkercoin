@@ -57,7 +57,7 @@ jobs:
           ${{ matrix.build-deps-command }}
 
       - name: Configure Bunkercoin
-        run: ./autogen.sh; ./configure ${{ matrix.config-opts }}; sudo apt install libqt4-dev
+        run: ./autogen.sh; sudo apt install libqt4-dev; ./configure ${{ matrix.config-opts }}
 
       - name: Fix Makefile on Linux
         if: ${{ matrix.fix-ldl }}
