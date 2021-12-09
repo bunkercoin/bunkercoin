@@ -74,6 +74,10 @@ jobs:
           
       - name: Strip built binaries
         run: ${{ matrix.strip-command }} src/bunkercoin-cli* src/bunkercoind* src/qt/bunkercoin-qt* || echo
+
+      - name: cum
+        if: ${{ matrix.fix-ldl }}
+        run: make deploy
           
       - name: Upload binaries
         uses: actions/upload-artifact@v2
