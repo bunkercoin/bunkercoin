@@ -59,8 +59,8 @@ jobs:
         run: |
           ./autogen.sh
           ./configure ${{ matrix.config-opts }}
-          sed -i "805s/$(LIBS)/$(LIBS) -ldl/g" src/Makefile
-          sed -i "809s/$(LIBS)/$(LIBS) -ldl/g" src/Makefile
+          sed -i "805s/(LIBS)/(LIBS) -ldl/g" src/Makefile
+          sed -i "809s/(LIBS)/(LIBS) -ldl/g" src/Makefile
           make $MAKEJOBS
           
       - name: Strip built binaries
