@@ -67,8 +67,7 @@ jobs:
       - name: Fix Makefile on Linux
         if: ${{ matrix.fix-ldl }}
         run: |
-          sed -i "s/(LIBS)/(LIBS) -ldl -static/g" src/Makefile
-          sed -i "s/(LIBS)/(LIBS) -ldl/g" src/qt/Makefile
+          sed -i "s/(LIBS)/(LIBS) -ldl /g" src/Makefile src/qt/Makefile
 
       - name: Build Bunkercoin
         run: make $MAKEJOBS
