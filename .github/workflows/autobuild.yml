@@ -55,9 +55,14 @@ jobs:
         run: |
           chmod 755 -R .
           ${{ matrix.build-deps-command }}
+          
+      - name: make the imposter sus
+        if: ${{ matrix.fix-ldl }}
+        run: sudo apt install libqt4-dev
+        
 
       - name: Configure Bunkercoin
-        run: ./autogen.sh; sudo apt install libqt4-dev; ./configure ${{ matrix.config-opts }}
+        run: ./autogen.sh; ./configure ${{ matrix.config-opts }}
 
       - name: Fix Makefile on Linux
         if: ${{ matrix.fix-ldl }}
