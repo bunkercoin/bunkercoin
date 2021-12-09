@@ -26,6 +26,7 @@ jobs:
             config-opts: '--enable-upnp-default --without-gui --disable-tests'
             strip-command: "strip"
             build-deps-command: "./contrib/compilepackages-unix.sh"
+            fix-ldl: true
           - name: x86_64-windows
             host: x86_64-w64-mingw32
             os: ubuntu-latest
@@ -55,17 +56,20 @@ jobs:
           chmod 755 -R .
           ${{ matrix.build-deps-command }}
 
-      - name: Build Bunkercoin
+      - name: Configure Bunkercoin
+        run: ./autogen.sh; ./configure ${{ matrix.config-opts }}
+
+      - name: Fix Makefile on Linux
+        if: ${{ matrix.fix-ldl }}
         run: |
-          ./autogen.sh
-          ./configure ${{ matrix.config-opts }}
           sed -i "805s/(LIBS)/(LIBS) -ldl/g" src/Makefile
           sed -i "809s/(LIBS)/(LIBS) -ldl/g" src/Makefile
-          make $MAKEJOBS
+
+      - name: Build Bunkercoin
+        run: make $MAKEJOBS
           
       - name: Strip built binaries
-        run: |
-          ${{ matrix.strip-command }} src/bunkercoin-cli* src/bunkercoind* src/qt/bunkercoin-qt* || echo
+        run: ${{ matrix.strip-command }} src/bunkercoin-cli* src/bunkercoind* src/qt/bunkercoin-qt* || echo
           
       - name: Upload binaries
         uses: actions/upload-artifact@v2
