@@ -60,7 +60,7 @@ make install
 # Build libboost
 cd $HOME/boost_1_65_1
 ./bootstrap.sh
-./bjam install --prefix=$HOME/unix-bin variant=release address-model=64 architecture=x86 runtime-link=static link=static threading=multi
+./bjam install --prefix=$HOME/unix-bin variant=release address-model=64 architecture=x86 link=static threading=multi
 
 # Build QT
 cd $HOME/qt-everywhere-opensource-src-4.8.5
