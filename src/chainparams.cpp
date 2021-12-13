@@ -97,28 +97,29 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // Deployment of BIP68, BIP112, and BIP113.
-        // XXX: BIP heights and hashes all need to be updated to Dingocoin values
+        // XXX: BIP heights and hashes all need to be updated to Bunkercoin values
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1651494979; // May 5th, 2022
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1683030979; // May 5th, 2023
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1640000000; // Dec 20 2021
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1670000000; // Dec 02 2022
 
         // Deployment of SegWit (BIP141, BIP143, and BIP147)
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1651494979; // May 5th, 2022
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1683030979; // May 5th, 2023
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1670000000; // Mar 11 2022
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // Disabled
 
 
 
-        consensus.BIP34Height = 1000000;
-        consensus.BIP65Height = 1000000; // 955bd496d23790aba1ecfacb722b089a6ae7ddabaedf7d8fb0878f48308a71f9
-        consensus.BIP66Height = 1000000;
+		//BIP are deployed gradually at 50000 blocks 
+        consensus.BIP34Height = 50000;
+        consensus.BIP65Height = 51000;
+        consensus.BIP66Height = 52000;
 		
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000d697a4e5b6709");
 
  
 
-        // Blocks 10 - 696969 are Digishield without AuxPoW
+        // Blocks 10 - 100000 are Digishield without AuxPoW
         digishieldConsensus = consensus;
         digishieldConsensus.nHeightEffective = 10;
         digishieldConsensus.fDigishieldDifficultyCalculation = true;
@@ -126,12 +127,12 @@ public:
         digishieldConsensus.nCoinbaseMaturity = 30;
 		consensus.fAllowLegacyBlocks = true;
 
-        // Blocks 696969+ are AuxPoW
+        // Blocks 100000+ are AuxPoW or PoW
         auxpowConsensus = digishieldConsensus;
 		
 		auxpowConsensus.nAuxpowChainId = 0x0042; // 66 - B
 		
-        auxpowConsensus.nHeightEffective = 696969;
+        auxpowConsensus.nHeightEffective = 100000;
         auxpowConsensus.fAllowLegacyBlocks = true;
 
         // Assemble the binary search tree of consensus parameters
@@ -150,7 +151,7 @@ public:
         pchMessageStart[3] = 0xa1;
         vAlertPubKey = ParseHex("04536744d5a57623b6602d8325383a580b1c00076a9e68fd75ff1f07240fb7408916e919cec8b8750a6e6aff08339db104106a75f976d5817490b9a1bdc2e0c727");
         nDefaultPort = 14200;
-        nPruneAfterHeight = 100000;
+        //nPruneAfterHeight = 100;
 
         genesis = CreateGenesisBlock(1637347145, 467930, 0x1e0ffff0, 1, 88 * COIN);
 
@@ -164,7 +165,7 @@ public:
         // Note that of those with the service bits flag, most only support a subset of possible options
         //vSeeds.push_back(CDNSSeedData("multidoge.org", "seed.multidoge.org", true));
         //vSeeds.push_back(CDNSSeedData("multidoge.org", "seed2.multidoge.org"));
-		vSeeds.push_back(CDNSSeedData("bunkercoin.xyz", "seed.bunkercoin.xyz"));
+		vSeeds.push_back(CDNSSeedData("seed.bunkercoin.xyz", "seed.bunkercoin.xyz"));
 		vSeeds.push_back(CDNSSeedData("seed.bunkerseed.tk", "seed.bunkerseed.tk"));
 		
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,25);
@@ -196,7 +197,7 @@ public:
             1637361799, // * UNIX timestamp of last checkpoint block
             116,   // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
-            0.18        // * estimated number of transactions per second after checkpoint
+            0.3        // * estimated number of transactions per second after checkpoint
         };
     }
 };
