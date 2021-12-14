@@ -407,20 +407,26 @@ public:
         nDefaultPort = 18444;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1296688602, 2, 0x207fffff, 1, 88 * COIN);
+        genesis = CreateGenesisBlock(1637347268, 2, 0x207fffff, 1, 88 * COIN); //hash e08a885e4191632633276ee13f8627849340187fc267610038aa9fe478bc7fab
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-
-
+		
+		assert(consensus.hashGenesisBlock == uint256S("0xe08a885e4191632633276ee13f8627849340187fc267610038aa9fe478bc7fab"));
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
+
 
         fMiningRequiresPeers = false;
         fDefaultConsistencyChecks = true;
         fRequireStandard = false;
         fMineBlocksOnDemand = true;
-
+		
+		
+        checkpointData = (CCheckpointData){
+            boost::assign::map_list_of
+            ( 0, uint256S("0xe08a885e4191632633276ee13f8627849340187fc267610038aa9fe478bc7fab"))
+        };
 
         chainTxData = ChainTxData{
             0,
