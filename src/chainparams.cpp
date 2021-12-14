@@ -215,107 +215,96 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
 
-        // Blocks 0 - 144999 are pre-Digishield
-        consensus.nHeightEffective = 0;
-        consensus.nPowTargetTimespan = 4 * 60 * 60; // pre-digishield: 4 hours
-        consensus.fDigishieldDifficultyCalculation = false;
-        consensus.nCoinbaseMaturity = 30;
-        consensus.fPowAllowMinDifficultyBlocks = true;
-        consensus.fPowAllowDigishieldMinDifficultyBlocks = false;
-        consensus.nSubsidyHalvingInterval = 100000;
-        consensus.nMajorityEnforceBlockUpgrade = 501;
-        consensus.nMajorityRejectBlockOutdated = 750;
-        consensus.nMajorityWindow = 1000;
-        // BIP34 is never enforced in Dogecoin v2 blocks, so we enforce from v3
-        consensus.BIP34Height = 708658;
-        consensus.BIP34Hash = uint256S("0x21b8b97dcdb94caa67c7f8f6dbf22e61e0cfe0e46e1fff3528b22864659e9b38");
-        consensus.BIP65Height = 1854705; // 955bd496d23790aba1ecfacb722b089a6ae7ddabaedf7d8fb0878f48308a71f9
-        consensus.BIP66Height = 708658; // 21b8b97dcdb94caa67c7f8f6dbf22e61e0cfe0e46e1fff3528b22864659e9b38 - this is the last block that could be v2, 1900 blocks past the last v2 block
+        // Blocks 0 - 10 are conventional difficulty calculation
+        consensus.nSubsidyHalvingInterval = 210000;
+        consensus.nMajorityEnforceBlockUpgrade = 75;
+        consensus.nMajorityRejectBlockOutdated = 90;
+        consensus.nMajorityWindow = 100;
         consensus.powLimit = uint256S("0x00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20;
         consensus.nPowTargetTimespan = 4 * 60 * 60; // pre-digishield: 4 hours
         consensus.nPowTargetSpacing = 60; // 1 minute
+        consensus.fDigishieldDifficultyCalculation = false;
+        consensus.nCoinbaseMaturity = 30;
+        consensus.fPowAllowMinDifficultyBlocks = false;
+        consensus.fPowAllowDigishieldMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
-        consensus.nRuleChangeActivationThreshold = 2880; // 2 days (note this is significantly lower than Bitcoin standard)
-        consensus.nMinerConfirmationWindow = 10080; // 60 * 24 * 7 = 10,080 blocks, or one week
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
+        consensus.nRuleChangeActivationThreshold = 95; // 95% of 10,080
+        consensus.nMinerConfirmationWindow = 108; // 60 * 24 * 7 = 10,080 blocks, or one week
+        consensus.fAllowLegacyBlocks = true;
+
+		consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // Deployment of BIP68, BIP112, and BIP113.
-        // XXX: BIP heights and hashes all need to be updated to Dogecoin values
+        // XXX: BIP heights and hashes all need to be updated to Bunkercoin values
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1456790400; // March 1st, 2016
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1493596800; // May 1st, 2017
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 0; // Dec 20 2021
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1970000000; // Dec 02 2022
 
         // Deployment of SegWit (BIP141, BIP143, and BIP147)
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1462060800; // May 1st 2016
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // Disabled
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 0; // Mar 11 2022
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1970000000; // Disabled
 
+
+
+		//BIP are deployed gradually at 50000 blocks 
+        consensus.BIP34Height = 110;
+        consensus.BIP65Height = 120;
+        consensus.BIP66Height = 130;
+		
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000000000000000de");
+        consensus.nMinimumChainWork = uint256S("0x00");
 
-        // By default assume that the signatures in ancestors of this block are valid.
-        //consensus.defaultAssumeValid = uint256S("0x6943eaeaba98dc7d09f7e73398daccb4abcabb18b66c8c875e52b07638d93951"); // 900,000
+ 
 
-        // AuxPoW parameters
-        consensus.nAuxpowChainId = 0x0062; // 98 - Josh Wise!
-        consensus.fStrictChainId = false;
-        consensus.nHeightEffective = 0;
-        consensus.fAllowLegacyBlocks = true;
-
-        // Blocks 145000 - 157499 are Digishield without minimum difficulty on all blocks
+        // Blocks 10 - 100000 are Digishield without AuxPoW
         digishieldConsensus = consensus;
-        digishieldConsensus.nHeightEffective = 145000;
-        digishieldConsensus.nPowTargetTimespan = 60; // post-digishield: 1 minute
+        digishieldConsensus.nHeightEffective = 10;
         digishieldConsensus.fDigishieldDifficultyCalculation = true;
-        digishieldConsensus.fSimplifiedRewards = true;
-        digishieldConsensus.fPowAllowMinDifficultyBlocks = false;
-        digishieldConsensus.nCoinbaseMaturity = 240;
+        digishieldConsensus.nPowTargetTimespan = 60; // post-digishield: 1 minute
+        digishieldConsensus.nCoinbaseMaturity = 30;
+		consensus.fAllowLegacyBlocks = true;
 
-        // Blocks 157500 - 158099 are Digishield with minimum difficulty on all blocks
-        minDifficultyConsensus = digishieldConsensus;
-        minDifficultyConsensus.nHeightEffective = 157500;
-        minDifficultyConsensus.fPowAllowDigishieldMinDifficultyBlocks = true;
-        minDifficultyConsensus.fPowAllowMinDifficultyBlocks = true;
+        // Blocks 100000+ are AuxPoW or PoW
+        auxpowConsensus = digishieldConsensus;
+		
+		auxpowConsensus.nAuxpowChainId = 0x0042; // 66 - B
+		
+        auxpowConsensus.nHeightEffective = 500;
+        auxpowConsensus.fAllowLegacyBlocks = true;
 
-        // Enable AuxPoW at 158100
-        auxpowConsensus = minDifficultyConsensus;
-        auxpowConsensus.nHeightEffective = 158100;
-        auxpowConsensus.fPowAllowDigishieldMinDifficultyBlocks = true;
-        auxpowConsensus.fAllowLegacyBlocks = false;
-
-        // Assemble the binary search tree of parameters
+        // Assemble the binary search tree of consensus parameters
         pConsensusRoot = &digishieldConsensus;
         digishieldConsensus.pLeft = &consensus;
-        digishieldConsensus.pRight = &minDifficultyConsensus;
-        minDifficultyConsensus.pRight = &auxpowConsensus;
+        digishieldConsensus.pRight = &auxpowConsensus;
 
-        pchMessageStart[0] = 0xfc;
+        pchMessageStart[0] = 0xf2;
         pchMessageStart[1] = 0xc1;
-        pchMessageStart[2] = 0xb7;
-        pchMessageStart[3] = 0xdc;
-        vAlertPubKey = ParseHex("042756726da3c7ef515d89212ee1705023d14be389e25fe15611585661b9a20021908b2b80a3c7200a0139dd2b26946606aab0eef9aa7689a6dc2c7eee237fa834");
+        pchMessageStart[2] = 0xb9;
+        pchMessageStart[3] = 0xd7;
+        vAlertPubKey = ParseHex("04536744d5a57623b6602d8325383a580b1c00076a9e68fd75ff1f07240fb7408916e919cec8b8750a6e6aff08339db104106a75f976d5817490b9a1bdc2e0c727");
         nDefaultPort = 44556;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1391503289, 997879, 0x1e0ffff0, 1, 88 * COIN);
+        genesis = CreateGenesisBlock(1637347145, 467930, 0x1e0ffff0, 1, 88 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         minDifficultyConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-        //assert(consensus.hashGenesisBlock == uint256S("0xbb0a78264637406b6360aad926284d544d7049f45189db5664f3c4d07350559e"));
+        assert(consensus.hashGenesisBlock == uint256S("0x405d1f6dda6196fc4fc4f2d28a8a199a6206149556cc30ddfaa0a26c04c6c9c2"));
         //assert(genesis.hashMerkleRoot == uint256S("0x5b2a3f53f605d62c53e62932dac6925e3d74afa5a4b459745c36d42d0ed26a69"));
 
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
         //vSeeds.push_back(CDNSSeedData("jrn.me.uk", "testseed.jrn.me.uk"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,113); // 0x71
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,85); // 0x71
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196); // 0xc4
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,241); // 0xf1
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xcf).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,110); // 0xf1
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0xD1)(0xDF).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x75)(0xA4).convert_to_container<std::vector<unsigned char> >();
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
@@ -323,7 +312,12 @@ public:
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
         fMineBlocksOnDemand = false;
-
+		
+        checkpointData = (CCheckpointData){
+            boost::assign::map_list_of
+            ( 0, uint256S("0x405d1f6dda6196fc4fc4f2d28a8a199a6206149556cc30ddfaa0a26c04c6c9c2"))
+        };
+		
         chainTxData = ChainTxData{
             // Data as of block 07fef07a255d510297c9189dc96da5f4e41a8184bc979df8294487f07fee1cf3 (height 3286675)
             0, // * UNIX timestamp of last checkpoint block
