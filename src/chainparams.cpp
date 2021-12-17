@@ -265,14 +265,14 @@ public:
         digishieldConsensus.fDigishieldDifficultyCalculation = true;
         digishieldConsensus.nPowTargetTimespan = 60; // post-digishield: 1 minute
         digishieldConsensus.nCoinbaseMaturity = 30;
-		consensus.fAllowLegacyBlocks = true;
+	consensus.fAllowLegacyBlocks = false;
 
         // Blocks 100000+ are AuxPoW or PoW
         auxpowConsensus = digishieldConsensus;
 		
 		auxpowConsensus.nAuxpowChainId = 0x0042; // 66 - B
 		
-        auxpowConsensus.nHeightEffective = 500;
+        auxpowConsensus.nHeightEffective = 110;
         auxpowConsensus.fAllowLegacyBlocks = true;
 
         // Assemble the binary search tree of consensus parameters
