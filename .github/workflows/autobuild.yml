@@ -45,7 +45,7 @@ jobs:
       - name: Install packages
         run: |
           sudo apt-get update
-          sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils python3
+          sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils python3 nsis
           sudo apt-get install ${{ matrix.packages }}
 
       - name: Get source code
