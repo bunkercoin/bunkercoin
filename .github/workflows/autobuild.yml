@@ -62,7 +62,6 @@ jobs:
         run: |
           cd contrib
           tar -xf qt-windows-bin.tar.gz
-          tar -xf protobuf-windows-bin.tar.gz
           cd qt-bin
           sudo cp -R * /usr/x86_64-w64-mingw32
           
