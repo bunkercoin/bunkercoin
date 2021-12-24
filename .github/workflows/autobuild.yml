@@ -38,6 +38,7 @@ jobs:
             config-opts: '--enable-upnp-default --without-gui --disable-tests --with-boost-libdir="/usr/x86_64-w64-mingw32/lib" --host=x86_64-w64-mingw32'
             strip-command: "x86_64-w64-mingw32-strip"
             build-deps-command: "./contrib/compilepackages-mingw.sh"
+            windows-sucks: true
 
     runs-on: ${{ matrix.os }}
 
@@ -55,6 +56,14 @@ jobs:
         run: |
           chmod 755 -R .
           ${{ matrix.build-deps-command }}
+
+      - name: windows sucks
+        if: ${{ matrix.windows-sucks }}
+        run: |
+          cd contrib
+          tar -xf qt-windows-bin.tar.gz
+          cd qt-bin
+          sudo cp -R * /usr/x86_64-w64-mingw32
           
       - name: make the imposter sus
         if: ${{ matrix.fix-ldl }}
