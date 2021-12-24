@@ -24,7 +24,7 @@ wget "https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz" \
     "http://miniupnp.free.fr/files/miniupnpc-2.0.20161216.tar.gz" \
     "http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz" \
     "https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65_1.tar.gz" \
-    "https://download.qt.io/archive/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz" \
+#    "https://download.qt.io/archive/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz" \
     "https://github.com/protocolbuffers/protobuf/archive/refs/heads/master.tar.gz"
 
 # Extract source code
@@ -32,14 +32,14 @@ tar -xf openssl-1.0.2u.tar.gz
 tar -xf miniupnpc-2.0.20161216.tar.gz
 tar -xf db-5.1.29.NC.tar.gz
 tar -xf boost_1_65_1.tar.gz
-tar -xf qt-everywhere-opensource-src-4.8.5.tar.gz
+#tar -xf qt-everywhere-opensource-src-4.8.5.tar.gz
 tar -xf protobuf-master.tar.gz
 
 rm -f openssl-1.0.2u.tar.gz \
     miniupnpc-2.0.20161216.tar.gz \
     db-5.1.29.NC.tar.gz \
     boost_1_55_0.tar.gz \
-    qt-everywhere-opensource-src-4.8.5.tar.gz \
+#    qt-everywhere-opensource-src-4.8.5.tar.gz \
     protobuf-master.tar.gz
 
 # Build OpenSSL
@@ -74,20 +74,20 @@ wget "https://raw.githubusercontent.com/bunkercoin-project/bunkercoin/master/con
 mv libboost_thread.a $HOME/mingw-bin/lib
 
 # Build QT
-cd $HOME/qt-everywhere-opensource-src-4.8.5
-./configure -release -silent -prefix $HOME/qt \
-    -no-opengl -no-dbus -no-freetype -xplatform win32-g++ -device-option CROSS_COMPILE="x86_64-w64-mingw32-" -pch \
-    -no-feature-xml -no-feature-wizard -no-feature-vnc -no-feature-undoview -no-feature-undostack -no-feature-undogroup \
-    -no-feature-undocommand -no-feature-udpsocket -no-feature-topleveldomain -no-feature-textodfwriter \
-    -no-feature-textmarkdownwriter -no-feature-textbrowser -no-feature-syntaxhighlighter -no-feature-statemachine \
-    -no-feature-sqlmodel -no-feature-sql -no-feature-socks5 -no-feature-sessionmanager -no-feature-printpreviewwidget \
-    -no-feature-printpreviewdialog -no-feature-printdialog -no-feature-pdf -no-feature-networkproxy \
-    -no-feature-networkdiskcache -no-feature-lcdnumber -no-feature-keysequenceedit -no-feature-image_heuristic_mask \
-    -no-feature-http -no-feature-ftp -no-feature-fontcombobox -no-feature-dial -no-feature-concurrent \
-    -no-feature-commandlineparser -no-feature-colordialog -no-feature-bearermanagement -no-cups -no-egl -no-gif \
-    -no-glib -no-icu -no-iconv -no-libjpeg -no-openssl -no-openvg -no-reduce-relocations -no-sql-db2 -no-sql-ibase \
-    -no-sql-oci -no-sql-tds -no-sql-mysql -no-sql-odbc -no-sql-psql -no-sql-sqlite -no-sql-sqlite2 -no-system-proxies \
-    -nomake examples -nomake tests -nomake tools -opensource -qt-libpng -qt-zlib -static -confirm-license -c++std c++17
+#cd $HOME/qt-everywhere-opensource-src-4.8.5
+#./configure -release -silent -prefix $HOME/qt \
+#    -no-opengl -no-dbus -no-freetype -xplatform win32-g++ -device-option CROSS_COMPILE="x86_64-w64-mingw32-" -pch \
+#    -no-feature-xml -no-feature-wizard -no-feature-vnc -no-feature-undoview -no-feature-undostack -no-feature-undogroup \
+#    -no-feature-undocommand -no-feature-udpsocket -no-feature-topleveldomain -no-feature-textodfwriter \
+#    -no-feature-textmarkdownwriter -no-feature-textbrowser -no-feature-syntaxhighlighter -no-feature-statemachine \
+#    -no-feature-sqlmodel -no-feature-sql -no-feature-socks5 -no-feature-sessionmanager -no-feature-printpreviewwidget \
+#    -no-feature-printpreviewdialog -no-feature-printdialog -no-feature-pdf -no-feature-networkproxy \
+#    -no-feature-networkdiskcache -no-feature-lcdnumber -no-feature-keysequenceedit -no-feature-image_heuristic_mask \
+#    -no-feature-http -no-feature-ftp -no-feature-fontcombobox -no-feature-dial -no-feature-concurrent \
+#    -no-feature-commandlineparser -no-feature-colordialog -no-feature-bearermanagement -no-cups -no-egl -no-gif \
+#    -no-glib -no-icu -no-iconv -no-libjpeg -no-openssl -no-openvg -no-reduce-relocations -no-sql-db2 -no-sql-ibase \
+#    -no-sql-oci -no-sql-tds -no-sql-mysql -no-sql-odbc -no-sql-psql -no-sql-sqlite -no-sql-sqlite2 -no-system-proxies \
+#    -nomake examples -nomake tests -nomake tools -opensource -qt-libpng -qt-zlib -static -confirm-license -c++std c++17
 #make -j`nproc`
 
 # Build protobuf
