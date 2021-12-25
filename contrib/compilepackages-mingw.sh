@@ -24,7 +24,8 @@ wget "https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz" \
     "http://miniupnp.free.fr/files/miniupnpc-2.0.20161216.tar.gz" \
     "http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz" \
     "https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65_1.tar.gz" \
-    "https://download.qt.io/archive/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz"
+    "https://download.qt.io/archive/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz" \
+    "https://zlib.net/zlib-1.2.11.tar.gz"
 
 # Extract source code
 tar -xf openssl-1.0.2u.tar.gz
@@ -32,12 +33,21 @@ tar -xf miniupnpc-2.0.20161216.tar.gz
 tar -xf db-5.1.29.NC.tar.gz
 tar -xf boost_1_65_1.tar.gz
 tar -xf qt-everywhere-opensource-src-4.8.5.tar.gz
+tar -xf zlib-1.2.11.tar.gz
 
 rm -f openssl-1.0.2u.tar.gz \
     miniupnpc-2.0.20161216.tar.gz \
     db-5.1.29.NC.tar.gz \
     boost_1_55_0.tar.gz \
-    qt-everywhere-opensource-src-4.8.5.tar.gz
+    qt-everywhere-opensource-src-4.8.5.tar.gz \
+    zlib-1.2.11.tar.gz
+
+# Build zlib
+cd $HOME/zlib-1.2.11
+./configure --prefix=$HOME/mingw-bin --static
+sed -i "s/gcc/x86_64-w64-mingw32-gcc/g" Makefile
+make -j`nproc`
+make install
 
 # Build OpenSSL
 cd $HOME/openssl-1.0.2u
