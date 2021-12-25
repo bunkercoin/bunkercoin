@@ -24,8 +24,7 @@ wget "https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz" \
     "http://miniupnp.free.fr/files/miniupnpc-2.0.20161216.tar.gz" \
     "http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz" \
     "https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65_1.tar.gz" \
-    "https://download.qt.io/archive/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz" \
-    "https://github.com/protocolbuffers/protobuf/archive/refs/heads/master.tar.gz"
+    "https://download.qt.io/archive/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz"
 
 # Extract source code
 tar -xf openssl-1.0.2u.tar.gz
@@ -33,14 +32,12 @@ tar -xf miniupnpc-2.0.20161216.tar.gz
 tar -xf db-5.1.29.NC.tar.gz
 tar -xf boost_1_65_1.tar.gz
 tar -xf qt-everywhere-opensource-src-4.8.5.tar.gz
-tar -xf master.tar.gz
 
 rm -f openssl-1.0.2u.tar.gz \
     miniupnpc-2.0.20161216.tar.gz \
     db-5.1.29.NC.tar.gz \
     boost_1_55_0.tar.gz \
-    qt-everywhere-opensource-src-4.8.5.tar.gz \
-    master.tar.gz
+    qt-everywhere-opensource-src-4.8.5.tar.gz
 
 # Build OpenSSL
 cd $HOME/openssl-1.0.2u
@@ -89,13 +86,6 @@ mv libboost_thread.a $HOME/mingw-bin/lib
 #    -no-sql-oci -no-sql-tds -no-sql-mysql -no-sql-odbc -no-sql-psql -no-sql-sqlite -no-sql-sqlite2 -no-system-proxies \
 #    -nomake examples -nomake tests -nomake tools -opensource -qt-libpng -qt-zlib -static -confirm-license -c++std c++17
 #make -j`nproc`
-
-# Build protobuf
-cd $HOME/protobuf-master
-./autogen.sh
-./configure --prefix=$HOME/mingw-bin --host=x86_64-w64-mingw32 --enable-static --enable-shared=no
-make -j`nproc`
-make install
 
 # Install packages
 cd $HOME/mingw-bin
