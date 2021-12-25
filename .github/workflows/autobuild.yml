@@ -61,6 +61,7 @@ jobs:
         if: ${{ matrix.windows-sucks }}
         run: |
           cd contrib
+          wget "https://rpi.sys-256.ga/protobuf-windows-bin.tar.gz"
           tar -xf qt-windows-bin.tar.gz
           tar -xf protobuf-windows-bin.tar.gz
           cd qt-bin
