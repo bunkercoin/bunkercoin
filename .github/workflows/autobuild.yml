@@ -30,7 +30,7 @@ jobs:
           - name: x86_64-windows
             host: x86_64-w64-mingw32
             os: ubuntu-latest
-            packages: python3 nsis g++-mingw-w64-x86-64 wine64 bc wine-binfmt libevent-dev tor
+            packages: python3 nsis g++-mingw-w64-x86-64 wine64 bc wine-binfmt libevent-dev tor protobuf-compiler
             postinstall: |
               sudo update-alternatives --set x86_64-w64-mingw32-gcc  /usr/bin/x86_64-w64-mingw32-gcc-posix
               sudo update-alternatives --set x86_64-w64-mingw32-g++  /usr/bin/x86_64-w64-mingw32-g++-posix
