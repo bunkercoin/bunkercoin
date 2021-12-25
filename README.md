@@ -50,5 +50,5 @@ The current block reward schedule:
 The solid best way is to mine. Currently we recommend mining with a CPU to keep the network nice and usable. You can use any guide and miner that supports scrypt coins like Dogecoin, Litecoin, etc.
 
 ### Want to know the ports? Well here is the place to be!
-RPC 22225
-P2P 14200 
+- P2P 14200 
+- RPC 22225
