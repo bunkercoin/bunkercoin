@@ -32,14 +32,14 @@ tar -xf openssl-1.0.2u.tar.gz
 tar -xf miniupnpc-2.0.20161216.tar.gz
 tar -xf db-5.1.29.NC.tar.gz
 tar -xf boost_1_65_1.tar.gz
-#tar -xf qt-everywhere-opensource-src-4.8.5.tar.gz
+tar -xf qt-everywhere-opensource-src-4.8.5.tar.gz
 tar -xf master.tar.gz
 
 rm -f openssl-1.0.2u.tar.gz \
     miniupnpc-2.0.20161216.tar.gz \
     db-5.1.29.NC.tar.gz \
     boost_1_55_0.tar.gz \
-#    qt-everywhere-opensource-src-4.8.5.tar.gz \
+    qt-everywhere-opensource-src-4.8.5.tar.gz \
     master.tar.gz
 
 # Build OpenSSL
@@ -91,7 +91,7 @@ mv libboost_thread.a $HOME/mingw-bin/lib
 #make -j`nproc`
 
 # Build protobuf
-cd $HOME/master
+cd $HOME/protobuf-master
 ./autogen.sh
 ./configure --prefix=$HOME/mingw-bin --host=x86_64-w64-mingw32 --enable-static --enable-shared=no
 make -j`nproc`
