@@ -24,7 +24,7 @@ wget "https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz" \
     "http://miniupnp.free.fr/files/miniupnpc-2.0.20161216.tar.gz" \
     "http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz" \
     "https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65_1.tar.gz" \
-#    "https://download.qt.io/archive/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz" \
+    "https://download.qt.io/archive/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz" \
     "https://github.com/protocolbuffers/protobuf/archive/refs/heads/master.tar.gz"
 
 # Extract source code
