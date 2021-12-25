@@ -91,7 +91,7 @@ mv libboost_thread.a $HOME/mingw-bin/lib
 #make -j`nproc`
 
 # Build protobuf
-cd $HOME/protobuf-master
+cd $HOME/master
 ./autogen.sh
 ./configure --prefix=$HOME/mingw-bin --host=x86_64-w64-mingw32 --enable-static --enable-shared=no
 make -j`nproc`
