@@ -1,0 +1,6 @@
+usr/local/bin/bunkercoin-qt usr/bin
+share/pixmaps/bunkercoin32.xpm usr/share/pixmaps
+share/pixmaps/bunkercoin16.xpm usr/share/pixmaps
+share/pixmaps/bunkercoin128.png usr/share/pixmaps
+debian/bunkercoin-qt.desktop usr/share/applications
+debian/bunkercoin-qt.protocol usr/share/kde4/services/

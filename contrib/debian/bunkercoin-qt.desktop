@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Bunkercoin Core
+Comment=Connect to the Bunkercoin P2P Network
+Comment[de]=Verbinde mit dem Bunkercoin peer-to-peer Netzwerk
+Comment[fr]=Bunkercoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Bunkercoin, eşten eşe kriptografik sanal para birimi
+Exec=bunkercoin-qt %u
+Terminal=false
+Type=Application
+Icon=bunkercoincoin128
+MimeType=x-scheme-handler/bunkercoin;
+Categories=Office;Finance;

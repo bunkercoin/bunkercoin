@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: Bunkercoin Continuous Integration
 
 on:
   push:
@@ -149,7 +149,7 @@ jobs:
       - name: Install packages
         run: |
           sudo apt-get update
-          sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils curl ca-certificates ccache python3 rsync git procps bison
+          sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils curl ca-certificates ccache python3 rsync git procps bison dos2unix
           sudo apt-get install ${{ matrix.packages }}
 
       - name: Post install
@@ -186,6 +186,8 @@ jobs:
 
       - name: Build depends
         run: |
+          sudo chmod 777 -R .
+          find . -type f -exec dos2unix {} \;
           make $MAKEJOBS -C depends HOST=${{ matrix.host }} ${{ matrix.dep-opts }}
 
       - name: CCache
@@ -196,17 +198,32 @@ jobs:
           path: ~/.ccache
           key: ${{ matrix.name }}-${{ env.cache-name }}-${{ hashFiles('**/configure.ac') }}
 
-      - name: Build Dogecoin
+      - name: Build Bunkercoin
         run: |
           depends/${{ matrix.host }}/native/bin/ccache --max-size=$CCACHE_SIZE
           ./autogen.sh
           ./configure --prefix=`pwd`/depends/${{ matrix.host }} ${{ matrix.config-opts }} --enable-reduce-exports || ( cat config.log && false)
           make $MAKEJOBS ${{ matrix.goal }} || ( echo "Build failure. Verbose build follows." && make ${{ matrix.goal }} V=1 ; false )
 
+      - name: Run tests
+        if: ${{ matrix.run-tests }}
+        run: |
+          make check $MAKEJOBS VERBOSE=1
+          qa/pull-tester/install-deps.sh
+          qa/pull-tester/rpc-tests.py --coverage
+
+      - name: Check security
+        if: ${{ matrix.check-security }}
+        run: make -C src check-security
+
+      - name: Check symbols
+        if: ${{ matrix.check-symbols }}
+        run: make -C src check-symbols
+
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: dogecoin-${{ github.sha }}-${{ matrix.name }}
+          name: bunkercoin-${{ github.sha }}-${{ matrix.name }}
           path: |
-            depends/${{ matrix.host }}/bin/dogecoin*
-            dist/Dogecoin-Qt.app
+            depends/${{ matrix.host }}/bin/bunkercoin*
+            dist/Bunkercoin-Qt.app

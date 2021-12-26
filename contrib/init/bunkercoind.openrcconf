@@ -1,0 +1,33 @@
+# /etc/conf.d/bunkercoind: config file for /etc/init.d/bunkercoind
+
+# Config file location
+#BUNKERCOIND_CONFIGFILE="/etc/bunkercoin/bunkercoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BUNKERCOIND_USER)
+#BUNKERCOIND_PIDDIR="/var/run/bunkercoind"
+
+# What filename to give the pidfile
+#BUNKERCOIND_PIDFILE="${BUNKERCOIND_PIDDIR}/bunkercoind.pid"
+
+# Where to write bunkercoind data (be mindful that the blockchain is large)
+#BUNKERCOIND_DATADIR="/var/lib/bunkercoind"
+
+# User and group to own bunkercoind process
+#BUNKERCOIND_USER="bunkercoin"
+#BUNKERCOIND_GROUP="bunkercoin"
+
+# Path to bunkercoind executable
+#BUNKERCOIND_BIN="/usr/bin/bunkercoind"
+
+# Nice value to run bunkercoind under
+#BUNKERCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BUNKERCOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for bunkercoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BUNKERCOIND_SIGTERM_TIMEOUT=60

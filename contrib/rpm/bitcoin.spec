@@ -243,20 +243,20 @@ done
 
 %if %{_buildqt}
 # qt icons
-install -D -p share/pixmaps/dogecoin.ico %{buildroot}%{_datadir}/pixmaps/dogecoin.ico
+install -D -p share/pixmaps/bunkercoin.ico %{buildroot}%{_datadir}/pixmaps/bunkercoin.ico
 install -p share/pixmaps/nsis-header.bmp %{buildroot}%{_datadir}/pixmaps/
 install -p share/pixmaps/nsis-wizard.bmp %{buildroot}%{_datadir}/pixmaps/
 install -p %{SOURCE100} %{buildroot}%{_datadir}/pixmaps/bitcoin.svg
-%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/dogecoin16.png -w16 -h16
-%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/dogecoin32.png -w32 -h32
-%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/dogecoin64.png -w64 -h64
-%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/dogecoin128.png -w128 -h128
-%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/dogecoin256.png -w256 -h256
-%{_bindir}/convert -resize 16x16 %{buildroot}%{_datadir}/pixmaps/dogecoin256.png %{buildroot}%{_datadir}/pixmaps/dogecoin16.xpm
-%{_bindir}/convert -resize 32x32 %{buildroot}%{_datadir}/pixmaps/dogecoin256.png %{buildroot}%{_datadir}/pixmaps/dogecoin32.xpm
-%{_bindir}/convert -resize 64x64 %{buildroot}%{_datadir}/pixmaps/dogecoin256.png %{buildroot}%{_datadir}/pixmaps/dogecoin64.xpm
-%{_bindir}/convert -resize 128x128 %{buildroot}%{_datadir}/pixmaps/dogecoin256.png %{buildroot}%{_datadir}/pixmaps/dogecoin128.xpm
-%{_bindir}/convert %{buildroot}%{_datadir}/pixmaps/dogecoin256.png %{buildroot}%{_datadir}/pixmaps/dogecoin256.xpm
+%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/bunkercoin16.png -w16 -h16
+%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/bunkercoin32.png -w32 -h32
+%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/bunkercoin64.png -w64 -h64
+%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/bunkercoin128.png -w128 -h128
+%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/bunkercoin256.png -w256 -h256
+%{_bindir}/convert -resize 16x16 %{buildroot}%{_datadir}/pixmaps/bunkercoin256.png %{buildroot}%{_datadir}/pixmaps/bunkercoin16.xpm
+%{_bindir}/convert -resize 32x32 %{buildroot}%{_datadir}/pixmaps/bunkercoin256.png %{buildroot}%{_datadir}/pixmaps/bunkercoin32.xpm
+%{_bindir}/convert -resize 64x64 %{buildroot}%{_datadir}/pixmaps/bunkercoin256.png %{buildroot}%{_datadir}/pixmaps/bunkercoin64.xpm
+%{_bindir}/convert -resize 128x128 %{buildroot}%{_datadir}/pixmaps/bunkercoin256.png %{buildroot}%{_datadir}/pixmaps/bunkercoin128.xpm
+%{_bindir}/convert %{buildroot}%{_datadir}/pixmaps/bunkercoin256.png %{buildroot}%{_datadir}/pixmaps/bunkercoin256.xpm
 touch %{buildroot}%{_datadir}/pixmaps/*.png -r %{SOURCE100}
 touch %{buildroot}%{_datadir}/pixmaps/*.xpm -r %{SOURCE100}
 
