@@ -43,7 +43,7 @@ The current block reward schedule:
 
   - [OSX Build Notes](doc/build-osx.md)
   - [Unix Build Notes](doc/build-unix.md)
-  - [Windows Build Notes](doc/build-msw.md)
+  - [Windows Build Notes](doc/build-msw.md) - unwork, update soon™
 
 ### How can I help the network?
 
