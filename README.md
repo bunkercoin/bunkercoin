@@ -13,7 +13,8 @@ Development is ongoing and the development team as well as other volunteers can 
 ## Not Frequently Asked Questions
 
 ### How much bunkercoin's can exist?
-Approximately 100,000,000,000 coins.
+As much as your heart desires
+
 Each subsequent block will grant a random amount of coins to encourage miners to continue to secure the network and make up for lost wallets on hard drives/lost encryption passwords/etc.
 
 ### How to get bunkercoin?
