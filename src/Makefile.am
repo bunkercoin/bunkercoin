@@ -66,11 +66,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += bunkercoind
+  bin_PROGRAMS += dogecoind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += bunkercoin-cli bunkercoin-tx
+  bin_PROGRAMS += dogecoin-cli dogecoin-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
