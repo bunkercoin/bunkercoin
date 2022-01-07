@@ -151,6 +151,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils curl ca-certificates ccache python3 rsync git procps bison dos2unix
           sudo apt-get install ${{ matrix.packages }}
+          sudo apt-get install rename
 
       - name: Post install
         if: ${{ matrix.postinstall }}
@@ -212,11 +213,14 @@ jobs:
       - name: Check symbols
         if: ${{ matrix.check-symbols }}
         run: make -C src check-symbols
+        
+      - name: Rename files
+        run: rename 's/dogecoin/bunkercoin/g' depends/${{ matrix.host }}/bin/dogecoin*
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
           name: bunkercoin-${{ github.sha }}-${{ matrix.name }}
           path: |
-            depends/${{ matrix.host }}/bin/dogecoin*
+            depends/${{ matrix.host }}/bin/bunkercoin*
             dist/Dogecoin-Qt.app
