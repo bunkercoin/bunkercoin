@@ -5,7 +5,7 @@ define(_CLIENT_VERSION_MINOR, 14)
 define(_CLIENT_VERSION_REVISION, 5)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
-define(_COPYRIGHT_YEAR, 2021)
+define(_COPYRIGHT_YEAR, 2022)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
 define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bitcoin Core and Dogecoin Core and Bunkercoin Core]])
 AC_INIT([Bunkercoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/bunkercoin-project/bunkercoin/issues],[bunkercoin],[https://bunkercoin.xyz/])
@@ -14,11 +14,10 @@ AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=bunkercoind
-BITCOIN_GUI_NAME=bunkercoin-qt
-BITCOIN_GUI_NAME=bunkercoin-qt
-BITCOIN_CLI_NAME=bunkercoin-cli
-BITCOIN_TX_NAME=bunkercoin-tx
+BITCOIN_DAEMON_NAME=dogecoind
+BITCOIN_GUI_NAME=dogecoin-qt
+BITCOIN_CLI_NAME=dogecoin-cli
+BITCOIN_TX_NAME=dogecoin-tx
 
 AC_CANONICAL_HOST
 
@@ -690,7 +689,6 @@ if test x$use_tests = xyes; then
        #define BOOST_TEST_DYN_LINK
        #define BOOST_TEST_MAIN
         #include <boost/test/unit_test.hpp>
-
        ])],
     [AC_MSG_RESULT(yes)]
     [TESTDEFS="$TESTDEFS -DBOOST_TEST_DYN_LINK"],
@@ -821,7 +819,6 @@ if test x$use_pkgconfig = xyes; then
           PKG_CHECK_MODULES([EVENT_PTHREADS], [libevent_pthreads],, [AC_MSG_ERROR(libevent_pthreads not found.)])
         fi
       fi
-
       if test "x$use_zmq" = "xyes"; then
         PKG_CHECK_MODULES([ZMQ],[libzmq >= 4],
           [AC_DEFINE([ENABLE_ZMQ],[1],[Define to 1 to enable ZMQ functions])],
@@ -935,11 +932,11 @@ AC_SUBST(UNIVALUE_LIBS)
 
 BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
-AC_MSG_CHECKING([whether to build bunkercoind])
+AC_MSG_CHECKING([whether to build dogecoind])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
-AC_MSG_CHECKING([whether to build utils (bunkercoin-cli bunkercoin-tx)])
+AC_MSG_CHECKING([whether to build utils (dogecoin-cli dogecoin-tx)])
 AM_CONDITIONAL([BUILD_BITCOIN_UTILS], [test x$build_bitcoin_utils = xyes])
 AC_MSG_RESULT($build_bitcoin_utils)
 
@@ -1040,7 +1037,7 @@ if test x$bitcoin_enable_qt != xno; then
     AC_MSG_WARN("xgettext is required to update qt translations")
   fi
 
-  AC_MSG_CHECKING([whether to build test_bunkercoin-qt])
+  AC_MSG_CHECKING([whether to build test_dogecoin-qt])
   if test x$use_gui_tests$bitcoin_enable_qt_test = xyesyes; then
     AC_MSG_RESULT([yes])
     BUILD_TEST_QT="yes"
@@ -1051,7 +1048,7 @@ fi
 
 AM_CONDITIONAL([ENABLE_ZMQ], [test "x$use_zmq" = "xyes"])
 
-AC_MSG_CHECKING([whether to build test_bunkercoin])
+AC_MSG_CHECKING([whether to build test_dogecoin])
 if test x$use_tests = xyes; then
   AC_MSG_RESULT([yes])
   BUILD_TEST="yes"
