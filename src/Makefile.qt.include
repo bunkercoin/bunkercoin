@@ -2,7 +2,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-bin_PROGRAMS += qt/dogecoin-qt
+bin_PROGRAMS += qt/bunkercoin-qt
 EXTRA_LIBRARIES += qt/libdogecoinqt.a
 
 # bitcoin qt core #
@@ -465,10 +465,10 @@ CLEAN_QT = $(nodist_qt_libdogecoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda
 
 CLEANFILES += $(CLEAN_QT)
 
-dogecoin_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libdogecoinqt_a_OBJECTS) $(qt_dogecoin_qt_OBJECTS) qt/dogecoin-qt$(EXEEXT) $(LIBDOGECOINQT)
+bunkercoin_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libdogecoinqt_a_OBJECTS) $(qt_dogecoin_qt_OBJECTS) qt/bunkercoin-qt$(EXEEXT) $(LIBDOGECOINQT)
 
-dogecoin_qt : qt/dogecoin-qt$(EXEEXT)
+bunkercoin_qt : qt/bunkercoin-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)
