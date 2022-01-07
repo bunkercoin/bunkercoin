@@ -219,4 +219,4 @@ jobs:
           name: bunkercoin-${{ github.sha }}-${{ matrix.name }}
           path: |
             depends/${{ matrix.host }}/bin/bunkercoin*
-            dist/Bunkercoin-Qt.app
+            # dist/Bunkercoin-Qt.app
