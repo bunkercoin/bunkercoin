@@ -99,7 +99,7 @@ public:
         // Deployment of BIP68, BIP112, and BIP113.
         // XXX: BIP heights and hashes all need to be updated to Bunkercoin values
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1640000000; // Dec 20 2021
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1645000000; // Feb 16 2022
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1670000000; // Dec 02 2022
 
         // Deployment of SegWit (BIP141, BIP143, and BIP147)
@@ -110,12 +110,12 @@ public:
 
 
 		//BIP are deployed gradually at 50000 blocks 
-        consensus.BIP34Height = 50000;
-        consensus.BIP65Height = 51000;
-        consensus.BIP66Height = 52000;
+        consensus.BIP34Height = 77000;
+        consensus.BIP65Height = 78000;
+        consensus.BIP66Height = 79000;
 		
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000d697a4e5b6709");
+        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000370ae5f67ed28d");
 
  
 
@@ -125,7 +125,7 @@ public:
         digishieldConsensus.fDigishieldDifficultyCalculation = true;
         digishieldConsensus.nPowTargetTimespan = 60; // post-digishield: 1 minute
         digishieldConsensus.nCoinbaseMaturity = 30;
-		consensus.fAllowLegacyBlocks = true;
+		consensus.fAllowLegacyBlocks = false;
 
         // Blocks 100000+ are AuxPoW or PoW
         auxpowConsensus = digishieldConsensus;
