@@ -11,7 +11,7 @@
 
 // XXX: Decide if this is appropriate - if we reintroduce alerts we may need
 //      to  reduce to 70012
-static const int PROTOCOL_VERSION = 70005;
+static const int PROTOCOL_VERSION = 70015;
 
 //! initial proto version, to be increased after version/verack negotiation
 static const int INIT_PROTO_VERSION = 209;

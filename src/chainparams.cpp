@@ -109,10 +109,10 @@ public:
 
 
 
-		//BIP are deployed gradually at 50000 blocks 
-        consensus.BIP34Height = 77000;
-        consensus.BIP65Height = 78000;
-        consensus.BIP66Height = 79000;
+		//BIP are deployed gradually at 85000 blocks 
+        consensus.BIP34Height = 83000;
+        consensus.BIP65Height = 84000;
+        consensus.BIP66Height = 85000;
 		
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000370ae5f67ed28d");
@@ -167,6 +167,7 @@ public:
         //vSeeds.push_back(CDNSSeedData("multidoge.org", "seed2.multidoge.org"));
 		vSeeds.push_back(CDNSSeedData("seed.bunkercoin.xyz", "seed.bunkercoin.xyz"));
 		vSeeds.push_back(CDNSSeedData("seed.bunkerseed.tk", "seed.bunkerseed.tk"));
+		vSeeds.push_back(CDNSSeedData("84.87.9.249", "84.87.9.249"));
 		
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,25);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,22);
@@ -189,15 +190,16 @@ public:
 			(     30, uint256S("0x8dea692c06c81cb5365f1dc7038618475d380ff38ba631a899d1dea9316ad5f9"))
 			(     50, uint256S("0x61881dacc6ffce7427cf033fc33dcc8cd13372d3517219cf5e16f2419c5d6c11"))
 			(     115, uint256S("0x945a2e3a0afcb3737fea470a4b8702830e145f7cd45205a52441825a532f9a11"))
+			(     60000, uint256S("0xd17d161d15ab4cd982bc3789cf44c257cadd2aa9975e8ea0fd599c098c27dc8a"))
         };
 
         chainTxData = ChainTxData{
-            // Data as of block e4b4ecda4c022406c502a247c0525480268ce7abbbef632796e8ca1646425e75 (height 3854173).
-            // Tx estimate based on average of year 2021 (~40k transactions per day)
-            1637361799, // * UNIX timestamp of last checkpoint block
-            116,   // * total number of transactions between genesis and last checkpoint
+            // Data as of block d17d161d15ab4cd982bc3789cf44c257cadd2aa9975e8ea0fd599c098c27dc8a (height 60000).
+            // Tx estimate based on average of year 2022 (~40k transactions per day)
+            1641395055, // * UNIX timestamp of last checkpoint block
+            68000,   // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
-            0.3        // * estimated number of transactions per second after checkpoint
+            0.05        // * estimated number of transactions per second after checkpoint
         };
     }
 };
