@@ -56,7 +56,7 @@ The current block reward schedule:
 
 ### How can I help the network?
 
-The solid best way is to mine. Currently we recommend mining with a CPU to keep the network nice and usable. You can use any guide and miner that supports scrypt coins like Dogecoin, Litecoin, etc.
+The solid best way is to mine. You can use any guide and miner that supports scrypt coins like Dogecoin, Litecoin, etc.
 
 ### Want to know the ports? Well here is the place to be!
 
