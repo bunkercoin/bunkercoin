@@ -226,4 +226,5 @@ jobs:
           name: bunkercoin-${{ github.sha }}-${{ matrix.name }}
           path: |
             depends/${{ matrix.host }}/bin/bunkercoin*
+            result/*
             dist/Dogecoin-Qt.app
