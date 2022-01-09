@@ -215,9 +215,9 @@ jobs:
         run: make -C src check-symbols
         
       - name: Rename files
-        run: rename 's/dogecoin/bunkercoin/g' depends/${{ matrix.host }}/bin/dogecoin*
+        run: rename 's/dogecoin/bunkercoin/g' release/dogecoin*
         
-      - name: Make deoloy
+      - name: Build installer
         run: make deploy
         
       - name: Upload artifacts
@@ -225,6 +225,6 @@ jobs:
         with:
           name: bunkercoin-${{ github.sha }}-${{ matrix.name }}
           path: |
-            depends/${{ matrix.host }}/bin/bunkercoin*
-            result/*
+            release/*
+            bunkercoin-*-*-setup*
             dist/Dogecoin-Qt.app
