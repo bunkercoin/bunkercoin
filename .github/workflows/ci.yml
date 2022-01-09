@@ -218,16 +218,16 @@ jobs:
         run: make deploy
         
       - name: Rename files
-        run: rename 's/dogecoin/bunkercoin/g' release/dogecoin*
+        run: rename 's/dogecoin/bunkercoin/g' depends/${{ matrix.host }}/bin/dogecoin*
       
       - name: Make files executable
-        run: chmod +x release/* bunkercoin-*-*-setup*
+        run: chmod +x depends/${{ matrix.host }}/bin/bunkercoin* bunkercoin-*-*-setup*
         
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
           name: bunkercoin-${{ github.sha }}-${{ matrix.name }}
           path: |
-            release/*
+            depends/${{ matrix.host }}/bin/bunkercoin*
             bunkercoin-*-*-setup*
             dist/Dogecoin-Qt.app
