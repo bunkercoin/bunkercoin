@@ -1,106 +1,66 @@
-Maketest
 <h1 align="center">
-KingKongBalls Core [DOGE, Ð]  
+Bunkercoin Core [BKC, Ƀ]
 <br/><br/>
-<img src="https://static.tumblr.com/ppdj5y9/Ae9mxmxtp/300coin.png" alt="Dogecoin" width="300"/>
+<img src="https://avatars.githubusercontent.com/u/84141344?s=200&v=4" alt="Dogecoin" width="200"/>
 </h1>
 
-<div align="center">
+## [](https://github.com/bunkercoin-project/bunkercoin/tree/master#what-is-bunkercoin)What is Bunkercoin?
 
-[![DogecoinBadge](https://img.shields.io/badge/Doge-Coin-yellow.svg)](https://dogecoin.com)
-[![MuchWow](https://img.shields.io/badge/Much-Wow-yellow.svg)](https://dogecoin.com)
+Bunkercoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW). Taking development cues from Dogecoin and Bitcoin, Bunkercoin currently employs a simplified variant of scrypt.
 
-</div>
+## Usage 
 
-Select language: EN | [CN](./README_zh_CN.md)
+To start your journey with Bunkercoin Core, see the [installation guide](INSTALL.md) and the [getting started](doc/getting-started.md) tutorial.
 
-Dogecoin is a community-driven cryptocurrency that was inspired by a Shiba Inu meme. The Dogecoin Core software allows anyone to operate a node in the Dogecoin blockchain networks and uses the Scrypt hashing method for Proof of Work. It is adapted from Bitcoin Core and other cryptocurrencies.
+The JSON-RPC API provided by Bunkercoin Core is self-documenting and can be browsed with `bunkercoin-cli help`, while detailed information for each command can be viewed with `bunkercoin-cli help <command>`. Alternatively, see the [Bitcoin Core documentation](https://developer.bitcoin.org/reference/rpc/) - which implement a similar protocol - to get a browsable version.
 
-For information about the default fees used on the Dogecoin network, please
-refer to the [fee recommendation](doc/fee-recommendation.md).
+##License
 
-**Website:** [dogecoin.com](https://dogecoin.com)
+Bunkercoin is released under the terms of the MIT license. See  [COPYING](https://github.com/bunkercoin-project/bunkercoin/blob/master/COPYING)  for more information or see  [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT).
 
-## Usage 💻
+## Development and contributions
 
-To start your journey with Dogecoin Core, see the [installation guide](INSTALL.md) and the [getting started](doc/getting-started.md) tutorial.
+Development is ongoing and the development team as well as other volunteers can freely work in their own trees and submit pull requests when features or bug fixes are ready.
 
-The JSON-RPC API provided by Dogecoin Core is self-documenting and can be browsed with `dogecoin-cli help`, while detailed information for each command can be viewed with `dogecoin-cli help <command>`. Alternatively, see the [Bitcoin Core documentation](https://developer.bitcoin.org/reference/rpc/) - which implement a similar protocol - to get a browsable version.
+## Not Frequently Asked Questions
 
-### Such ports
+### How much bunkercoin's can exist?
 
-Dogecoin Core by default uses port `22556` for peer-to-peer communication that
-is needed to synchronize the "mainnet" blockchain and stay informed of new
-transactions and blocks. Additionally, a JSONRPC port can be opened, which
-defaults to port `22555` for mainnet nodes. It is strongly recommended to not
-expose RPC ports to the public internet.
+As much as your heart desires
 
-| Function | mainnet | testnet | regtest |
-| :------- | ------: | ------: | ------: |
-| P2P      |   22556 |   44556 |   18444 |
-| RPC      |   22555 |   44555 |   18332 |
+Each subsequent block will grant a random amount of coins to encourage miners to continue to secure the network and make up for lost wallets on hard drives/lost encryption passwords/etc.
 
-## Ongoing development - Moon plan 🌒
+### How to get bunkercoin?
 
-Dogecoin Core is an open source and community driven software. The development
-process is open and publicly visible; anyone can see, discuss and work on the
-software.
+Bunkercoin uses a simplified variant of the scrypt key derivation function as its proof of work with a target time of one minute per block and difficulty readjustment after every block. The block rewards are fixed and halve every 100,000 blocks. Starting with the 600,000th block, a permanent reward of 10,000 Bunkercoin per block will be paid.
 
-Main development resources:
+The current block reward schedule:
 
-* [Github Projects](https://github.com/dogecoin/dogecoin/projects) is used to
-  follow planned and in-progress work for upcoming releases.
-* [Github Discussion](https://github.com/dogecoin/dogecoin/discussions) is used
-  to discuss features, planned and unplanned, related to both the development of
-  the Dogecoin Core software, the underlying protocols and the DOGE asset.  
-* [Dogecoindev subreddit](https://www.reddit.com/r/dogecoindev/)
+1–99,000: 0–1,000,000 Bunkercoin
 
-### Version strategy
-Version numbers are following ```major.minor.patch``` semantics.
+100,000–144,999: 0–500,000 Bunkercoin
 
-### Branches
-There are 3 types of branches in this repository:
+145,000–199,999: 250,000 Bunkercoin
 
-- **master:** Stable, contains the latest version of the latest *major.minor* release.
-- **maintenance:** Stable, contains the latest version of previous releases, which are still under active maintenance. Format: ```<version>-maint```
-- **development:** Unstable, contains new code for planned releases. Format: ```<version>-dev```
+200,000–299,999: 125,000 Bunkercoin
 
-*Master and maintenance branches are exclusively mutable by release. Planned*
-*releases will always have a development branch and pull requests should be*
-*submitted against those. Maintenance branches are there for **bug fixes only,***
-*please submit new features against the development branch with the highest version.*
+300,000–399,999: 62,500 Bunkercoin
 
-## Contributing 🤝
+400,000–499,999: 31,250 Bunkercoin
 
-If you find a bug or experience issues with this software, please report it
-using the [issue system](https://github.com/dogecoin/dogecoin/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D+).
+500,000–599,999: 15,625 Bunkercoin
 
-Please see [the contribution guide](CONTRIBUTING.md) to see how you can
-participate in the development of Dogecoin Core. There are often
-[topics seeking help](https://github.com/dogecoin/dogecoin/labels/help%20wanted)
-where your contributions will have high impact and get very appreciation. wow.
+600,000+: 10,000 Bunkercoin
 
-## Communities 🚀🍾
 
-You can join the communities on different social media.
-To see what's going on, meet people & discuss, find the lastest meme, learn
-about Dogecoin, give or ask for help, to share your project.
 
-Here are some places to visit:
+### How can I help the network?
 
-* [Dogecoin subreddit](https://www.reddit.com/r/dogecoin/)
-* [Dogeducation subreddit](https://www.reddit.com/r/dogeducation/)
-* [Discord](https://discord.gg/dogecoin)
-* [Dogecoin Twitter](https://twitter.com/dogecoin)
+The solid best way is to mine. You can use any guide and miner that supports scrypt coins like Dogecoin, Litecoin, etc.
 
-## Very Much Frequently Asked Questions ❓
+### Want to know the ports? Well here is the place to be!
 
-Do you have a question regarding Dogecoin? An answer is perhaps already in the
-[FAQ](doc/FAQ.md) or the
-[Q&A section](https://github.com/dogecoin/dogecoin/discussions/categories/q-a)
-of the discussion board!
-
-## License - Much license ⚖️
-Dogecoin Core is released under the terms of the MIT license. See
-[COPYING](COPYING) for more information or see
-[opensource.org](https://opensource.org/licenses/MIT)
+| Function | mainnet |
+| :------- | ------: | 
+| P2P      |   14200 |
+| RPC      |   22555 |
