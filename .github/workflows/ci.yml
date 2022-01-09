@@ -213,12 +213,15 @@ jobs:
       - name: Check symbols
         if: ${{ matrix.check-symbols }}
         run: make -C src check-symbols
+      
+      - name: Build installer
+        run: make deploy
         
       - name: Rename files
         run: rename 's/dogecoin/bunkercoin/g' release/dogecoin*
-        
-      - name: Build installer
-        run: make deploy
+      
+      - name: Make files executable
+        run: chmod +x release/* bunkercoin-*-*-setup*
         
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
