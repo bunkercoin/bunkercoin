@@ -125,3 +125,6 @@ stage/
 *.iws
 *.iml
 *.ipr
+
+### VS Code ###
+.vscode
