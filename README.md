@@ -1,5 +1,7 @@
 # Bunkercoin Core [BKC, Ƀ]
 
+THIS IS OUTDATED AND WILL NOT WORK WITH THE NETWORK!
+
 ## What is Bunkercoin?
 Bunkercoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW). Taking development cues from Dogecoin and Bitcoin, Bunkercoin currently employs a simplified variant of scrypt.
 
