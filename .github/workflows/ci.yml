@@ -217,8 +217,6 @@ jobs:
       - name: Build installer
         run: make deploy
         
-      - name: Rename files
-        run: rename 's/dogecoin/bunkercoin/g' depends/${{ matrix.host }}/bin/dogecoin*
       
       - name: Make files executable
         run: chmod +x depends/${{ matrix.host }}/bin/bunkercoin* bunkercoin-*-*-setup* || echo
@@ -230,4 +228,4 @@ jobs:
           path: |
             depends/${{ matrix.host }}/bin/bunkercoin*
             bunkercoin-*-*-setup*
-            dist/Dogecoin-Qt.app
+            dist/Bunkercoin-Qt.app
