@@ -163,11 +163,11 @@
     </message>
     <message>
         <source>&amp;Such sending addresses...</source>
-        <translation>&amp;ที่เก็บเงิน ที่จะส่ง dogecoin</translation>
+        <translation>&amp;ที่เก็บเงิน ที่จะส่ง bunkercoin</translation>
     </message>
     <message>
         <source>&amp;Much receiving addresses...</source>
-        <translation>&amp;ที่เก็บเงิน ที่จะรับ dogecoin</translation>
+        <translation>&amp;ที่เก็บเงิน ที่จะรับ bunkercoin</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <source>Sign messages with your Dogecoin addresses to prove you own them</source>
-        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Dogecoin เพื่อแสดงว่าท่านเป็นเจ้าของ dogecoin นี้จริง</translation>
+        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Dogecoin เพื่อแสดงว่าท่านเป็นเจ้าของ bunkercoin นี้จริง</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
@@ -254,20 +254,20 @@
         <translation>แถบเครื่องมือ</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
-        <translation>เรียกเก็บ การชำระเงิน (สร้าง QR codes และ dogecoin: URIs)</translation>
+        <source>Request payments (generates QR codes and bunkercoin: URIs)</source>
+        <translation>เรียกเก็บ การชำระเงิน (สร้าง QR codes และ bunkercoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>แสดงรายการ ที่เก็บเงินที่จะส่ง dogecoin ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะส่ง bunkercoin ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>แสดงรายการ ที่เก็บเงินที่จะรับ dogecoin เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะรับ bunkercoin เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
-        <source>Open a dogecoin: URI or payment request</source>
-        <translation>เปิด dogecoin: URI หรือ การเรียกเก็บเงิน (การเรียกให้ชำระเงิน)</translation>
+        <source>Open a bunkercoin: URI or payment request</source>
+        <translation>เปิด bunkercoin: URI หรือ การเรียกเก็บเงิน (การเรียกให้ชำระเงิน)</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>

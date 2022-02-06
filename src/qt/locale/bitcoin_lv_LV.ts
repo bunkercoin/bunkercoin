@@ -218,12 +218,12 @@
         <translation>Ciļņu rīkjosla</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un dogecoin: URIs)</translation>
+        <source>Request payments (generates QR codes and bunkercoin: URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un bunkercoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a dogecoin: URI or payment request</source>
-        <translation>Atvērt dogecoin URI vai maksājuma pieprasījumu</translation>
+        <source>Open a bunkercoin: URI or payment request</source>
+        <translation>Atvērt bunkercoin URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -499,7 +499,7 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Ieslēgt dogecoin &amp;kontroles funkcijas</translation>
+        <translation>Ieslēgt bunkercoin &amp;kontroles funkcijas</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>

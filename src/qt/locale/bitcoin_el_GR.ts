@@ -211,7 +211,7 @@
     </message>
     <message>
         <source>Send coins to a Dogecoin address</source>
-        <translation>Στείλε νομίσματα σε μια διεύθυνση dogecoin</translation>
+        <translation>Στείλε νομίσματα σε μια διεύθυνση bunkercoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -286,8 +286,8 @@
         <translation>Εργαλειοθήκη καρτελών</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
-        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις dogecoin: )</translation>
+        <source>Request payments (generates QR codes and bunkercoin: URIs)</source>
+        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις bunkercoin: )</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -298,8 +298,8 @@
         <translation>Προβολή της λίστας των χρησιμοποιημένων διευθύνσεων και ετικετών λήψεως</translation>
     </message>
     <message>
-        <source>Open a dogecoin: URI or payment request</source>
-        <translation>Άνοιγμα dogecoin: URI αίτησης πληρωμής</translation>
+        <source>Open a bunkercoin: URI or payment request</source>
+        <translation>Άνοιγμα bunkercoin: URI αίτησης πληρωμής</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>

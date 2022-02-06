@@ -366,12 +366,12 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
-        <translation>Loo maksepäring (genereerib QR koodid ja dogecoini: URId)</translation>
+        <source>Request payments (generates QR codes and bunkercoin: URIs)</source>
+        <translation>Loo maksepäring (genereerib QR koodid ja bunkercoini: URId)</translation>
     </message>
     <message>
-        <source>Open a dogecoin: URI or payment request</source>
-        <translation>Ava dogecoini: URI või maksepäring</translation>
+        <source>Open a bunkercoin: URI or payment request</source>
+        <translation>Ava bunkercoini: URI või maksepäring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>

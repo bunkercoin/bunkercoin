@@ -8,7 +8,7 @@
 
 #include "amount.h"
 #include "auxpow.h"
-#include "dogecoin-fees.h"
+#include "bunkercoin-fees.h"
 #include "streams.h"
 #include "tinyformat.h"
 #include "ui_interface.h"

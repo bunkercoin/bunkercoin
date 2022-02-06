@@ -218,7 +218,7 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
+        <source>Request payments (generates QR codes and bunkercoin: URIs)</source>
         <translation>Solicitar pagos (genera codigo QR y URL's de Dogecoin)</translation>
     </message>
     <message>
@@ -230,8 +230,8 @@
         <translation>Muestra la lista de direcciones de recepción y etiquetas</translation>
     </message>
     <message>
-        <source>Open a dogecoin: URI or payment request</source>
-        <translation>Abrir un dogecoin: URI o petición de pago</translation>
+        <source>Open a bunkercoin: URI or payment request</source>
+        <translation>Abrir un bunkercoin: URI o petición de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>

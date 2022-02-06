@@ -143,7 +143,7 @@
     </message>
     <message>
         <source>Send coins to a Dogecoin address</source>
-        <translation>Enviar monedas a una dirección dogecoin</translation>
+        <translation>Enviar monedas a una dirección bunkercoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -206,8 +206,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
-        <translation>Pide pagos (genera codigos QR and dogecoin: URls)</translation>
+        <source>Request payments (generates QR codes and bunkercoin: URIs)</source>
+        <translation>Pide pagos (genera codigos QR and bunkercoin: URls)</translation>
     </message>
     <message>
         <source>Error</source>
@@ -773,7 +773,7 @@
     </message>
     <message>
         <source>Dogecoin Core</source>
-        <translation>dogecoin core</translation>
+        <translation>bunkercoin core</translation>
     </message>
     <message>
         <source>Error loading block database</source>

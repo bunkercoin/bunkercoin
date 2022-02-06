@@ -162,7 +162,7 @@ void OverviewPage::UpdateTip()
         tr("Never share your private key to an untrustworthy person."),
         tr("Who own the private keys own the coins."),
         tr("To see ongoing development and contribute, checkout Dogecoin repository on GitHub!"),
-        tr("Services that claim to double your dogecoins are always ponzi schemes")
+        tr("Services that claim to double your bunkercoins are always ponzi schemes")
     };
 
     int i = rand() % tips.length();

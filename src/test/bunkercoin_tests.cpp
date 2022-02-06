@@ -4,12 +4,12 @@
 
 #include "arith_uint256.h"
 #include "chainparams.h"
-#include "dogecoin.h"
+#include "bunkercoin.h"
 #include "test/test_bitcoin.h"
 
 #include <boost/test/unit_test.hpp>
 
-BOOST_FIXTURE_TEST_SUITE(dogecoin_tests, TestingSetup)
+BOOST_FIXTURE_TEST_SUITE(bunkercoin_tests, TestingSetup)
 
 /**
  * the maximum block reward at a given height for a block without fees
