@@ -2935,7 +2935,7 @@ CAmount CWallet::GetDogecoinPriorityFee(const CMutableTransaction& tx, unsigned 
     CAmount nFeeNeeded = targetFee;
     // User didn't set: use -txconfirmtarget to estimate...
     if (nFeeNeeded == 0) {
-        nFeeNeeded = GetDogecoinFeeRate(nPriority).GetFee(nTxBytes);
+        nFeeNeeded = GetBunkercoinFeeRate(nPriority).GetFee(nTxBytes);
     }
     // prevent user from paying a fee below minRelayTxFee or minTxFee
     // Dogecoin: as we're adapting minTxFee to never be higher than

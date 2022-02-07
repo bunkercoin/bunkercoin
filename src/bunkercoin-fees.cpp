@@ -19,7 +19,7 @@
 
 #ifdef ENABLE_WALLET
 
-CFeeRate GetDogecoinFeeRate(int priority)
+CFeeRate GetBunkercoinFeeRate(int priority)
 {
     switch(priority)
     {
@@ -40,7 +40,7 @@ CFeeRate GetDogecoinFeeRate(int priority)
     return CWallet::minTxFee;
 }
 
-const std::string GetDogecoinPriorityLabel(int priority)
+const std::string GetBunkercoinPriorityLabel(int priority)
 {
     switch(priority)
     {
