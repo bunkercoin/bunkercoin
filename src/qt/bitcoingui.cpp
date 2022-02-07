@@ -171,7 +171,7 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
         setCentralWidget(rpcConsole);
     }
 
-    // Dogecoin: load fallback font in case Comic Sans is not available on the system
+    // Bunkercoin: load fallback font in case Comic Sans is not available on the system
     QFontDatabase::addApplicationFont(":fonts/ComicNeue-Bold");
     QFontDatabase::addApplicationFont(":fonts/ComicNeue-Bold-Oblique");
     QFontDatabase::addApplicationFont(":fonts/ComicNeue-Light");
@@ -180,10 +180,10 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
     QFontDatabase::addApplicationFont(":fonts/ComicNeue-Regular-Oblique");
     QFont::insertSubstitution("Comic Sans MS", "Comic Neue");
 
-    // Dogecoin: Specify Comic Sans as new font.
+    // Bunkercoin: Specify Comic Sans as new font.
     QFont newFont("Comic Sans MS", 10);
 
-    // Dogecoin: Set new application font
+    // Bunkercoin: Set new application font
     QApplication::setFont(newFont);
 
     // Accept D&D of URIs
@@ -295,14 +295,14 @@ void BitcoinGUI::createActions()
 {
     QActionGroup *tabGroup = new QActionGroup(this);
 
-    overviewAction = new QAction(platformStyle->SingleColorIcon(":/icons/overview"), tr("&Wow"), this);
+    overviewAction = new QAction(platformStyle->SingleColorIcon(":/icons/overview"), tr("&Wallet"), this);
     overviewAction->setStatusTip(tr("Show general overview of wallet"));
     overviewAction->setToolTip(overviewAction->statusTip());
     overviewAction->setCheckable(true);
     overviewAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_1));
     tabGroup->addAction(overviewAction);
 
-    sendCoinsAction = new QAction(platformStyle->SingleColorIcon(":/icons/send"), tr("&Such Send"), this);
+    sendCoinsAction = new QAction(platformStyle->SingleColorIcon(":/icons/send"), tr("&Send"), this);
     sendCoinsAction->setStatusTip(tr("Send coins to a Bunker address"));
     sendCoinsAction->setToolTip(sendCoinsAction->statusTip());
     sendCoinsAction->setCheckable(true);

@@ -74,7 +74,7 @@
         <translation>به روز رسانی با شبکه...</translation>
     </message>
     <message>
-        <source>&amp;Wow</source>
+        <source>&amp;Wallet</source>
         <translation>و بازبینی</translation>
     </message>
     <message>
@@ -134,7 +134,7 @@
         <translation>رمز مربوط به رمزگذاریِ wallet را تغییر دهید</translation>
     </message>
     <message>
-        <source>Dogecoin</source>
+        <source>Bunkercoin</source>
         <translation>bunkercoin</translation>
     </message>
     <message>
@@ -142,7 +142,7 @@
         <translation>کیف پول</translation>
     </message>
     <message>
-        <source>&amp;Such Send</source>
+        <source>&amp;Send</source>
         <translation>و ارسال</translation>
     </message>
     <message>
@@ -293,7 +293,7 @@
         <translation>فرم</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bunkercoin network after a connection is established, but this process has not completed yet.</source>
         <translation>اطلاعات نمایش داده شده ممکن است روزآمد نباشد. wallet شما به صورت خودکار بعد از برقراری اتصال با شبکه bunkercoin به روز می شود اما این فرایند هنوز تکمیل نشده است.</translation>
     </message>
     </context>

@@ -126,12 +126,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Bunkercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Bunkercoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -356,8 +356,8 @@
     </message>
     <message>
         <location line="+158"/>
-        <source>&amp;Wow</source>
-        <translation type="unfinished">&amp;Wow</translation>
+        <source>&amp;Wallet</source>
+        <translation type="unfinished">&amp;Wallet</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -366,13 +366,13 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>&amp;Such Send</source>
-        <translation type="unfinished">&amp;Such Send</translation>
+        <source>&amp;Send</source>
+        <translation type="unfinished">&amp;Send</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send coins to a Dogecoin address</source>
-        <translation type="unfinished">Send coins to a Dogecoin address</translation>
+        <source>Send coins to a Bunkercoin address</source>
+        <translation type="unfinished">Send coins to a Bunkercoin address</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -481,8 +481,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
-        <translation type="unfinished">Sign messages with your Dogecoin addresses to prove you own them</translation>
+        <source>Sign messages with your Bunkercoin addresses to prove you own them</source>
+        <translation type="unfinished">Sign messages with your Bunkercoin addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -491,8 +491,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
-        <translation type="unfinished">Verify messages to ensure they were signed with specified Dogecoin addresses</translation>
+        <source>Verify messages to ensure they were signed with specified Bunkercoin addresses</source>
+        <translation type="unfinished">Verify messages to ensure they were signed with specified Bunkercoin addresses</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -551,7 +551,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Import a Dogecoin private key</source>
+        <source>Import a Bunkercoin private key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -561,7 +561,7 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>Show the %1 help message to get a list with possible Dogecoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Bunkercoin command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -591,10 +591,10 @@
     </message>
     <message numerus="yes">
         <location line="+155"/>
-        <source>%n active connection(s) to Dogecoin network</source>
+        <source>%n active connection(s) to Bunkercoin network</source>
         <translation type="unfinished">
-            <numerusform>%n active connection to Dogecoin network</numerusform>
-            <numerusform>%n active connections to Dogecoin network</numerusform>
+            <numerusform>%n active connection to Bunkercoin network</numerusform>
+            <numerusform>%n active connections to Bunkercoin network</numerusform>
         </translation>
     </message>
     <message>
@@ -677,8 +677,8 @@
     </message>
     <message>
         <location line="+13"/>
-        <source>Dogecoin</source>
-        <translation type="unfinished">Dogecoin</translation>
+        <source>Bunkercoin</source>
+        <translation type="unfinished">Bunkercoin</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -762,7 +762,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Bunkercoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1013,7 +1013,7 @@
     </message>
     <message>
         <location line="+71"/>
-        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Bunkercoin address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1228,7 +1228,7 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>%1 will download and store a copy of the Dogecoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>%1 will download and store a copy of the Bunkercoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1488,7 +1488,7 @@
     </message>
     <message>
         <location line="+30"/>
-        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Bunkercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1498,7 +1498,7 @@
     </message>
     <message>
         <location line="+17"/>
-        <source>Connect to the Dogecoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Bunkercoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1553,7 +1553,7 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>Connect to the Dogecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the Bunkercoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1678,7 +1678,7 @@
     <message>
         <location line="+62"/>
         <location line="+428"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bunkercoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1813,7 +1813,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>To see ongoing development and contribute, checkout Dogecoin repository on GitHub!</source>
+        <source>To see ongoing development and contribute, checkout Bunkercoin repository on GitHub!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2081,7 +2081,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+8"/>
-        <source>URI cannot be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Bunkercoin address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2247,7 +2247,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+136"/>
-        <source>Enter a Dogecoin address (e.g. %1)</source>
+        <source>Enter a Bunkercoin address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2901,7 +2901,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="+14"/>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bunkercoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3398,7 +3398,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+134"/>
-        <source>Warning: Invalid Dogecoin address</source>
+        <source>Warning: Invalid Bunkercoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3453,7 +3453,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+39"/>
-        <source>The Dogecoin address to send the payment to</source>
+        <source>The Bunkercoin address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3510,7 +3510,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+47"/>
-        <source>A message that was attached to the bunkercoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
+        <source>A message that was attached to the bunkercoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bunkercoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3572,7 +3572,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+18"/>
-        <source>The Dogecoin address to sign the message with</source>
+        <source>The Bunkercoin address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3614,7 +3614,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Dogecoin address</source>
+        <source>Sign the message to prove you own this Bunkercoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3645,12 +3645,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+21"/>
-        <source>The Dogecoin address the message was signed with</source>
+        <source>The Bunkercoin address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Bunkercoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4468,8 +4468,8 @@ p, li { white-space: pre-wrap; }
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+12"/>
-        <source>Dogecoin Core</source>
-        <translation type="unfinished">Dogecoin Core</translation>
+        <source>Bunkercoin Core</source>
+        <translation type="unfinished">Bunkercoin Core</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4478,7 +4478,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+1"/>
-        <source>Bitcoin Core and Dogecoin Core</source>
+        <source>Bitcoin Core and Bunkercoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5683,7 +5683,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+1"/>
-        <source>Wow</source>
+        <source>Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

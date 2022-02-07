@@ -161,7 +161,7 @@ void OverviewPage::UpdateTip()
         tr("Always do your own research before using an external cryptocurrency service"),
         tr("Never share your private key to an untrustworthy person."),
         tr("Who own the private keys own the coins."),
-        tr("To see ongoing development and contribute, checkout Dogecoin repository on GitHub!"),
+        tr("To see ongoing development and contribute, checkout Bunkercoin repository on GitHub!"),
         tr("Services that claim to double your bunkercoins are always ponzi schemes")
     };
 

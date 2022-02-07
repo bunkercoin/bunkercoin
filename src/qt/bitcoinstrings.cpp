@@ -11,7 +11,7 @@
 static const char UNUSED *bitcoin_strings[] = {
 QT_TRANSLATE_NOOP("bitcoin-core", "Bunkercoin Core"),
 QT_TRANSLATE_NOOP("bitcoin-core", "The %s developers"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Bitcoin Core and Dogecoin Core and BunkercoinCore"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Bitcoin Core and Bunkercoin Core and BunkercoinCore"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "(1 = keep tx meta data e.g. account owner and payment request information, 2 "
 "= drop tx meta data)"),
@@ -413,7 +413,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", "Wallet options:"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Warning"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Warning: unknown new rules activated (versionbit %i)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Whether to operate in a blocks only mode (default: %u)"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Wow"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Wallet"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Zapping all transactions from wallet..."),
 QT_TRANSLATE_NOOP("bitcoin-core", "ZeroMQ notification options:"),
 };

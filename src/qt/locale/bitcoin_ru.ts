@@ -99,12 +99,12 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши адреса Dogecoin для отправки платежей. Всегда проверяйте сумму и адрес получателя перед отправкой перевода.</translation>
+        <source>These are your Bunkercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши адреса Bunkercoin для отправки платежей. Всегда проверяйте сумму и адрес получателя перед отправкой перевода.</translation>
     </message>
     <message>
-        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши адреса Dogecoin для приёма платежей. Рекомендуется использовать новый адрес получения для каждой транзакции.</translation>
+        <source>These are your Bunkercoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши адреса Bunkercoin для приёма платежей. Рекомендуется использовать новый адрес получения для каждой транзакции.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -279,7 +279,7 @@
         <translation>Синхронизация с сетью...</translation>
     </message>
     <message>
-        <source>&amp;Wow</source>
+        <source>&amp;Wallet</source>
         <translation>&amp;Обзор</translation>
     </message>
     <message>
@@ -367,8 +367,8 @@
         <translation>Идёт переиндексация блоков на диске...</translation>
     </message>
     <message>
-        <source>Send coins to a Dogecoin address</source>
-        <translation>Отправить монеты на указанный адрес Dogecoin</translation>
+        <source>Send coins to a Bunkercoin address</source>
+        <translation>Отправить монеты на указанный адрес Bunkercoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -391,15 +391,15 @@
         <translation>&amp;Проверить сообщение...</translation>
     </message>
     <message>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Bunkercoin</source>
+        <translation>Bunkercoin</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Бумажник</translation>
     </message>
     <message>
-        <source>&amp;Such Send</source>
+        <source>&amp;Send</source>
         <translation>&amp;Отправить</translation>
     </message>
     <message>
@@ -419,12 +419,12 @@
         <translation>Зашифровать приватные ключи, принадлежащие вашему бумажнику</translation>
     </message>
     <message>
-        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
-        <translation>Подписать сообщения вашим адресом Dogecoin, чтобы доказать, что вы им владеете</translation>
+        <source>Sign messages with your Bunkercoin addresses to prove you own them</source>
+        <translation>Подписать сообщения вашим адресом Bunkercoin, чтобы доказать, что вы им владеете</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
-        <translation>Проверить сообщения, чтобы удостовериться, что они были подписаны определённым адресом Dogecoin</translation>
+        <source>Verify messages to ensure they were signed with specified Bunkercoin addresses</source>
+        <translation>Проверить сообщения, чтобы удостовериться, что они были подписаны определённым адресом Bunkercoin</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -463,11 +463,11 @@
         <translation>&amp;Параметры командной строки</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Dogecoin network</source>
+        <source>%n active connection(s) to Bunkercoin network</source>
         <translation>
-            <numerusform>%n активных соединений с сетью Dogecoin</numerusform>
-            <numerusform>%n активных соединений с сетью Dogecoin</numerusform>
-            <numerusform>%n активных соединений с сетью Dogecoin</numerusform>
+            <numerusform>%n активных соединений с сетью Bunkercoin</numerusform>
+            <numerusform>%n активных соединений с сетью Bunkercoin</numerusform>
+            <numerusform>%n активных соединений с сетью Bunkercoin</numerusform>
         </translation>
     </message>
     <message>
@@ -515,7 +515,7 @@
         <translation>Синхронизировано</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Dogecoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Bunkercoin command-line options</source>
         <translation>Показать помощь по %1, чтобы получить список доступных параметров командной строки</translation>
     </message>
     <message>
@@ -585,8 +585,8 @@
         <translation>Бумажник &lt;b&gt;зашифрован&lt;/b&gt; и в настоящее время &lt;b&gt;заблокирован&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
-        <translation>Произошла неисправимая ошибка. Dogecoin не может безопасно продолжать работу и будет закрыт.</translation>
+        <source>A fatal error occurred. Bunkercoin can no longer continue safely and will quit.</source>
+        <translation>Произошла неисправимая ошибка. Bunkercoin не может безопасно продолжать работу и будет закрыт.</translation>
     </message>
     <message>
         <source>&amp;Print paper wallets</source>
@@ -609,7 +609,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import a Dogecoin private key</source>
+        <source>Import a Bunkercoin private key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -814,8 +814,8 @@
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
-        <translation>Введённый адрес &quot;%1&quot; не является правильным Dogecoin-адресом.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Bunkercoin address.</source>
+        <translation>Введённый адрес &quot;%1&quot; не является правильным Bunkercoin-адресом.</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
@@ -986,7 +986,7 @@
         <translation>При первом запуске программы вы можете выбрать где %1 будет хранить свои данные.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Dogecoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>%1 will download and store a copy of the Bunkercoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>%1 скачает и сохранит копию цепи блоков. Как минимум %2GB будут записаны в этот каталог, и со временем он будет расти. Бумажник также будет сохранен в этом каталоге.</translation>
     </message>
     <message>
@@ -1195,20 +1195,20 @@
         <translation>&amp;Тратить неподтверждённую сдачу</translation>
     </message>
     <message>
-        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть порт для Dogecoin-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
+        <source>Automatically open the Bunkercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть порт для Bunkercoin-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Пробросить порт через &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Dogecoin network through a SOCKS5 proxy.</source>
-        <translation>Подключаться к сети Dogecoin через прокси SOCKS5</translation>
+        <source>Connect to the Bunkercoin network through a SOCKS5 proxy.</source>
+        <translation>Подключаться к сети Bunkercoin через прокси SOCKS5</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>&amp;Подключаться к сети Dogecoin через прокси SOCKS5 (прокси по умолчанию):</translation>
+        <translation>&amp;Подключаться к сети Bunkercoin через прокси SOCKS5 (прокси по умолчанию):</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1243,8 +1243,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Dogecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Подключаться к сети Dogecoin через прокси SOCKS5 для скрытых сервисов Tor.</translation>
+        <source>Connect to the Bunkercoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Подключаться к сети Bunkercoin через прокси SOCKS5 для скрытых сервисов Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1342,8 +1342,8 @@
         <translation>Форма</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью Dogecoin после подключения, но этот процесс пока не завершён.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bunkercoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью Bunkercoin после подключения, но этот процесс пока не завершён.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1450,7 +1450,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>To see ongoing development and contribute, checkout Dogecoin repository on GitHub!</source>
+        <source>To see ongoing development and contribute, checkout Bunkercoin repository on GitHub!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1656,8 +1656,8 @@ p, li { white-space: pre-wrap; }
         <translation>Неверный адрес платежа %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
-        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом Dogecoin или неправильными параметрами URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Bunkercoin address or malformed URI parameters.</source>
+        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом Bunkercoin или неправильными параметрами URI.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1785,8 +1785,8 @@ p, li { white-space: pre-wrap; }
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>Enter a Dogecoin address (e.g. %1)</source>
-        <translation>Введите адрес Dogecoin (например, %1)</translation>
+        <source>Enter a Bunkercoin address (e.g. %1)</source>
+        <translation>Введите адрес Bunkercoin (например, %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2285,8 +2285,8 @@ p, li { white-space: pre-wrap; }
         <translation>&amp;Повторно использовать существующий адрес получения (не рекомендуется)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
-        <translation>Необязательное сообщение для запроса платежа, которое будет показано при открытии запроса. Заметьте: сообщение не будет отправлено вместе с платежом через сеть Dogecoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bunkercoin network.</source>
+        <translation>Необязательное сообщение для запроса платежа, которое будет показано при открытии запроса. Заметьте: сообщение не будет отправлено вместе с платежом через сеть Bunkercoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2654,8 +2654,8 @@ p, li { white-space: pre-wrap; }
         <translation>Заплатить только обязательную комиссию %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Dogecoin address</source>
-        <translation>Внимание: неверный адрес Dogecoin</translation>
+        <source>Warning: Invalid Bunkercoin address</source>
+        <translation>Внимание: неверный адрес Bunkercoin</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2721,8 +2721,8 @@ p, li { white-space: pre-wrap; }
         <translation>Это нормальный платёж.</translation>
     </message>
     <message>
-        <source>The Dogecoin address to send the payment to</source>
-        <translation>Адрес Dogecoin, на который отправить платёж</translation>
+        <source>The Bunkercoin address to send the payment to</source>
+        <translation>Адрес Bunkercoin, на который отправить платёж</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2765,8 +2765,8 @@ p, li { white-space: pre-wrap; }
         <translation>Введите метку для этого адреса, чтобы добавить его в список использованных</translation>
     </message>
     <message>
-        <source>A message that was attached to the bunkercoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
-        <translation>К bunkercoin: URI было прикреплено сообщение, которое будет сохранено вместе с транзакцией для вашего сведения. Заметьте: сообщение не будет отправлено через сеть Dogecoin.</translation>
+        <source>A message that was attached to the bunkercoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bunkercoin network.</source>
+        <translation>К bunkercoin: URI было прикреплено сообщение, которое будет сохранено вместе с транзакцией для вашего сведения. Заметьте: сообщение не будет отправлено через сеть Bunkercoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2814,8 +2814,8 @@ p, li { white-space: pre-wrap; }
         <translation>Вы можете подписывать сообщения/соглашения своими адресами, чтобы доказать свою возможность получать биткоины на них. Будьте осторожны, не подписывайте что-то неопределённое или случайное, так как фишинговые атаки могут обманным путём заставить вас подписать нежелательные сообщения. Подписывайте только те сообщения, с которыми вы согласны вплоть до мелочей.</translation>
     </message>
     <message>
-        <source>The Dogecoin address to sign the message with</source>
-        <translation>Адрес Dogecoin, которым подписать сообщение</translation>
+        <source>The Bunkercoin address to sign the message with</source>
+        <translation>Адрес Bunkercoin, которым подписать сообщение</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2846,8 +2846,8 @@ p, li { white-space: pre-wrap; }
         <translation>Скопировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dogecoin address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом Dogecoin</translation>
+        <source>Sign the message to prove you own this Bunkercoin address</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом Bunkercoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2870,12 +2870,12 @@ p, li { white-space: pre-wrap; }
         <translation>Введите ниже адрес получателя, сообщение (убедитесь, что переводы строк, пробелы, табы и т.п. в точности скопированы) и подпись, чтобы проверить сообщение. Убедитесь, что не скопировали лишнего в подпись, по сравнению с самим подписываемым сообщением, чтобы не стать жертвой атаки &quot;man-in-the-middle&quot;. Заметьте, что эта операция удостоверяет лишь авторство подписавшего, но не может удостоверить отправителя транзакции.</translation>
     </message>
     <message>
-        <source>The Dogecoin address the message was signed with</source>
-        <translation>Адрес Dogecoin, которым было подписано сообщение</translation>
+        <source>The Bunkercoin address the message was signed with</source>
+        <translation>Адрес Bunkercoin, которым было подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом Dogecoin</translation>
+        <source>Verify the message to ensure it was signed with the specified Bunkercoin address</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом Bunkercoin</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3590,8 +3590,8 @@ p, li { white-space: pre-wrap; }
         <translation>Невозможно запустить HTTP сервер. Смотри debug лог для подробностей.</translation>
     </message>
     <message>
-        <source>Dogecoin Core</source>
-        <translation>Dogecoin Core</translation>
+        <source>Bunkercoin Core</source>
+        <translation>Bunkercoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -4434,7 +4434,7 @@ p, li { white-space: pre-wrap; }
         <translation>Ошибка</translation>
     </message>
     <message>
-        <source>Bitcoin Core and Dogecoin Core</source>
+        <source>Bitcoin Core and Bunkercoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4482,7 +4482,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wow</source>
+        <source>Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

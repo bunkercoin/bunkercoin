@@ -54,7 +54,7 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>&amp;Wow</source>
+        <source>&amp;Wallet</source>
         <translation>&amp;கண்ணோட்டம்</translation>
     </message>
     <message>
@@ -90,15 +90,15 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Bunkercoin</source>
+        <translation>Bunkercoin</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>பணப்பை</translation>
     </message>
     <message>
-        <source>&amp;Such Send</source>
+        <source>&amp;Send</source>
         <translation>&amp;அனுப்பு</translation>
     </message>
     <message>
@@ -708,8 +708,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Dogecoin Core</source>
-        <translation>Dogecoin மையம்</translation>
+        <source>Bunkercoin Core</source>
+        <translation>Bunkercoin மையம்</translation>
     </message>
     <message>
         <source>(default: %u)</source>
