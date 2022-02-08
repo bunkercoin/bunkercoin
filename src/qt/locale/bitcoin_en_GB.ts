@@ -54,12 +54,12 @@
         <translation>C&amp;hoose</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
-        <translation>Such sending addresses</translation>
+        <source>Sending Addresses</source>
+        <translation>Sending Addresses</translation>
     </message>
     <message>
-        <source>Much receiving addresses</source>
-        <translation>Much receiving addresses</translation>
+        <source>Receiving Addresses</source>
+        <translation>Receiving Addresses</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -210,12 +210,12 @@
         <translation>&amp;Change Passphrase...</translation>
     </message>
     <message>
-        <source>&amp;Such sending addresses...</source>
-        <translation>&amp;Such sending addresses...</translation>
+        <source>&amp;Sending Addresses...</source>
+        <translation>&amp;Sending Addresses...</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
-        <translation>&amp;Much receiving addresses...</translation>
+        <source>&amp;Receiving Addresses...</source>
+        <translation>&amp;Receiving Addresses...</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>

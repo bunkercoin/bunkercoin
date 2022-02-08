@@ -54,11 +54,11 @@
         <translation>Избери</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>Адреси за изпращане</translation>
     </message>
     <message>
-        <source>Much receiving addresses</source>
+        <source>Receiving Addresses</source>
         <translation>Адреси за получаване</translation>
     </message>
     <message>

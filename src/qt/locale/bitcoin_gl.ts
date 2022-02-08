@@ -122,7 +122,7 @@
         <translation>&amp;Cambiar contrasinal...</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation>Direccións para recibir</translation>
     </message>
     <message>

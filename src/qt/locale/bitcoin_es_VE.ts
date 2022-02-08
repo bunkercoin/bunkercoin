@@ -106,7 +106,7 @@
         <translation>&amp;Opciones...</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation>Recepción de direcciones</translation>
     </message>
     <message>

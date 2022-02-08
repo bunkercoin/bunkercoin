@@ -54,11 +54,11 @@
         <translation>Escol&amp;her</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>A enviar endereços</translation>
     </message>
     <message>
-        <source>Much receiving addresses</source>
+        <source>Receiving Addresses</source>
         <translation>A receber endereços</translation>
     </message>
     <message>
@@ -282,11 +282,11 @@
         <translation>Alterar &amp;Frase de Segurança...</translation>
     </message>
     <message>
-        <source>&amp;Such sending addresses...</source>
+        <source>&amp;Sending Addresses...</source>
         <translation>A &amp;enviar os endereços...</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation>A &amp;receber os endereços...</translation>
     </message>
     <message>

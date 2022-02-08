@@ -55,7 +55,7 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>&amp;Pilih</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>alamat-alamat penghantaran</translation>
     </message>
     <message>
@@ -307,7 +307,7 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>&amp;Menukar frasa-laluan</translation>
     </message>
     <message>
-        <source>&amp;Such sending addresses...</source>
+        <source>&amp;Sending Addresses...</source>
         <translation>&amp;Menghantar frasa-laluan</translation>
     </message>
     <message>

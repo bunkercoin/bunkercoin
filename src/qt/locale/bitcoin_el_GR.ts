@@ -50,7 +50,7 @@
         <translation>Επιλέξτε διεύθυνση παραλαβής νομισμάτων</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>Διευθύνσεις αποστολής</translation>
     </message>
     <message>

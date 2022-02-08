@@ -54,11 +54,11 @@
         <translation>&amp;Zvol</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>Odesílací adresy</translation>
     </message>
     <message>
-        <source>Much receiving addresses</source>
+        <source>Receiving Addresses</source>
         <translation>Přijímací adresy</translation>
     </message>
     <message>

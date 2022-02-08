@@ -54,11 +54,11 @@
         <translation>Vybrať</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>Odosielajúce adresy</translation>
     </message>
     <message>
-        <source>Much receiving addresses</source>
+        <source>Receiving Addresses</source>
         <translation>Prijímajúce adresy</translation>
     </message>
     <message>

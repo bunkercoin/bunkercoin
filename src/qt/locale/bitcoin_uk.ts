@@ -54,7 +54,7 @@
         <translation>О&amp;брати</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>Адреса відправлення</translation>
     </message>
     <message>

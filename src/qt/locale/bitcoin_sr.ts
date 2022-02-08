@@ -46,11 +46,11 @@
         <translation>Izbirajte adresu za primanje</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>Adresa za slanje</translation>
     </message>
     <message>
-        <source>Much receiving addresses</source>
+        <source>Receiving Addresses</source>
         <translation>Adresa za primanje</translation>
     </message>
     </context>

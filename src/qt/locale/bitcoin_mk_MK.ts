@@ -122,11 +122,11 @@
         <translation>&amp;Измени Тајна Фраза...</translation>
     </message>
     <message>
-        <source>&amp;Such sending addresses...</source>
+        <source>&amp;Sending Addresses...</source>
         <translation>&amp;Адреси за Испраќање...</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation>&amp;Адреси за Примање...</translation>
     </message>
     <message>

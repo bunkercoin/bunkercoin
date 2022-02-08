@@ -50,7 +50,7 @@
         <translation>Velg adressen til å motta mynter med</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>Utsendingsadresser</translation>
     </message>
     <message>

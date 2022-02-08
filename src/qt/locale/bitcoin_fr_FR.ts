@@ -202,11 +202,11 @@
         <translation>&amp;Modifier le mot de passe</translation>
     </message>
     <message>
-        <source>&amp;Such sending addresses...</source>
+        <source>&amp;Sending Addresses...</source>
         <translation>&amp;Adresses d'envoi</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation>&amp;Adresses de réception</translation>
     </message>
     <message>

@@ -50,7 +50,7 @@
         <translation>เลือกที่อยู่เพื่อส่งเหรียญไปไว้</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>ส่งที่อยู่</translation>
     </message>
     </context>
@@ -162,11 +162,11 @@
         <translation>&amp;เปลี่ยนรหัสผ่าน...</translation>
     </message>
     <message>
-        <source>&amp;Such sending addresses...</source>
+        <source>&amp;Sending Addresses...</source>
         <translation>&amp;ที่เก็บเงิน ที่จะส่ง bunkercoin</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation>&amp;ที่เก็บเงิน ที่จะรับ bunkercoin</translation>
     </message>
     <message>

@@ -54,11 +54,11 @@
         <translation>&amp;Tria</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>Adreces d'enviament</translation>
     </message>
     <message>
-        <source>Much receiving addresses</source>
+        <source>Receiving Addresses</source>
         <translation>Adreces de recepció</translation>
     </message>
     <message>
@@ -310,7 +310,7 @@
         <translation>Adreces d'e&amp;nviament...</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation>Adreces de &amp;recepció...</translation>
     </message>
     <message>

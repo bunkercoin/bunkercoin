@@ -91,11 +91,11 @@
         <translation>Sc&amp;egli</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>Indirizzi d&apos;invio</translation>
     </message>
     <message>
-        <source>Much receiving addresses</source>
+        <source>Receiving Addresses</source>
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
@@ -563,11 +563,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Such sending addresses...</source>
+        <source>&amp;Sending Addresses...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -116,12 +116,12 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Much receiving addresses</source>
+        <source>Receiving Addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -516,7 +516,7 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>&amp;Such sending addresses...</source>
+        <source>&amp;Sending Addresses...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -526,7 +526,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

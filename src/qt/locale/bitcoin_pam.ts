@@ -118,7 +118,7 @@
         <translation>&amp;Alilan ing Passphrase...</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation>Address king pamag-Tanggap</translation>
     </message>
     <message>
