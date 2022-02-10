@@ -130,7 +130,7 @@ public:
         // Blocks 100000+ are AuxPoW or PoW
         auxpowConsensus = digishieldConsensus;
 		
-		auxpowConsensus.nAuxpowChainId = 0x0042; // 66 - B
+		auxpowConsensus.nAuxpowChainId = 0x0042; // 73s
 		
         auxpowConsensus.nHeightEffective = 100000;
         auxpowConsensus.fAllowLegacyBlocks = true;
@@ -191,15 +191,17 @@ public:
 			(     50, uint256S("0x61881dacc6ffce7427cf033fc33dcc8cd13372d3517219cf5e16f2419c5d6c11"))
 			(     115, uint256S("0x945a2e3a0afcb3737fea470a4b8702830e145f7cd45205a52441825a532f9a11"))
 			(     60000, uint256S("0xd17d161d15ab4cd982bc3789cf44c257cadd2aa9975e8ea0fd599c098c27dc8a"))
+			(     80000, uint256S("0x38c5277d693b59030a73ec375cccc2769b7a21fd31d8d85fbbe9f9cec82edf94"))
+			(     100000, uint256S("0xffcd62ddf782a04e1f9b51c537b5e080ee0f99030803465eecaeb653c41c01fb"))
         };
 
         chainTxData = ChainTxData{
-            // Data as of block d17d161d15ab4cd982bc3789cf44c257cadd2aa9975e8ea0fd599c098c27dc8a (height 60000).
+            // Data as of block 0xffcd62ddf782a04e1f9b51c537b5e080ee0f99030803465eecaeb653c41c01fb (height 100000).
             // Tx estimate based on average of year 2022 (~40k transactions per day)
-            1641395055, // * UNIX timestamp of last checkpoint block
-            68000,   // * total number of transactions between genesis and last checkpoint
+            1643853880, // * UNIX timestamp of last checkpoint block
+            100800,   // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
-            0.05        // * estimated number of transactions per second after checkpoint
+            0.2        // * estimated number of transactions per second after checkpoint
         };
     }
 };
