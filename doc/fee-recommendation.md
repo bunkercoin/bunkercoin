@@ -1,7 +1,7 @@
 Bunkercoin Fee Recommendation
 ----------------------------
 
-_last updated for 1.1.0_
+_last updated for 1.15.0
 
 The Bunkercoin chain has a relatively low block interval, 1 megabyte blockspace
 and aims to provide a cheap means for people to transact. Therefore, the biggest

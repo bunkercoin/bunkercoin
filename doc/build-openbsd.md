@@ -2,6 +2,8 @@ OpenBSD build guide
 ======================
 
 ***NOTE: This documentation is outdated and needs to be updated***
+***No Bunkercoin Developers can test the OpenBSD build! Try at your own risk..***
+
 
 (updated for OpenBSD 6.0)
 

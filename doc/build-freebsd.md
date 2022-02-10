@@ -1,8 +1,7 @@
 Building on FreeBSD
 --------------------
 
-**Last tested with:** 1.14.5-dev (as of 18dbe32)
-**Tested on:** FreeBSD 11.4
+**No Bunkercoin Developers can test the FreeBSD build! Try at your own risk..**
 
 Clang is installed by default as `cc` compiler, this makes it easier to get
 started than on other distros. Installing dependencies:

@@ -1,4 +1,4 @@
-### Building dogecoin-qt 1.14 on modern macs. ###
+### Building bunkercoin-qt 1.15 on modern macs. ###
 
 Note that this requires changes made by michilumin on the 1.14-dev branch as well as some changes to BDB.
 
@@ -6,11 +6,11 @@ Tested on OSX 10.11 El Capitan, 10.13 High Sierra and 11.1 Big Sur.
 
 **Paper wallet printing support seems to work fine through this method as well.**
 
-### Clone dogecoin locally, or check it out, etc. ###
+### Clone Bunkercoin locally, or check it out, etc. ###
 
 For this purpose, just indicating the 1.14-branding branch in my repo.
 
-	$git clone -b 1.14-branding --single-branch https://github.com/michilumin/dogecoin.git
+	$git clone -b 1.15-branding --single-branch https://github.com/michilumin/bunkercoin.git
 
 ### Set up OSX basic build dependencies. ##
 
@@ -76,9 +76,9 @@ Build BDB 5.3.28
     $cd /usr/local/include 
     $ln -s ../opt/openssl/include/openssl 
 
-### Go back to your Dogecoin repo ###
+### Go back to your Bunkercoin repo ###
 
-    $cd ~/dogecoin
+    $cd ~/bunkercoin
     $./autogen.sh
     $./configure --with-gui=qt5 --with-qrcode=yes
     $make
@@ -91,7 +91,7 @@ Go have another beverage.
 
 Run it.
 
-	$/usr/local/bin/dogecoin-qt
+	$/usr/local/bin/bunkercoin-qt
 
 
 
