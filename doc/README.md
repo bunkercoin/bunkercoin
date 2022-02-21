@@ -1,4 +1,4 @@
-Bunkercoin Core 1.1.0
+Bunkercoin Core 1.15.1
 =====================
 
 Development
