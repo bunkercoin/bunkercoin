@@ -102,7 +102,7 @@
         <translation>&amp;அனுப்பு</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;பெறு</translation>
     </message>
     <message>

@@ -178,7 +178,7 @@
         <translation>&amp;Envía</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>y recibir</translation>
     </message>
     <message>

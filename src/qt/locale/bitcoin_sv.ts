@@ -375,7 +375,7 @@ Var vänlig och försök igen.</translation>
         <translation>&amp;Skicka</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Ta emot</translation>
     </message>
     <message>

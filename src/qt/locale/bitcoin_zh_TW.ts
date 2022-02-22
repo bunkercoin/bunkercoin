@@ -374,7 +374,7 @@
         <translation>付款</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>收款</translation>
     </message>
     <message>

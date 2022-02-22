@@ -286,7 +286,7 @@
         <translation>&amp;Send</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Motta</translation>
     </message>
     <message>

@@ -202,7 +202,7 @@
         <translation>&amp;Lähetä</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Vastaanota</translation>
     </message>
     <message>

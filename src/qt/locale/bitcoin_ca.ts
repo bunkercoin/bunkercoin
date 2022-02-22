@@ -370,7 +370,7 @@
         <translation>&amp;Envia</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Rep</translation>
     </message>
     <message>

@@ -399,7 +399,7 @@
         <translation>发送(&amp;S)</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>接收(&amp;R)</translation>
     </message>
     <message>

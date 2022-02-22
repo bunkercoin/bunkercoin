@@ -158,7 +158,7 @@
         <translation>&amp;Испрати</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Прими</translation>
     </message>
     <message>

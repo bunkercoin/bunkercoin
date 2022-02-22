@@ -411,7 +411,7 @@
         <translation>보내기(&amp;S)</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>받기(&amp;R)</translation>
     </message>
     <message>

@@ -190,7 +190,7 @@
         <translation>&amp;Siųsti</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Gauti</translation>
     </message>
     <message>

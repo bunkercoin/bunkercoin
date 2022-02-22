@@ -403,7 +403,7 @@
         <translation>&amp;Gönder</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Al</translation>
     </message>
     <message>

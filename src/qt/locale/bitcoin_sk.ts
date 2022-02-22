@@ -374,7 +374,7 @@
         <translation>&amp;Odoslať</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Prijať</translation>
     </message>
     <message>

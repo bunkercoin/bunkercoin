@@ -182,7 +182,7 @@
         <translation>&amp;Жўнатиш</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Қабул қилиш</translation>
     </message>
     <message>

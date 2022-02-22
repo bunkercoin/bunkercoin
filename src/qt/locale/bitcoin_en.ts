@@ -376,8 +376,8 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>&amp;Much Receive</source>
-        <translation type="unfinished">&amp;Much Receive</translation>
+        <source>&amp;Receive</source>
+        <translation type="unfinished">&amp;Receive</translation>
     </message>
     <message>
         <location line="+1"/>

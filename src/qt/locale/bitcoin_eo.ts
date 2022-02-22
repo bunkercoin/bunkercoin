@@ -250,7 +250,7 @@
         <translation>&amp;Sendi</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Ricevi</translation>
     </message>
     <message>

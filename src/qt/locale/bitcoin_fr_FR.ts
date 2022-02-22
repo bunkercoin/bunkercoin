@@ -254,7 +254,7 @@
         <translation>&amp;Envoyer</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Réception</translation>
     </message>
     <message>

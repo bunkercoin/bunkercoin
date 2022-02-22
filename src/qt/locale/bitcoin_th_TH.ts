@@ -214,7 +214,7 @@
         <translation>&amp;ส่ง</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;รับ</translation>
     </message>
     <message>

@@ -326,7 +326,7 @@
         <translation>&amp;Saada</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Võta vastu</translation>
     </message>
     <message>

@@ -403,7 +403,7 @@
         <translation>送金 (&amp;S)</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>入金 (&amp;R)</translation>
     </message>
     <message>

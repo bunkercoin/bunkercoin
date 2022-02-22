@@ -295,7 +295,7 @@
         <translation>Kirim koin ke alamat Bunkercoin</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Terima Banget</translation>
     </message>
     <message>

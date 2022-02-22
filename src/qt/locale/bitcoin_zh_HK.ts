@@ -346,7 +346,7 @@
         <translation>付款 &amp;S</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>收款 &amp;R</translation>
     </message>
     <message>

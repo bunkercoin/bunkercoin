@@ -82,7 +82,7 @@
         <translation>Жіберу</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>Алу</translation>
     </message>
     <message>

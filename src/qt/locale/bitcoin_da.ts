@@ -374,7 +374,7 @@
         <translation>&amp;Send</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Modtag</translation>
     </message>
     <message>

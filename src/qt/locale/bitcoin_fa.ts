@@ -334,7 +334,7 @@
         <translation>&amp;ارسال</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;دریافت</translation>
     </message>
     <message>

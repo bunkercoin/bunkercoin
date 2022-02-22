@@ -354,7 +354,7 @@
         <translation>&amp;Изпращане</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Получаване</translation>
     </message>
     <message>

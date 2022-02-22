@@ -210,7 +210,7 @@
         <translation>&amp;Pošalji</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>Pri&amp;mi</translation>
     </message>
     <message>

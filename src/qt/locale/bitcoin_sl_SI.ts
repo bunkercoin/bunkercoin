@@ -190,7 +190,7 @@
         <translation>&amp;Pošlji</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>P&amp;rejmi</translation>
     </message>
     <message>
