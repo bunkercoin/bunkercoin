@@ -130,7 +130,7 @@
         <translation>Usklađivanje sa mrežom...</translation>
     </message>
     <message>
-        <source>&amp;Wow</source>
+        <source>&amp;Wallet</source>
         <translation>&amp;Pregled</translation>
     </message>
     <message>
@@ -146,11 +146,11 @@
         <translation>&amp;Izmeni pristupnu frazu...</translation>
     </message>
     <message>
-        <source>&amp;Such sending addresses...</source>
+        <source>&amp;Sending Addresses...</source>
         <translation>&amp;Slanje adresa...</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation>&amp;Primanje adresa...</translation>
     </message>
     <message>
@@ -158,27 +158,27 @@
         <translation>Otvori &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Dogecoin address</source>
-        <translation>Pošalji novčiće na Dogecoin adresu</translation>
+        <source>Send coins to a Bunkercoin address</source>
+        <translation>Pošalji novčiće na Bunkercoin adresu</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Proveri poruku...</translation>
     </message>
     <message>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Bunkercoin</source>
+        <translation>Bunkercoin</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Novčanik</translation>
     </message>
     <message>
-        <source>&amp;Such Send</source>
+        <source>&amp;Send</source>
         <translation>&amp;Pošalji</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Primi</translation>
     </message>
     <message>
@@ -406,8 +406,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Dogecoin Core</source>
-        <translation>Dogecoin Core</translation>
+        <source>Bunkercoin Core</source>
+        <translation>Bunkercoin Core</translation>
     </message>
     <message>
         <source>Information</source>

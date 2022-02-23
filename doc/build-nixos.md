@@ -5,7 +5,7 @@ of the latest changes on NixOS.
 
 Clone and enter the repo:
 
-    $ git clone https://github.com/bunkercoin-project/bunkercoin
+    $ git clone https://github.com/bunkercoin/bunkercoin
     $ cd bunkercoin
 
 Enter the `nix-shell` environment with all the Bunkercoin dependencies present:

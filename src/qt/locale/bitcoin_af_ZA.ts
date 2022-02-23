@@ -42,11 +42,11 @@
         <translation>K&amp;ies</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>Stuur adresse</translation>
     </message>
     <message>
-        <source>Much receiving addresses</source>
+        <source>Receiving Addresses</source>
         <translation>Ontvang adresse</translation>
     </message>
     <message>
@@ -182,7 +182,7 @@
         <translation>Sinchroniseer met die netwerk ...</translation>
     </message>
     <message>
-        <source>&amp;Wow</source>
+        <source>&amp;Wallet</source>
         <translation>&amp;Oorsig</translation>
     </message>
     <message>
@@ -214,8 +214,8 @@
         <translation>&amp;Opsies</translation>
     </message>
     <message>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Bunkercoin</source>
+        <translation>Bunkercoin</translation>
     </message>
     <message>
         <source>Wallet</source>

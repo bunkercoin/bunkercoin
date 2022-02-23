@@ -7,11 +7,11 @@
 
 #include "policy/policy.h"
 #include "arith_uint256.h"
-#include "dogecoin.h"
+#include "bunkercoin.h"
 #include "txmempool.h"
 #include "util.h"
 #include "validation.h"
-#include "dogecoin-fees.h"
+#include "bunkercoin-fees.h"
 
 int static generateMTRandom(unsigned int s, int range)
 {

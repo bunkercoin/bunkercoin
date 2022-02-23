@@ -130,11 +130,11 @@
         <translation>&amp;Schimbă parola...</translation>
     </message>
     <message>
-        <source>&amp;Such sending addresses...</source>
+        <source>&amp;Sending Addresses...</source>
         <translation>&amp;Trimite adresele...</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation>&amp;Primește adresele...</translation>
     </message>
     <message>
@@ -142,8 +142,8 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Dogecoin address</source>
-        <translation>Trimite monedele către o adresă Dogecoin</translation>
+        <source>Send coins to a Bunkercoin address</source>
+        <translation>Trimite monedele către o adresă Bunkercoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,19 +166,19 @@
         <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Bunkercoin</source>
+        <translation>Bunkercoin</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Portofel</translation>
     </message>
     <message>
-        <source>&amp;Such Send</source>
+        <source>&amp;Send</source>
         <translation>&amp;Trimite</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Primește</translation>
     </message>
     <message>
@@ -194,12 +194,12 @@
         <translation>Criptează cheile private care aparțin portofelului tău.</translation>
     </message>
     <message>
-        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
-        <translation>Semnează mesajele cu adresa ta de Dogecoin pentru a face dovada că îți aparțin.</translation>
+        <source>Sign messages with your Bunkercoin addresses to prove you own them</source>
+        <translation>Semnează mesajele cu adresa ta de Bunkercoin pentru a face dovada că îți aparțin.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
-        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Dogecoin specificată.</translation>
+        <source>Verify messages to ensure they were signed with specified Bunkercoin addresses</source>
+        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Bunkercoin specificată.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -214,12 +214,12 @@
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
-        <translation>Cerere plată (generează coduri QR și dogecoin: URIs)</translation>
+        <source>Request payments (generates QR codes and bunkercoin: URIs)</source>
+        <translation>Cerere plată (generează coduri QR și bunkercoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a dogecoin: URI or payment request</source>
-        <translation>Deschide un dogecoin: URI sau cerere de plată</translation>
+        <source>Open a bunkercoin: URI or payment request</source>
+        <translation>Deschide un bunkercoin: URI sau cerere de plată</translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -748,8 +748,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Dogecoin Core</source>
-        <translation>Dogecoin Core</translation>
+        <source>Bunkercoin Core</source>
+        <translation>Bunkercoin Core</translation>
     </message>
     <message>
         <source>Information</source>

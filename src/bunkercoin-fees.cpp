@@ -7,11 +7,11 @@
 
 #include "policy/policy.h"
 #include "arith_uint256.h"
-#include "dogecoin.h"
+#include "bunkercoin.h"
 #include "txmempool.h"
 #include "util.h"
 #include "validation.h"
-#include "dogecoin-fees.h"
+#include "bunkercoin-fees.h"
 #include "amount.h"
 #ifdef ENABLE_WALLET
 #include "wallet/wallet.h"
@@ -19,7 +19,7 @@
 
 #ifdef ENABLE_WALLET
 
-CFeeRate GetDogecoinFeeRate(int priority)
+CFeeRate GetBunkercoinFeeRate(int priority)
 {
     switch(priority)
     {
@@ -40,7 +40,7 @@ CFeeRate GetDogecoinFeeRate(int priority)
     return CWallet::minTxFee;
 }
 
-const std::string GetDogecoinPriorityLabel(int priority)
+const std::string GetBunkercoinPriorityLabel(int priority)
 {
     switch(priority)
     {

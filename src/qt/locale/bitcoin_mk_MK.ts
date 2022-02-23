@@ -74,7 +74,7 @@
         <translation>Синхронизација со мрежата...</translation>
     </message>
     <message>
-        <source>&amp;Wow</source>
+        <source>&amp;Wallet</source>
         <translation>&amp;Преглед</translation>
     </message>
     <message>
@@ -122,11 +122,11 @@
         <translation>&amp;Измени Тајна Фраза...</translation>
     </message>
     <message>
-        <source>&amp;Such sending addresses...</source>
+        <source>&amp;Sending Addresses...</source>
         <translation>&amp;Адреси за Испраќање...</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation>&amp;Адреси за Примање...</translation>
     </message>
     <message>
@@ -138,7 +138,7 @@
         <translation>Повторно индексирање на блокови од дискот...</translation>
     </message>
     <message>
-        <source>Send coins to a Dogecoin address</source>
+        <source>Send coins to a Bunkercoin address</source>
         <translation>Испрати биткоини на Биткоин адреса</translation>
     </message>
     <message>
@@ -146,7 +146,7 @@
         <translation>&amp;Потврди порака...</translation>
     </message>
     <message>
-        <source>Dogecoin</source>
+        <source>Bunkercoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -154,11 +154,11 @@
         <translation>Паричник</translation>
     </message>
     <message>
-        <source>&amp;Such Send</source>
+        <source>&amp;Send</source>
         <translation>&amp;Испрати</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Прими</translation>
     </message>
     <message>
@@ -578,7 +578,7 @@
         <translation>Опции:</translation>
     </message>
     <message>
-        <source>Dogecoin Core</source>
+        <source>Bunkercoin Core</source>
         <translation>Биткоин Core</translation>
     </message>
     <message>

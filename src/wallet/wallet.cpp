@@ -8,8 +8,8 @@
 #include "base58.h"
 #include "checkpoints.h"
 #include "chain.h"
-#include "dogecoin.h"
-#include "dogecoin-fees.h"
+#include "bunkercoin.h"
+#include "bunkercoin-fees.h"
 #include "wallet/coincontrol.h"
 #include "consensus/consensus.h"
 #include "consensus/validation.h"
@@ -2935,7 +2935,7 @@ CAmount CWallet::GetDogecoinPriorityFee(const CMutableTransaction& tx, unsigned 
     CAmount nFeeNeeded = targetFee;
     // User didn't set: use -txconfirmtarget to estimate...
     if (nFeeNeeded == 0) {
-        nFeeNeeded = GetDogecoinFeeRate(nPriority).GetFee(nTxBytes);
+        nFeeNeeded = GetBunkercoinFeeRate(nPriority).GetFee(nTxBytes);
     }
     // prevent user from paying a fee below minRelayTxFee or minTxFee
     // Dogecoin: as we're adapting minTxFee to never be higher than

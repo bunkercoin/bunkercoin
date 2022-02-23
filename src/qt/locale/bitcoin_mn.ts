@@ -114,7 +114,7 @@
         <translation>&amp;Нууц Үгийг Солих...</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation>Хүлээн авах хаяг</translation>
     </message>
     <message>
@@ -126,7 +126,7 @@
         <translation>Оношилгоо ба засварын консолыг онгойлго</translation>
     </message>
     <message>
-        <source>Dogecoin</source>
+        <source>Bunkercoin</source>
         <translation>Биткойн</translation>
     </message>
     <message>

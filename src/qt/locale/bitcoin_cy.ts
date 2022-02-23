@@ -58,7 +58,7 @@
         <translation>Cysoni â'r rhwydwaith...</translation>
     </message>
     <message>
-        <source>&amp;Wow</source>
+        <source>&amp;Wallet</source>
         <translation>&amp;Trosolwg</translation>
     </message>
     <message>
@@ -98,11 +98,11 @@
         <translation>&amp;Newid cyfrinymadrodd...</translation>
     </message>
     <message>
-        <source>&amp;Such sending addresses...</source>
+        <source>&amp;Sending Addresses...</source>
         <translation>&amp;Cyfeiriadau anfon...</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation>&amp;Cyfeiriadau derbyn...</translation>
     </message>
     <message>
@@ -114,19 +114,19 @@
         <translation>Newid y cyfrinymadrodd a ddefnyddiwyd ar gyfer amgryptio'r waled</translation>
     </message>
     <message>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Bunkercoin</source>
+        <translation>Bunkercoin</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Waled</translation>
     </message>
     <message>
-        <source>&amp;Such Send</source>
+        <source>&amp;Send</source>
         <translation>&amp;Anfon</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Derbyn</translation>
     </message>
     <message>
@@ -484,8 +484,8 @@
         <translation>Opsiynau:</translation>
     </message>
     <message>
-        <source>Dogecoin Core</source>
-        <translation>Craidd Dogecoin</translation>
+        <source>Bunkercoin Core</source>
+        <translation>Craidd Bunkercoin</translation>
     </message>
     <message>
         <source>Information</source>

@@ -40,7 +40,7 @@ Other
 
 ### Info
 * Designer: Jonas Schnelli, Bitboy, Stephen Hutchings, Marco Falke
-* Bunkercoin Icon: Based on the original Bunkercoin logo from Christine Ricks
+* Bunkercoin Icon: Based on the original Bunkercoin logo from Furimm
 * Network connection icon: Inspired by flow-merge.svg from Stephen Hutchings
 * Some icons are based on Stephan Hutchings Typicons
 * License: MIT

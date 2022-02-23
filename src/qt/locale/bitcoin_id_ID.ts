@@ -91,16 +91,16 @@
         <translation>&amp;Pilih</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>Alamat-alamat pengirim</translation>
     </message>
     <message>
-        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Berikut merupakan alamat - alamat Dogecoinmu yang berguna untuk mengirimkan pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirimkan koin.</translation>
+        <source>These are your Bunkercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Berikut merupakan alamat - alamat Bunkercoinmu yang berguna untuk mengirimkan pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirimkan koin.</translation>
     </message>
     <message>
-        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Berikut merupakan alamat - alamat Dogecoinmu yang berguna untuk menerima pembayaran. Dianjurkan untuk menggunakan alamat penerima yang baru setiap kali melakukan transaksi.</translation>
+        <source>These are your Bunkercoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Berikut merupakan alamat - alamat Bunkercoinmu yang berguna untuk menerima pembayaran. Dianjurkan untuk menggunakan alamat penerima yang baru setiap kali melakukan transaksi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -131,7 +131,7 @@
         <translation>Terjadi kesalahan saat berusaha untuk menyimpan alamat ke dalam daftar %1. Mohon ulangi kembali.</translation>
     </message>
     <message>
-        <source>Much receiving addresses</source>
+        <source>Receiving Addresses</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -217,8 +217,8 @@
         <translation>Dompet terenkripsi</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dogecoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 sekarang akan tertutup untuk menyelesaikan proses enkripsi. Ingatlah bahwa mengenkripsi dompetmu tidak dapat sepenuhnya melindungi dari pencurian dogecoin oleh malware yang menginfeksi komputer Anda.</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bunkercoins from being stolen by malware infecting your computer.</source>
+        <translation>%1 sekarang akan tertutup untuk menyelesaikan proses enkripsi. Ingatlah bahwa mengenkripsi dompetmu tidak dapat sepenuhnya melindungi dari pencurian bunkercoin oleh malware yang menginfeksi komputer Anda.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -279,28 +279,28 @@
         <translation>Sinkronisasi dengan jaringan...</translation>
     </message>
     <message>
-        <source>&amp;Wow</source>
-        <translation>&amp;Wow</translation>
+        <source>&amp;Wallet</source>
+        <translation>&amp;Wallet</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
         <translation>Tampilkan gambaran umum dompet Anda</translation>
     </message>
     <message>
-        <source>&amp;Such Send</source>
+        <source>&amp;Send</source>
         <translation>&amp;Kirim Aja</translation>
     </message>
     <message>
-        <source>Send coins to a Dogecoin address</source>
-        <translation>Kirim koin ke alamat Dogecoin</translation>
+        <source>Send coins to a Bunkercoin address</source>
+        <translation>Kirim koin ke alamat Bunkercoin</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Terima Banget</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
-        <translation>Minta pembayaran (bikin kode QR dan dogecoin: URI)</translation>
+        <source>Request payments (generates QR codes and bunkercoin: URIs)</source>
+        <translation>Minta pembayaran (bikin kode QR dan bunkercoin: URI)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -379,12 +379,12 @@
         <translation>Tandatangani &amp;pesan...</translation>
     </message>
     <message>
-        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
-        <translation>Tanda tangani sebuah pesan menggunakan alamat Dogecoinmu untuk membuktikan bahwa kamu adalah benar-benar pemilik alamat tersebut</translation>
+        <source>Sign messages with your Bunkercoin addresses to prove you own them</source>
+        <translation>Tanda tangani sebuah pesan menggunakan alamat Bunkercoinmu untuk membuktikan bahwa kamu adalah benar-benar pemilik alamat tersebut</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
-        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditandatangani oleh suatu alamat Dogecoin tertentu</translation>
+        <source>Verify messages to ensure they were signed with specified Bunkercoin addresses</source>
+        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditandatangani oleh suatu alamat Bunkercoin tertentu</translation>
     </message>
     <message>
         <source>Print paper wallets</source>
@@ -399,11 +399,11 @@
         <translation>Buka konsol debug dan diagnosa</translation>
     </message>
     <message>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Bunkercoin</source>
+        <translation>Bunkercoin</translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation>&amp;Alamat-alamat untuk menerima...</translation>
     </message>
     <message>
@@ -415,8 +415,8 @@
         <translation>Buka &amp;URI</translation>
     </message>
     <message>
-        <source>Open a dogecoin: URI or payment request</source>
-        <translation>Buka URI dogecoin: atau permintaan pembayaran</translation>
+        <source>Open a bunkercoin: URI or payment request</source>
+        <translation>Buka URI bunkercoin: atau permintaan pembayaran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -443,9 +443,9 @@
         <translation>%1 klien</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Dogecoin network</source>
+        <source>%n active connection(s) to Bunkercoin network</source>
         <translation>
-            <numerusform>%n koneksi aktif ke jaringan Dogecoin</numerusform>
+            <numerusform>%n koneksi aktif ke jaringan Bunkercoin</numerusform>
         </translation>
     </message>
     <message>
@@ -515,8 +515,8 @@
         <translation>Informasi</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Dogecoin command-line options</source>
-        <translation>Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah Dogecoin yang memungkinkan</translation>
+        <source>Show the %1 help message to get a list with possible Bunkercoin command-line options</source>
+        <translation>Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah Bunkercoin yang memungkinkan</translation>
     </message>
     <message>
         <source>Date: %1
@@ -573,8 +573,8 @@
         <translation>Dompet &lt;b&gt;terenkripsi&lt;/b&gt; dan saat ini &lt;b&gt;terkunci&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
-        <translation>Terjadi kesalahan fatal. Dogecoin tidak bisa berlanjut dan akan berhenti.</translation>
+        <source>A fatal error occurred. Bunkercoin can no longer continue safely and will quit.</source>
+        <translation>Terjadi kesalahan fatal. Bunkercoin tidak bisa berlanjut dan akan berhenti.</translation>
     </message>
     <message>
         <source>Node</source>
@@ -593,7 +593,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Such sending addresses...</source>
+        <source>&amp;Sending Addresses...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -605,7 +605,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import a Dogecoin private key</source>
+        <source>Import a Bunkercoin private key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -810,8 +810,8 @@
         <translation>Ubah alamat pengiriman</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
-        <translation>Kamu memasukan alamat &quot;%1&quot; yang bukan alamat Dogecoin yang valid.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Bunkercoin address.</source>
+        <translation>Kamu memasukan alamat &quot;%1&quot; yang bukan alamat Bunkercoin yang valid.</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
@@ -982,8 +982,8 @@
         <translation>Berhubung ini pertama kali program dijalankan, kamu bisa memilih dimana %1 akan menyimpan datanya.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Dogecoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 akan mengunduh dan menyimpan salinan dari rantai blok Dogecoin. Sedikitnya %2GB akan disimpan pada direktori ini, dan akan bertambah secara berkala. Dompet juga akan disimpan dalam direktori ini.</translation>
+        <source>%1 will download and store a copy of the Bunkercoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 akan mengunduh dan menyimpan salinan dari rantai blok Bunkercoin. Sedikitnya %2GB akan disimpan pada direktori ini, dan akan bertambah secara berkala. Dompet juga akan disimpan dalam direktori ini.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1025,11 +1025,11 @@
         <translation>Formulir</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the dogecoin network, as detailed below.</source>
-        <translation>Transaksi terakhir mungkin belum diperlihatkan, karena mungkin saja saldo dompet kamu salah. Informasi ini akan menjadi benar setelah dompetmu tersinkronisasi dengan jaringa dogecoin, seperti tertampil dibawah.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bunkercoin network, as detailed below.</source>
+        <translation>Transaksi terakhir mungkin belum diperlihatkan, karena mungkin saja saldo dompet kamu salah. Informasi ini akan menjadi benar setelah dompetmu tersinkronisasi dengan jaringa bunkercoin, seperti tertampil dibawah.</translation>
     </message>
     <message>
-        <source>Attempting to spend dogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend bunkercoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Mencoba untuk menggunakan koin-koin yang masuk kedalam kategori &quot;transaksi yang belum ditampilkan&quot; tidak akan diterima oleh jaringan.</translation>
     </message>
     <message>
@@ -1187,16 +1187,16 @@
         <translation>&amp;Perubahan saldo untuk transaksi yang belum dikonfirmasi</translation>
     </message>
     <message>
-        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Otomatis membuka port klien Dogecoin di router. Hanya berjalan apabila router kami mendukung UPnP dan sudah diaktifkan.</translation>
+        <source>Automatically open the Bunkercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Otomatis membuka port klien Bunkercoin di router. Hanya berjalan apabila router kami mendukung UPnP dan sudah diaktifkan.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Petakan port dengan &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Dogecoin network through a SOCKS5 proxy.</source>
-        <translation>Hubungkan ke jaringan Dogecoin melalui proxy SOCKS5.</translation>
+        <source>Connect to the Bunkercoin network through a SOCKS5 proxy.</source>
+        <translation>Hubungkan ke jaringan Bunkercoin melalui proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1235,8 +1235,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Dogecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Terhubung ke jaringan Dogecoin melalui proxy SOCKS5 yang terpisah untuk layanan tersembunyi Tor.</translation>
+        <source>Connect to the Bunkercoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Terhubung ke jaringan Bunkercoin melalui proxy SOCKS5 yang terpisah untuk layanan tersembunyi Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1334,8 +1334,8 @@
         <translation>Formulir</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompetmu secara otomatis mensinkronisasi dengan jaringan Dogecoin ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bunkercoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompetmu secara otomatis mensinkronisasi dengan jaringan Bunkercoin ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1442,11 +1442,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>To see ongoing development and contribute, checkout Dogecoin repository on GitHub!</source>
+        <source>To see ongoing development and contribute, checkout Bunkercoin repository on GitHub!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Services that claim to double your dogecoins are always ponzi schemes</source>
+        <source>Services that claim to double your bunkercoins are always ponzi schemes</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1632,8 +1632,8 @@ p, li { white-space: pre-wrap; }
         <translation>Permintaan pembayaran gagal</translation>
     </message>
     <message>
-        <source>Cannot start dogecoin: click-to-pay handler</source>
-        <translation>Tidak bisa memulai dogecoin: penanganan ketuk-untuk-bayar</translation>
+        <source>Cannot start bunkercoin: click-to-pay handler</source>
+        <translation>Tidak bisa memulai bunkercoin: penanganan ketuk-untuk-bayar</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1648,8 +1648,8 @@ p, li { white-space: pre-wrap; }
         <translation>Alamat pembayaran tidak valid %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
-        <translation>URI tidak bisa diterjemahkan! Bisa disebabkan karena alamat Dogecoin yang salah atau parameter URI yang tidak benar.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Bunkercoin address or malformed URI parameters.</source>
+        <translation>URI tidak bisa diterjemahkan! Bisa disebabkan karena alamat Bunkercoin yang salah atau parameter URI yang tidak benar.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1777,8 +1777,8 @@ p, li { white-space: pre-wrap; }
         <translation>Nilai</translation>
     </message>
     <message>
-        <source>Enter a Dogecoin address (e.g. %1)</source>
-        <translation>Masukkan alamat Dogecoin (contoh. %1)</translation>
+        <source>Enter a Bunkercoin address (e.g. %1)</source>
+        <translation>Masukkan alamat Bunkercoin (contoh. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2265,8 +2265,8 @@ p, li { white-space: pre-wrap; }
         <translation>Gunakan lagi alamat penerima yang ada (tidak disarankan)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
-        <translation>Pesan tidak wajib yang dilampirkan dalam permintaan pembayaran, yang akan ditampilkan ketika permintaan telah dibuka. Catatan: Pesan ini tidak akan dikirim bersama dengan pembayaran melalui jaringan Dogecoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bunkercoin network.</source>
+        <translation>Pesan tidak wajib yang dilampirkan dalam permintaan pembayaran, yang akan ditampilkan ketika permintaan telah dibuka. Catatan: Pesan ini tidak akan dikirim bersama dengan pembayaran melalui jaringan Bunkercoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2526,8 +2526,8 @@ p, li { white-space: pre-wrap; }
         <translation>Dust:</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for dogecoin transactions than the network can process.</source>
-        <translation>Boleh saja membayar hanya biaya minimum selama volume transaksi lebih sedikit daripada ruang di blok yang tersedia. Tetapi ketahuilah bahwa ini bisa menyebabkan transaksimu tidak pernah terkonfirmasi kalau permintaan untuk transaksi terus meningkat melebihi kapasitas jaringan dogecoin.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bunkercoin transactions than the network can process.</source>
+        <translation>Boleh saja membayar hanya biaya minimum selama volume transaksi lebih sedikit daripada ruang di blok yang tersedia. Tetapi ketahuilah bahwa ini bisa menyebabkan transaksimu tidak pernah terkonfirmasi kalau permintaan untuk transaksi terus meningkat melebihi kapasitas jaringan bunkercoin.</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -2638,8 +2638,8 @@ p, li { white-space: pre-wrap; }
         <translation>Cuma membayar biaya yang dibutuhkan dari %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Dogecoin address</source>
-        <translation>Peringatan: Alamat Dogecoin tidak valid</translation>
+        <source>Warning: Invalid Bunkercoin address</source>
+        <translation>Peringatan: Alamat Bunkercoin tidak valid</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2701,8 +2701,8 @@ p, li { white-space: pre-wrap; }
         <translation>Ini adalah pembayaran normal.</translation>
     </message>
     <message>
-        <source>The Dogecoin address to send the payment to</source>
-        <translation>Alamat Dogecoin yang akan dikirimkan bayaran</translation>
+        <source>The Bunkercoin address to send the payment to</source>
+        <translation>Alamat Bunkercoin yang akan dikirimkan bayaran</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2721,8 +2721,8 @@ p, li { white-space: pre-wrap; }
         <translation>Hapus masukan ini</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less dogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Biaya tersebut akan dipotong dari jumlah yang dikirimkan. Penerima akan menerima dogecoin lebih sedikit daripada yang kamu masukkan diisian jumlah. Jika beberapa penerima dipilih sekaligus, biayanya akan dibagi rata.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less bunkercoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Biaya tersebut akan dipotong dari jumlah yang dikirimkan. Penerima akan menerima bunkercoin lebih sedikit daripada yang kamu masukkan diisian jumlah. Jika beberapa penerima dipilih sekaligus, biayanya akan dibagi rata.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2745,8 +2745,8 @@ p, li { white-space: pre-wrap; }
         <translation>Masukkan label untuk alamat ini agar dimasukan ke dalam daftar alamat yang pernah digunakan</translation>
     </message>
     <message>
-        <source>A message that was attached to the dogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
-        <translation>Pesan yang dilampirkan ke dogecoin: URI yang akan disimpan dengan transaksi sebagai referensi kamu. Catatan: Pesan ini tidak akan dikirim bersama dengan pembayaran melalui jaringan Dogecoin.</translation>
+        <source>A message that was attached to the bunkercoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bunkercoin network.</source>
+        <translation>Pesan yang dilampirkan ke bunkercoin: URI yang akan disimpan dengan transaksi sebagai referensi kamu. Catatan: Pesan ini tidak akan dikirim bersama dengan pembayaran melalui jaringan Bunkercoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2790,16 +2790,16 @@ p, li { white-space: pre-wrap; }
         <translation>&amp;Tandakan Pesan</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive dogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Kamu bisa menandatangani pesan / perjanjian dengan alamat tujuan untuk membuktikan bahwa kamu dapat menerima dogecoin. Berhati-hatilah untuk tidak menandatangani apa pun yang samar atau acak, karena serangan phishing mungkin mencoba menipumy agar menyerahkan identitas. Tetap wasapada dan hanya tanda tangani pernyataan yang detail dan kamu pahami. </translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive bunkercoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Kamu bisa menandatangani pesan / perjanjian dengan alamat tujuan untuk membuktikan bahwa kamu dapat menerima bunkercoin. Berhati-hatilah untuk tidak menandatangani apa pun yang samar atau acak, karena serangan phishing mungkin mencoba menipumy agar menyerahkan identitas. Tetap wasapada dan hanya tanda tangani pernyataan yang detail dan kamu pahami. </translation>
     </message>
     <message>
         <source>Choose previously used address</source>
         <translation>Pilih alamat yang digunakan sebelumnya</translation>
     </message>
     <message>
-        <source>The Dogecoin address to sign the message with</source>
-        <translation>Alamat Dogecoin untuk menanda tangani pesan dengan</translation>
+        <source>The Bunkercoin address to sign the message with</source>
+        <translation>Alamat Bunkercoin untuk menanda tangani pesan dengan</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2826,8 +2826,8 @@ p, li { white-space: pre-wrap; }
         <translation>Salin tanda tangan terpilih ke sistem klipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dogecoin address</source>
-        <translation>Tandai pesan untuk menyetujui kamu pemilik alamat Dogecoin ini</translation>
+        <source>Sign the message to prove you own this Bunkercoin address</source>
+        <translation>Tandai pesan untuk menyetujui kamu pemilik alamat Bunkercoin ini</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2850,12 +2850,12 @@ p, li { white-space: pre-wrap; }
         <translation>Masukkan alamat penerima, pesan (pastikan menyalin jeda baris, spasi, tab, dll dengan tepat) dan tanda tangan di bawah ini untuk memverifikasi pesan. Berhati-hatilah untuk tidak membaca lebih banyak ke dalam tanda tangan daripada apa yang ada di pesan yang ditandatangani itu sendiri, untuk menghindari tertipu oleh serangan man-in-the-middle. Perhatikan bahwa ini hanya membuktikan bahwa pihak yang menandatangani menerima dengan alamat tersebut, tidak dapat membuktikan pengiriman transaksi apa pun!</translation>
     </message>
     <message>
-        <source>The Dogecoin address the message was signed with</source>
-        <translation>Alamat Dogecoin yang digunakan telah ditandatangani dengan</translation>
+        <source>The Bunkercoin address the message was signed with</source>
+        <translation>Alamat Bunkercoin yang digunakan telah ditandatangani dengan</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
-        <translation>Verifikasi pesan untuk memastikan telah ditandatangani dengan alamat Dogecoin</translation>
+        <source>Verify the message to ensure it was signed with the specified Bunkercoin address</source>
+        <translation>Verifikasi pesan untuk memastikan telah ditandatangani dengan alamat Bunkercoin</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3494,8 +3494,8 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Dogecoin Core</source>
-        <translation>Dogecoin Core</translation>
+        <source>Bunkercoin Core</source>
+        <translation>Bunkercoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -3826,7 +3826,7 @@ p, li { white-space: pre-wrap; }
         <translation>Gagal</translation>
     </message>
     <message>
-        <source>Bitcoin Core and Dogecoin Core</source>
+        <source>Bitcoin Core and Bunkercoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4450,7 +4450,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wow</source>
+        <source>Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

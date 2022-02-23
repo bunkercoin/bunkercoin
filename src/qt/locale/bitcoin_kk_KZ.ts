@@ -70,7 +70,7 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
-        <source>Dogecoin</source>
+        <source>Bunkercoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -78,11 +78,11 @@
         <translation>Әмиян</translation>
     </message>
     <message>
-        <source>&amp;Such Send</source>
+        <source>&amp;Send</source>
         <translation>Жіберу</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>Алу</translation>
     </message>
     <message>

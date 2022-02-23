@@ -80,31 +80,31 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Scegli l&apos;indirizzo a cui inviare dogecoin</translation>
+        <translation>Scegli l&apos;indirizzo a cui inviare bunkercoin</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Scegli l&apos;indirizzo con cui ricevere dogecoin</translation>
+        <translation>Scegli l&apos;indirizzo con cui ricevere bunkercoin</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
         <translation>Sc&amp;egli</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>Indirizzi d&apos;invio</translation>
     </message>
     <message>
-        <source>Much receiving addresses</source>
+        <source>Receiving Addresses</source>
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questo è un elenco di indirizzi dogecoin a cui puoi inviare pagamenti. Controlla sempre l&apos;importo e l&apos;indirizzo del beneficiario prima di inviare dogecoin.</translation>
+        <source>These are your Bunkercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questo è un elenco di indirizzi bunkercoin a cui puoi inviare pagamenti. Controlla sempre l&apos;importo e l&apos;indirizzo del beneficiario prima di inviare bunkercoin.</translation>
     </message>
     <message>
-        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono i tuoi indirizzi dogecoin che puoi usare per ricevere pagamenti. Si raccomanda di generare un nuovo indirizzo per ogni transazione.</translation>
+        <source>These are your Bunkercoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono i tuoi indirizzi bunkercoin che puoi usare per ricevere pagamenti. Si raccomanda di generare un nuovo indirizzo per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -206,7 +206,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOGECOINS&lt;/b&gt;!</source>
-        <translation>Attenzione: se si cifra il portamonete e si perde la passphrase &lt;b&gt;TUTTI I PROPRI Dogecoin ANDRANNO PERSI&lt;/b&gt;!</translation>
+        <translation>Attenzione: se si cifra il portamonete e si perde la passphrase &lt;b&gt;TUTTI I PROPRI Bunkercoin ANDRANNO PERSI&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -253,7 +253,7 @@
         <translation>Attenzione: è attivo il tasto blocco maiuscole !</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dogecoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bunkercoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -279,7 +279,7 @@
         <translation>Sincronizzazione con la rete in corso...</translation>
     </message>
     <message>
-        <source>&amp;Wow</source>
+        <source>&amp;Wallet</source>
         <translation>&amp;Sintesi</translation>
     </message>
     <message>
@@ -351,8 +351,8 @@
         <translation>Re-indicizzazione blocchi su disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Dogecoin address</source>
-        <translation>Invia monete ad un indirizzo dogecoin</translation>
+        <source>Send coins to a Bunkercoin address</source>
+        <translation>Invia monete ad un indirizzo bunkercoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -375,19 +375,19 @@
         <translation>&amp;Verifica messaggio...</translation>
     </message>
     <message>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Bunkercoin</source>
+        <translation>Bunkercoin</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Portamonete</translation>
     </message>
     <message>
-        <source>&amp;Such Send</source>
+        <source>&amp;Send</source>
         <translation>&amp;Invia</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive</source>
         <translation>&amp;Ricevi</translation>
     </message>
     <message>
@@ -403,12 +403,12 @@
         <translation>Cifra le chiavi private che appartengono al tuo portamonete</translation>
     </message>
     <message>
-        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
-        <translation>Firma i messaggi con il tuo indirizzo dogecoin per dimostrarne il possesso</translation>
+        <source>Sign messages with your Bunkercoin addresses to prove you own them</source>
+        <translation>Firma i messaggi con il tuo indirizzo bunkercoin per dimostrarne il possesso</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
-        <translation>Verifica i messaggi per accertare che siano stati firmati con gli indirizzi dogecoin specificati</translation>
+        <source>Verify messages to ensure they were signed with specified Bunkercoin addresses</source>
+        <translation>Verifica i messaggi per accertare che siano stati firmati con gli indirizzi bunkercoin specificati</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -427,8 +427,8 @@
         <translation>Barra degli strumenti</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e dogecoin: URI)</translation>
+        <source>Request payments (generates QR codes and bunkercoin: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e bunkercoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -439,7 +439,7 @@
         <translation>Mostra la lista degli indirizzi di ricezione utilizzati</translation>
     </message>
     <message>
-        <source>Open a dogecoin: URI or payment request</source>
+        <source>Open a bunkercoin: URI or payment request</source>
         <translation>Apri un URI o una richiesta di pagamento</translation>
     </message>
     <message>
@@ -447,10 +447,10 @@
         <translation>Opzioni della riga di &amp;comando</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Dogecoin network</source>
+        <source>%n active connection(s) to Bunkercoin network</source>
         <translation>
-            <numerusform>%n connessione attiva alla rete Dogecoin</numerusform>
-            <numerusform>%n connessioni attive alla rete Dogecoin</numerusform>
+            <numerusform>%n connessione attiva alla rete Bunkercoin</numerusform>
+            <numerusform>%n connessioni attive alla rete Bunkercoin</numerusform>
         </translation>
     </message>
     <message>
@@ -497,8 +497,8 @@
         <translation>Aggiornato</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Dogecoin command-line options</source>
-        <translation>Mostra il messaggio di aiuto di %1 per ottenere una lista di opzioni di comando per Dogecoin </translation>
+        <source>Show the %1 help message to get a list with possible Bunkercoin command-line options</source>
+        <translation>Mostra il messaggio di aiuto di %1 per ottenere una lista di opzioni di comando per Bunkercoin </translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -563,11 +563,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Such sending addresses...</source>
+        <source>&amp;Sending Addresses...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Much receiving addresses...</source>
+        <source>&amp;Receiving Addresses...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -575,7 +575,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import a Dogecoin private key</source>
+        <source>Import a Bunkercoin private key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -611,7 +611,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Bunkercoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -812,8 +812,8 @@
         <translation>Modifica indirizzo d&apos;invio</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
-        <translation>L&apos;indirizzo inserito &quot;%1&quot; non è un indirizzo dogecoin valido.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Bunkercoin address.</source>
+        <translation>L&apos;indirizzo inserito &quot;%1&quot; non è un indirizzo bunkercoin valido.</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
@@ -984,8 +984,8 @@
         <translation>Dato che questa è la prima volta che il programma viene lanciato, puoi scegliere dove %1 salverà i suoi dati.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Dogecoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 scaricherà e salverà una copia della Blockchain di Dogecoin. Saranno salvati almeno %2GB di dati in questo percorso e continueranno ad aumentare col tempo. Anche il portafoglio verrà salvato in questo percorso.</translation>
+        <source>%1 will download and store a copy of the Bunkercoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 scaricherà e salverà una copia della Blockchain di Bunkercoin. Saranno salvati almeno %2GB di dati in questo percorso e continueranno ad aumentare col tempo. Anche il portafoglio verrà salvato in questo percorso.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1049,11 +1049,11 @@
         <translation>Nascondi</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the dogecoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bunkercoin network, as detailed below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Attempting to spend dogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend bunkercoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1192,16 +1192,16 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation>&amp;Spendi resti non confermati</translation>
     </message>
     <message>
-        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Apri automaticamente la porta del client Dogecoin sul router. Il protocollo UPnP deve essere supportato da parte del router ed attivo.</translation>
+        <source>Automatically open the Bunkercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Apri automaticamente la porta del client Bunkercoin sul router. Il protocollo UPnP deve essere supportato da parte del router ed attivo.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mappa le porte tramite &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Dogecoin network through a SOCKS5 proxy.</source>
-        <translation>Connessione alla rete Dogecoin attraverso un proxy SOCKS5.</translation>
+        <source>Connect to the Bunkercoin network through a SOCKS5 proxy.</source>
+        <translation>Connessione alla rete Bunkercoin attraverso un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1240,8 +1240,8 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Dogecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Connette alla rete Dogecoin attraverso un proxy SOCKS5 separato per Tor.</translation>
+        <source>Connect to the Bunkercoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Connette alla rete Bunkercoin attraverso un proxy SOCKS5 separato per Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1289,7 +1289,7 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Scegli l&apos;unità di suddivisione predefinita da utilizzare per l&apos;interfaccia e per l&apos;invio di dogecoin.</translation>
+        <translation>Scegli l&apos;unità di suddivisione predefinita da utilizzare per l&apos;interfaccia e per l&apos;invio di bunkercoin.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1339,8 +1339,8 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation>Modulo</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Le informazioni visualizzate potrebbero non essere aggiornate. Il portamonete si sincronizza automaticamente con la rete Dogecoin una volta stabilita una connessione, ma questo processo non è ancora stato completato.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bunkercoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Le informazioni visualizzate potrebbero non essere aggiornate. Il portamonete si sincronizza automaticamente con la rete Bunkercoin una volta stabilita una connessione, ma questo processo non è ancora stato completato.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1447,11 +1447,11 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>To see ongoing development and contribute, checkout Dogecoin repository on GitHub!</source>
+        <source>To see ongoing development and contribute, checkout Bunkercoin repository on GitHub!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Services that claim to double your dogecoins are always ponzi schemes</source>
+        <source>Services that claim to double your bunkercoins are always ponzi schemes</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1579,7 +1579,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished">Invia Dogecoin</translation>
+        <translation type="unfinished">Invia Bunkercoin</translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
@@ -1637,8 +1637,8 @@ p, li { white-space: pre-wrap; }
         <translation>Errore di richiesta di pagamento</translation>
     </message>
     <message>
-        <source>Cannot start dogecoin: click-to-pay handler</source>
-        <translation>Impossibile avviare dogecoin: gestore click-to-pay</translation>
+        <source>Cannot start bunkercoin: click-to-pay handler</source>
+        <translation>Impossibile avviare bunkercoin: gestore click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1653,8 +1653,8 @@ p, li { white-space: pre-wrap; }
         <translation>Indirizzo di pagamento non valido %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
-        <translation>Impossibile interpretare l&apos;URI! I parametri dell&apos;URI o l&apos;indirizzo Dogecoin potrebbero non essere corretti.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Bunkercoin address or malformed URI parameters.</source>
+        <translation>Impossibile interpretare l&apos;URI! I parametri dell&apos;URI o l&apos;indirizzo Bunkercoin potrebbero non essere corretti.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1782,8 +1782,8 @@ p, li { white-space: pre-wrap; }
         <translation>Importo</translation>
     </message>
     <message>
-        <source>Enter a Dogecoin address (e.g. %1)</source>
-        <translation>Inserisci un indirizzo Dogecoin (ad es. %1)</translation>
+        <source>Enter a Bunkercoin address (e.g. %1)</source>
+        <translation>Inserisci un indirizzo Bunkercoin (ad es. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2276,8 +2276,8 @@ p, li { white-space: pre-wrap; }
         <translation>R&amp;iusa un indirizzo di ricezione (non raccomandato)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
-        <translation>Un messaggio opzionale da allegare alla richiesta di pagamento, il quale sarà mostrato all&apos;apertura della richiesta. Nota: Il messaggio non sarà inviato con il pagamento sulla rete Dogecoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bunkercoin network.</source>
+        <translation>Un messaggio opzionale da allegare alla richiesta di pagamento, il quale sarà mostrato all&apos;apertura della richiesta. Nota: Il messaggio non sarà inviato con il pagamento sulla rete Bunkercoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2430,7 +2430,7 @@ p, li { white-space: pre-wrap; }
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Invia Dogecoin</translation>
+        <translation>Invia Bunkercoin</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2505,7 +2505,7 @@ p, li { white-space: pre-wrap; }
         <translation>somma almeno</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for dogecoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bunkercoin transactions than the network can process.</source>
         <translation>Non vi è alcuna controindicazione a pagare la commissione minima, a patto che il volume delle transazioni sia inferiore allo spazio disponibile nei blocchi. Occorre comunque essere consapevoli che ciò potrebbe impedire la conferma delle transazioni nel caso in cui la rete risultasse satura.</translation>
     </message>
     <message>
@@ -2609,8 +2609,8 @@ p, li { white-space: pre-wrap; }
         <translation>Richiesta di pagamento scaduta.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Dogecoin address</source>
-        <translation>Attenzione: Indirizzo Dogecoin non valido</translation>
+        <source>Warning: Invalid Bunkercoin address</source>
+        <translation>Attenzione: Indirizzo Bunkercoin non valido</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2712,8 +2712,8 @@ p, li { white-space: pre-wrap; }
         <translation>Questo è un normale pagamento.</translation>
     </message>
     <message>
-        <source>The Dogecoin address to send the payment to</source>
-        <translation>L&apos;indirizzo Dogecoin a cui vuoi inviare il pagamento</translation>
+        <source>The Bunkercoin address to send the payment to</source>
+        <translation>L&apos;indirizzo Bunkercoin a cui vuoi inviare il pagamento</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2732,8 +2732,8 @@ p, li { white-space: pre-wrap; }
         <translation>Rimuovi questa voce</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less dogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>La commissione sarà sottratta dall&apos;importo che si sta inviando. Il beneficiario riceverà un totale di dogecoin inferiore al valore digitato. Nel caso in cui siano stati selezionati più beneficiari la commissione sarà suddivisa in parti uguali.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less bunkercoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>La commissione sarà sottratta dall&apos;importo che si sta inviando. Il beneficiario riceverà un totale di bunkercoin inferiore al valore digitato. Nel caso in cui siano stati selezionati più beneficiari la commissione sarà suddivisa in parti uguali.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2756,8 +2756,8 @@ p, li { white-space: pre-wrap; }
         <translation>Inserisci un&apos;etichetta per questo indirizzo per aggiungerlo alla lista degli indirizzi utilizzati</translation>
     </message>
     <message>
-        <source>A message that was attached to the dogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
-        <translation>Messaggio incluso nel dogecoin URI e che sarà memorizzato con la transazione per vostro riferimento. Nota: Questo messaggio non sarà inviato attraverso la rete Dogecoin.</translation>
+        <source>A message that was attached to the bunkercoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bunkercoin network.</source>
+        <translation>Messaggio incluso nel bunkercoin URI e che sarà memorizzato con la transazione per vostro riferimento. Nota: Questo messaggio non sarà inviato attraverso la rete Bunkercoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2801,12 +2801,12 @@ p, li { white-space: pre-wrap; }
         <translation>&amp;Firma Messaggio</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive dogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>È possibile firmare messaggi/accordi con i propri indirizzi in modo da dimostrare di poter ricevere dogecoin attraverso di essi. Si consiglia di prestare attenzione a non firmare dichiarazioni vaghe o casuali, attacchi di phishing potrebbero cercare di indurre ad apporre la firma su di esse. Si raccomanda di firmare esclusivamente dichiarazioni completamente dettagliate e delle quali si condivide in pieno il contenuto.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive bunkercoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>È possibile firmare messaggi/accordi con i propri indirizzi in modo da dimostrare di poter ricevere bunkercoin attraverso di essi. Si consiglia di prestare attenzione a non firmare dichiarazioni vaghe o casuali, attacchi di phishing potrebbero cercare di indurre ad apporre la firma su di esse. Si raccomanda di firmare esclusivamente dichiarazioni completamente dettagliate e delle quali si condivide in pieno il contenuto.</translation>
     </message>
     <message>
-        <source>The Dogecoin address to sign the message with</source>
-        <translation>L&apos;indirizzo Dogecoin da utilizzare per firmare il messaggio</translation>
+        <source>The Bunkercoin address to sign the message with</source>
+        <translation>L&apos;indirizzo Bunkercoin da utilizzare per firmare il messaggio</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2837,7 +2837,7 @@ p, li { white-space: pre-wrap; }
         <translation>Copia la firma corrente nella clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dogecoin address</source>
+        <source>Sign the message to prove you own this Bunkercoin address</source>
         <translation>Firma un messaggio per dimostrare di possedere questo indirizzo</translation>
     </message>
     <message>
@@ -2861,11 +2861,11 @@ p, li { white-space: pre-wrap; }
         <translation>Per verificare il messaggio inserire l&apos;indirizzo del firmatario, il messaggio e la firma nei campi sottostanti, assicurandosi di copiare esattamente anche ritorni a capo, spazi, tabulazioni, etc.. Si raccomanda di non lasciarsi fuorviare dalla firma a leggere più di quanto non sia riportato nel testo del messaggio stesso, in modo da evitare di cadere vittima di attacchi di tipo man-in-the-middle. Si ricorda che la verifica della firma dimostra soltanto che il firmatario può ricevere pagamenti con l&apos;indirizzo corrispondente, non prova l&apos;invio di alcuna transazione.</translation>
     </message>
     <message>
-        <source>The Dogecoin address the message was signed with</source>
-        <translation>L&apos;indirizzo Dogecoin con cui è stato contrassegnato il messaggio</translation>
+        <source>The Bunkercoin address the message was signed with</source>
+        <translation>L&apos;indirizzo Bunkercoin con cui è stato contrassegnato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Bunkercoin address</source>
         <translation>Verifica il messaggio per accertare che sia stato firmato con l&apos;indirizzo specificato</translation>
     </message>
     <message>
@@ -2886,7 +2886,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation>L&apos;indirizzo dogecoin inserito non è associato a nessuna chiave.</translation>
+        <translation>L&apos;indirizzo bunkercoin inserito non è associato a nessuna chiave.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
@@ -3468,7 +3468,7 @@ p, li { white-space: pre-wrap; }
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Invia Dogecoin</translation>
+        <translation>Invia Bunkercoin</translation>
     </message>
 </context>
 <context>
@@ -3565,8 +3565,8 @@ p, li { white-space: pre-wrap; }
         <translation>Impossibile avviare il server HTTP. Dettagli nel log di debug.</translation>
     </message>
     <message>
-        <source>Dogecoin Core</source>
-        <translation>Dogecoin Core</translation>
+        <source>Bunkercoin Core</source>
+        <translation>Bunkercoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -4309,7 +4309,7 @@ p, li { white-space: pre-wrap; }
         <translation>Errore</translation>
     </message>
     <message>
-        <source>Bitcoin Core and Dogecoin Core</source>
+        <source>Bitcoin Core and Bunkercoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4469,7 +4469,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wow</source>
+        <source>Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

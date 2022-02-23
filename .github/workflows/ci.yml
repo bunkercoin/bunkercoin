@@ -228,4 +228,4 @@ jobs:
           path: |
             depends/${{ matrix.host }}/bin/bunkercoin*
             bunkercoin-*-*-setup*
-            dist/Dogecoin-Qt.app
+            dist/Bunkercoin-Qt.app

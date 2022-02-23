@@ -82,10 +82,10 @@ UniValue importprivkey(const JSONRPCRequest& request)
     
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 3)
         throw runtime_error(
-            "importprivkey \"dogecoinprivkey\" ( \"label\" ) ( rescan )\n"
+            "importprivkey \"bunkercoinprivkey\" ( \"label\" ) ( rescan )\n"
             "\nAdds a private key (as returned by dumpprivkey) to your wallet.\n"
             "\nArguments:\n"
-            "1. \"dogecoinprivkey\"  (string, required) The private key (see dumpprivkey)\n"
+            "1. \"bunkercoinprivkey\"  (string, required) The private key (see dumpprivkey)\n"
             "2. \"label\"            (string, optional, default=\"\") An optional label\n"
             "3. rescan               (boolean, optional, default=true) Rescan the wallet for transactions\n"
             "\nNote: This call can take minutes to complete if rescan is true.\n"
@@ -522,7 +522,7 @@ UniValue dumpprivkey(const JSONRPCRequest& request)
             "\nReveals the private key corresponding to 'address'.\n"
             "Then the importprivkey can be used with this output\n"
             "\nArguments:\n"
-            "1. \"address\"   (string, required) The dogecoin address for the private key\n"
+            "1. \"address\"   (string, required) The bunkercoin address for the private key\n"
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
             "\nExamples:\n"

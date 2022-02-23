@@ -46,11 +46,11 @@
         <translation>Izbirajte adresu za primanje</translation>
     </message>
     <message>
-        <source>Such sending addresses</source>
+        <source>Sending Addresses</source>
         <translation>Adresa za slanje</translation>
     </message>
     <message>
-        <source>Much receiving addresses</source>
+        <source>Receiving Addresses</source>
         <translation>Adresa za primanje</translation>
     </message>
     </context>
@@ -82,7 +82,7 @@
         <translation>Синхронизација са мрежом у току...</translation>
     </message>
     <message>
-        <source>&amp;Wow</source>
+        <source>&amp;Wallet</source>
         <translation>&amp;Општи преглед</translation>
     </message>
     <message>
@@ -130,8 +130,8 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Dogecoin address</source>
-        <translation>Пошаљите новац на dogecoin адресу</translation>
+        <source>Send coins to a Bunkercoin address</source>
+        <translation>Пошаљите новац на bunkercoin адресу</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -142,7 +142,7 @@
         <translation>новчаник</translation>
     </message>
     <message>
-        <source>&amp;Such Send</source>
+        <source>&amp;Send</source>
         <translation>&amp;Пошаљи</translation>
     </message>
     <message>

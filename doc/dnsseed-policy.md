@@ -38,9 +38,6 @@ if this data was not made more complete by biasing node connectivity
 6. Operators are encouraged, but not required, to publicly document the
 details of their operating practices.
 
-7. A reachable email contact address must be published for inquiries
-related to the DNS seed operation.
-
 If these expectations cannot be satisfied the operator should
 discontinue providing services and contact the active Bunkercoin
 Core development team as well as posting on
@@ -51,4 +48,4 @@ situations but should be discussed in public in advance.
 
 See also
 ----------
-- [Bunkercoin-seeder](https://github.com/bunkercoin-project/bunkercoin-seeder) is a reference implementation of a DNS seed.
+- [Bunkercoin-seeder](https://github.com/bunkercoin/bunkercoin-seeder) is a reference implementation of a DNS seed.

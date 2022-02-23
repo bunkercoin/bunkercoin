@@ -30,7 +30,7 @@ Build Bunkercoin Core
 
 1. Clone the bunkercoin source code and cd into `bunkercoin`
 
-        git clone https://github.com/bunkercoin-project/bunkercoin
+        git clone https://github.com/bunkercoin/bunkercoin
         cd bunkercoin
 
 2.  Build Bunkercoin:
