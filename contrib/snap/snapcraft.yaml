@@ -1,5 +1,5 @@
 name: bunkercoin-core # you probably want to 'snapcraft register <name>'
-version: '1.15.0'
+version: '1.15.1'
 summary: Reference client of Bunkercoin, a peer-to-peer digital currency like Bitcoin.
 description: |
   Bunkercoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW). Taking development cues from Tenebrix and Litecoin, Bunkercoin currently employs a simplified variant of scrypt. MIT licenced.
