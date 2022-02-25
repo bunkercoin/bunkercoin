@@ -220,9 +220,9 @@ public:
         strNetworkID = "test";
 
         // Blocks 0 - 10 are conventional difficulty calculation
-        consensus.nSubsidyHalvingInterval = 210000;
-        consensus.nMajorityEnforceBlockUpgrade = 75;
-        consensus.nMajorityRejectBlockOutdated = 90;
+        consensus.nSubsidyHalvingInterval = 5;
+        consensus.nMajorityEnforceBlockUpgrade = 2;
+        consensus.nMajorityRejectBlockOutdated = 4;
         consensus.nMajorityWindow = 100;
         consensus.powLimit = uint256S("0x00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20;
         consensus.nPowTargetTimespan = 4 * 60 * 60; // pre-digishield: 4 hours
