@@ -100,11 +100,11 @@
     </message>
     <message>
         <source>These are your Bunkercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>这些是你要付款过去的邦克币地址。在付钱之前，务必要检查金额和收款地址是否正确。</translation>
+        <translation>这些是你要付款过去的比特币地址。在付钱之前，务必要检查金额和收款地址是否正确。</translation>
     </message>
     <message>
         <source>These are your Bunkercoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>这些是你用来收款的邦克币地址。建议在每次交易时，都使用一个新的收款地址。</translation>
+        <translation>这些是你用来收款的比特币地址。建议在每次交易时，都使用一个新的收款地址。</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -364,7 +364,7 @@
     </message>
     <message>
         <source>Send coins to a Bunkercoin address</source>
-        <translation>向一个邦克币地址发送邦克币</translation>
+        <translation>向一个狗狗币地址发送狗狗币</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -388,7 +388,7 @@
     </message>
     <message>
         <source>Bunkercoin</source>
-        <translation>邦克币</translation>
+        <translation>狗狗币</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -416,11 +416,11 @@
     </message>
     <message>
         <source>Sign messages with your Bunkercoin addresses to prove you own them</source>
-        <translation>用邦克币地址关联的私钥为消息签名，以证明您拥有这个邦克币地址</translation>
+        <translation>用狗狗币地址关联的私钥为消息签名，以证明您拥有这个狗狗币地址</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bunkercoin addresses</source>
-        <translation>校验消息，确保该消息是由指定的邦克币地址所有者签名的</translation>
+        <translation>校验消息，确保该消息是由指定的狗狗币地址所有者签名的</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -452,7 +452,7 @@
     </message>
     <message>
         <source>Open a bunkercoin: URI or payment request</source>
-        <translation>打开一个 邦克币: URI 或支付请求</translation>
+        <translation>打开一个 bunkercoin: URI 或支付请求</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -461,7 +461,7 @@
     <message numerus="yes">
         <source>%n active connection(s) to Bunkercoin network</source>
         <translation>
-            <numerusform>%n条到邦克币网络的活动连接</numerusform>
+            <numerusform>%n条到狗狗币网络的活动连接</numerusform>
         </translation>
     </message>
     <message>
@@ -811,7 +811,7 @@
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is not a valid Bunkercoin address.</source>
-        <translation>输入的地址 %1 并不是有效的邦克币地址。</translation>
+        <translation>输入的地址 %1 并不是有效的比特币地址。</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
@@ -980,11 +980,11 @@
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
-        <translation>由于这是第一次启动邦克币程序，您可以选择%1的数据所存储的位置</translation>
+        <translation>由于这是第一次启动此程序，您可以选择%1的数据所存储的位置</translation>
     </message>
     <message>
         <source>%1 will download and store a copy of the Bunkercoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 会下载并存储一份邦克币区块链的副本。至少有 %2GB 的数据会存储到这个目录中，并且还会持续增长。另外钱包资料也会储存在这个目录。</translation>
+        <translation>%1 会下载并存储一份比特币区块链的副本。至少有 %2GB 的数据会存储到这个目录中，并且还会持续增长。另外钱包资料也会储存在这个目录。</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1109,7 +1109,7 @@
     </message>
     <message>
         <source>&amp;Start %1 on system login</source>
-        <translation>系统登入时启动邦克币</translation>
+        <translation>系统登入时启动 %1</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1189,7 +1189,7 @@
     </message>
     <message>
         <source>Automatically open the Bunkercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自动在路由器中打开邦克币端口。只有当您的路由器开启了 UPnP 选项时此功能才有效。</translation>
+        <translation>自动在路由器中打开狗狗币端口。只有当您的路由器开启了 UPnP 选项时此功能才有效。</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1237,7 +1237,7 @@
     </message>
     <message>
         <source>Connect to the Bunkercoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>在 Tor 匿名网络下通过不同的 SOCKS5 代理连接邦克币网络</translation>
+        <translation>在 Tor 匿名网络下通过不同的 SOCKS5 代理连接比特币网络</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1281,11 +1281,11 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>邦克币金额单位(&amp;U)：</translation>
+        <translation>比特币金额单位(&amp;U)：</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>选择邦克币单位。</translation>
+        <translation>选择比特币单位。</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1575,7 +1575,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished">发送邦克币</translation>
+        <translation type="unfinished">发送比特币</translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
@@ -1619,7 +1619,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation type="unfinished">确认发送邦克币</translation>
+        <translation type="unfinished">确认发送货币</translation>
     </message>
     <message>
         <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
@@ -1651,7 +1651,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Bunkercoin address or malformed URI parameters.</source>
-        <translation>无法解析 URI 地址！可能是因为邦克币地址无效，或是 URI 参数格式错误。</translation>
+        <translation>无法解析 URI 地址！可能是因为比特币地址无效，或是 URI 参数格式错误。</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1780,7 +1780,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Enter a Bunkercoin address (e.g. %1)</source>
-        <translation>请输入邦克币地址 (例如: %1)</translation>
+        <translation>请输入狗狗币地址 (例如: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1949,7 +1949,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Name</source>
-        <translation>主网类型</translation>
+        <translation>姓名</translation>
     </message>
     <message>
         <source>Number of connections</source>
@@ -2005,7 +2005,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Version</source>
-        <translation>网络版本</translation>
+        <translation>版本</translation>
     </message>
     <message>
         <source>Starting Block</source>
@@ -2421,7 +2421,7 @@ p, li { white-space: pre-wrap; }
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>发送邦克币</translation>
+        <translation>发送比特币</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2537,7 +2537,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Confirm the send action</source>
-        <translation>确认发送邦克币</translation>
+        <translation>确认发送货币</translation>
     </message>
     <message>
         <source>S&amp;end</source>
@@ -2793,7 +2793,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive bunkercoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>您可以用你的地址对消息/协议进行签名，以证明您可以接收发送到该地址的邦克币。注意不要对任何模棱两可或者随机的消息进行签名，以免遭受钓鱼式攻击。请确保消息内容准确的表达了您的真实意愿。</translation>
+        <translation>您可以用你的地址对消息/协议进行签名，以证明您可以接收发送到该地址的比特币。注意不要对任何模棱两可或者随机的消息进行签名，以免遭受钓鱼式攻击。请确保消息内容准确的表达了您的真实意愿。</translation>
     </message>
     <message>
         <source>The Bunkercoin address to sign the message with</source>
@@ -2857,7 +2857,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bunkercoin address</source>
-        <translation>验证消息，确保消息是由指定的邦克币地址签名过的。</translation>
+        <translation>验证消息，确保消息是由指定的狗狗币地址签名过的。</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3127,7 +3127,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>生成的邦克币在可以使用前必须有 %1 个成熟的区块。当您生成了此区块后，它将被广播到网络中以加入区块链。如果它未成功进入区块链，其状态将变更为“不接受”并且不可使用。这可能偶尔会发生，如果另一个节点比你早几秒钟成功生成一个区块。</translation>
+        <translation>生成的比特币在可以使用前必须有 %1 个成熟的区块。当您生成了此区块后，它将被广播到网络中以加入区块链。如果它未成功进入区块链，其状态将变更为“不接受”并且不可使用。这可能偶尔会发生，如果另一个节点比你早几秒钟成功生成一个区块。</translation>
     </message>
     <message>
         <source>Debug information</source>
