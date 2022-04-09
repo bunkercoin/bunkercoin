@@ -276,7 +276,7 @@ public:
 		
 		auxpowConsensus.nAuxpowChainId = 0x0042; // 66 - B
 		
-        auxpowConsensus.nHeightEffective = 110;
+        auxpowConsensus.nHeightEffective = 101;
         auxpowConsensus.fAllowLegacyBlocks = true;
 
         // Assemble the binary search tree of consensus parameters
@@ -292,12 +292,12 @@ public:
         nDefaultPort = 44556;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1637347145, 467930, 0x1e0ffff0, 1, 88 * COIN);
+        genesis = CreateGenesisBlock(1649532597, 2081600, 0x1e0ffff0, 1, 88 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         minDifficultyConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-        assert(consensus.hashGenesisBlock == uint256S("0x405d1f6dda6196fc4fc4f2d28a8a199a6206149556cc30ddfaa0a26c04c6c9c2"));
+        assert(consensus.hashGenesisBlock == uint256S("0x2c3e9adaf3bd615c3f431facb23b787b8dc4fb6b1ea0daeb93efd9dc0cd85086"));
         //assert(genesis.hashMerkleRoot == uint256S("0x5b2a3f53f605d62c53e62932dac6925e3d74afa5a4b459745c36d42d0ed26a69"));
 
         vSeeds.clear();
@@ -319,7 +319,7 @@ public:
 		
         checkpointData = (CCheckpointData){
             boost::assign::map_list_of
-            ( 0, uint256S("0x405d1f6dda6196fc4fc4f2d28a8a199a6206149556cc30ddfaa0a26c04c6c9c2"))
+            ( 0, uint256S("0x2c3e9adaf3bd615c3f431facb23b787b8dc4fb6b1ea0daeb93efd9dc0cd85086"))
         };
 		
         chainTxData = ChainTxData{
