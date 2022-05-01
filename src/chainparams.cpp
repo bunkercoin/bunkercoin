@@ -220,9 +220,9 @@ public:
         strNetworkID = "test";
 
         // Blocks 0 - 10 are conventional difficulty calculation
-        consensus.nSubsidyHalvingInterval = 100;
-        consensus.nMajorityEnforceBlockUpgrade = 75;
-        consensus.nMajorityRejectBlockOutdated = 90;
+        consensus.nSubsidyHalvingInterval = 11;
+        consensus.nMajorityEnforceBlockUpgrade = 1;
+        consensus.nMajorityRejectBlockOutdated = 2;
         consensus.nMajorityWindow = 100;
         consensus.powLimit = uint256S("0x00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20;
         consensus.nPowTargetTimespan = 4 * 60 * 60; // pre-digishield: 4 hours
@@ -319,7 +319,7 @@ public:
 		
         checkpointData = (CCheckpointData){
             boost::assign::map_list_of
-            ( 0, uint256S("0x2c3e9adaf3bd615c3f431facb23b787b8dc4fb6b1ea0daeb93efd9dc0cd85086"))
+            ( 0, uint256S("0xf9bbe878f5d839abc89cddd05e9716070542bf4c13cd46fb275b494d76a17161"))
         };
 		
         chainTxData = ChainTxData{
