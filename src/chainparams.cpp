@@ -133,7 +133,7 @@ public:
 		auxpowConsensus.nAuxpowChainId = 0x0042; // 73s
 		
         auxpowConsensus.nHeightEffective = 100000;
-        auxpowConsensus.fAllowLegacyBlocks = true;
+        auxpowConsensus.fAllowLegacyBlocks = false;
 
         // Assemble the binary search tree of consensus parameters
         pConsensusRoot = &digishieldConsensus;
