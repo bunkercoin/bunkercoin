@@ -133,7 +133,7 @@ public:
 		auxpowConsensus.nAuxpowChainId = 0x0042; // 73s
 		
         auxpowConsensus.nHeightEffective = 100000;
-        auxpowConsensus.fAllowLegacyBlocks = true;
+        auxpowConsensus.fAllowLegacyBlocks = false;
 
         // Assemble the binary search tree of consensus parameters
         pConsensusRoot = &digishieldConsensus;
@@ -220,9 +220,9 @@ public:
         strNetworkID = "test";
 
         // Blocks 0 - 10 are conventional difficulty calculation
-        consensus.nSubsidyHalvingInterval = 210000;
-        consensus.nMajorityEnforceBlockUpgrade = 75;
-        consensus.nMajorityRejectBlockOutdated = 90;
+        consensus.nSubsidyHalvingInterval = 11;
+        consensus.nMajorityEnforceBlockUpgrade = 1;
+        consensus.nMajorityRejectBlockOutdated = 2;
         consensus.nMajorityWindow = 100;
         consensus.powLimit = uint256S("0x00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20;
         consensus.nPowTargetTimespan = 4 * 60 * 60; // pre-digishield: 4 hours
@@ -276,7 +276,7 @@ public:
 		
 		auxpowConsensus.nAuxpowChainId = 0x0042; // 66 - B
 		
-        auxpowConsensus.nHeightEffective = 110;
+        auxpowConsensus.nHeightEffective = 101;
         auxpowConsensus.fAllowLegacyBlocks = true;
 
         // Assemble the binary search tree of consensus parameters
@@ -292,13 +292,13 @@ public:
         nDefaultPort = 44556;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1637347145, 467930, 0x1e0ffff0, 1, 88 * COIN);
+        genesis = CreateGenesisBlock(1651427697, 707474, 0x1e0ffff0, 1, 88 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         minDifficultyConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-        assert(consensus.hashGenesisBlock == uint256S("0x405d1f6dda6196fc4fc4f2d28a8a199a6206149556cc30ddfaa0a26c04c6c9c2"));
-        //assert(genesis.hashMerkleRoot == uint256S("0x5b2a3f53f605d62c53e62932dac6925e3d74afa5a4b459745c36d42d0ed26a69"));
+        assert(consensus.hashGenesisBlock == uint256S("0xf9bbe878f5d839abc89cddd05e9716070542bf4c13cd46fb275b494d76a17161"));
+        assert(genesis.hashMerkleRoot == uint256S("0xd80699e741a6ad2478044ad7f71642f6263b0b3d9c0af2c531ca79c7f5648fec"));
 
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
@@ -314,12 +314,12 @@ public:
 
         fMiningRequiresPeers = true;
         fDefaultConsistencyChecks = false;
-        fRequireStandard = false;
-        fMineBlocksOnDemand = false;
+        fRequireStandard = true;
+        fMineBlocksOnDemand = true;
 		
         checkpointData = (CCheckpointData){
             boost::assign::map_list_of
-            ( 0, uint256S("0x405d1f6dda6196fc4fc4f2d28a8a199a6206149556cc30ddfaa0a26c04c6c9c2"))
+            ( 0, uint256S("0xf9bbe878f5d839abc89cddd05e9716070542bf4c13cd46fb275b494d76a17161"))
         };
 		
         chainTxData = ChainTxData{

@@ -8,6 +8,7 @@ src/bunkercoin-tx
 src/test/test_bunkercoin
 src/test/test_bunkercoin_fuzzy
 src/qt/test/test_bunkercoin-qt
+src/bench/bench_bunkercoin
 
 # autoreconf
 Makefile.in
