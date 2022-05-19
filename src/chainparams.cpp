@@ -1,3 +1,4 @@
+
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
@@ -76,8 +77,8 @@ public:
         strNetworkID = "main";
 
         // Blocks 0 - 10 are conventional difficulty calculation
-        consensus.nSubsidyHalvingInterval = 210000;
-        consensus.nMajorityEnforceBlockUpgrade = 1500;
+        consensus.nSubsidyHalvingInterval = 2;
+        consensus.nMajorityEnforceBlockUpgrade = 5;
         consensus.nMajorityRejectBlockOutdated = 1900;
         consensus.nMajorityWindow = 2000;
         consensus.powLimit = uint256S("0x00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20;
@@ -115,7 +116,7 @@ public:
         consensus.BIP66Height = 85000;
 		
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000370ae5f67ed28d");
+        consensus.nMinimumChainWork = uint256S("0x0");
 
  
 
@@ -145,10 +146,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xe8;
-        pchMessageStart[1] = 0xc9;
-        pchMessageStart[2] = 0xf0;
-        pchMessageStart[3] = 0xa1;
+        pchMessageStart[0] = 0xf8;
+        pchMessageStart[1] = 0xu9;
+        pchMessageStart[2] = 0xc0;
+        pchMessageStart[3] = 0xk1;
         vAlertPubKey = ParseHex("04536744d5a57623b6602d8325383a580b1c00076a9e68fd75ff1f07240fb7408916e919cec8b8750a6e6aff08339db104106a75f976d5817490b9a1bdc2e0c727");
         nDefaultPort = 14200;
         //nPruneAfterHeight = 100;
