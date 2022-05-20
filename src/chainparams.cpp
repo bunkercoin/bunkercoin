@@ -116,7 +116,7 @@ public:
         consensus.BIP66Height = 85000;
 		
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000370ae5f67ed28d");
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000005c67c01740d53b");
 
  
 
@@ -202,7 +202,7 @@ public:
             // Data as of block 0xffcd62ddf782a04e1f9b51c537b5e080ee0f99030803465eecaeb653c41c01fb (height 100000).
             // Tx estimate based on average of year 2022 (~40k transactions per day)
             1653080927, // * UNIX timestamp of last checkpoint block
-            239934,   // * total number of transactions between genesis and last checkpoint
+            239929,   // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0.3        // * estimated number of transactions per second after checkpoint
         };
