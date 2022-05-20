@@ -202,7 +202,7 @@ public:
             // Data as of block 0xffcd62ddf782a04e1f9b51c537b5e080ee0f99030803465eecaeb653c41c01fb (height 100000).
             // Tx estimate based on average of year 2022 (~40k transactions per day)
             1653080927, // * UNIX timestamp of last checkpoint block
-            239929,   // * total number of transactions between genesis and last checkpoint
+            239934,   // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0.3        // * estimated number of transactions per second after checkpoint
         };
