@@ -194,15 +194,15 @@ public:
 			(     60000, uint256S("0xd17d161d15ab4cd982bc3789cf44c257cadd2aa9975e8ea0fd599c098c27dc8a"))
 			(     80000, uint256S("0x38c5277d693b59030a73ec375cccc2769b7a21fd31d8d85fbbe9f9cec82edf94"))
 			(     100000, uint256S("0xffcd62ddf782a04e1f9b51c537b5e080ee0f99030803465eecaeb653c41c01fb"))
-            (     239930, uint256S("58b8b23586a2e05f0c62b731cc5bb5f30754979a550c097220142278ed3c39a1"))
-            (     239935, uint256S("b1ce9a4c445167e70a24f68d7d471eac64aee53850803be2d67fbe8046531321"))
+            (     239930, uint256S("0x58b8b23586a2e05f0c62b731cc5bb5f30754979a550c097220142278ed3c39a1"))
+            (     239961, uint256S("0x7fd21781aa2d1e4d1887790f9c60e6350b95ed1aafaccbd767d40e52de0d89db"))
         };
 
         chainTxData = ChainTxData{
             // Data as of block 0xffcd62ddf782a04e1f9b51c537b5e080ee0f99030803465eecaeb653c41c01fb (height 100000).
             // Tx estimate based on average of year 2022 (~40k transactions per day)
-            1653080927, // * UNIX timestamp of last checkpoint block
-            239934,   // * total number of transactions between genesis and last checkpoint
+            1653082501, // * UNIX timestamp of last checkpoint block
+            249309,   // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0.3        // * estimated number of transactions per second after checkpoint
         };
