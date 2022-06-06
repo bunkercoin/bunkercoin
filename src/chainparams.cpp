@@ -77,7 +77,7 @@ public:
         strNetworkID = "main";
 
         // Blocks 0 - 10 are conventional difficulty calculation
-        consensus.nSubsidyHalvingInterval = 210000;
+        consensus.nSubsidyHalvingInterval = 2;
         consensus.nMajorityEnforceBlockUpgrade = 1500;
         consensus.nMajorityRejectBlockOutdated = 1900;
         consensus.nMajorityWindow = 2000;
@@ -146,7 +146,7 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xe8;
+        pchMessageStart[0] = 0xe9;
         pchMessageStart[1] = 0xc9;
         pchMessageStart[2] = 0xf0;
         pchMessageStart[3] = 0xa1;
