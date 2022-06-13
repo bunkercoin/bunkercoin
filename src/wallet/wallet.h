@@ -238,7 +238,7 @@ public:
      * on this bitcoin node, and set to 0 for transactions that were created
      * externally and came in through the network or sendrawtransaction RPC.
      */
-    char fFromMe;
+    bool fFromMe;
     std::string strFromAccount;
     int64_t nOrderPos; //!< position in ordered transaction list
 
