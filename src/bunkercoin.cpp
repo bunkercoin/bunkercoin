@@ -134,7 +134,7 @@ CAmount GetDogecoinBlockSubsidy(int nHeight, const Consensus::Params& consensusP
         const char* cseed = cseed_str.c_str();
         char* endp = NULL;
         long seed = strtol(cseed, &endp, 16);
-        CAmount maxReward = (1000000 >> (4*halvings)) - 1; sss
+        CAmount maxReward = (1000000 >> (4*halvings)) - 1; 
         int rand = generateMTRandom(seed, maxReward);
 
         return (1 + rand) * COIN;
