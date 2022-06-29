@@ -167,8 +167,8 @@ void CWallet::DeriveNewChildKey(CKeyMetadata& metadata, CKey& secret)
 }
 
 bool CWallet::AddKeyPubKey(const CKey& secret, const CPubKey &pubkey)
-{
-    AssertLockHeld(cs_wallet); // mapKeyMetadata
+{ 
+    LOCK(cs_wallet); // mapKeyMetadata
     if (!CCryptoKeyStore::AddKeyPubKey(secret, pubkey))
         return false;
 
