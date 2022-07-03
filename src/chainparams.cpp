@@ -262,7 +262,7 @@ public:
 
         // Blocks 10 - 100000 are Digishield without AuxPoW
         digishieldConsensus = consensus;
-        digishieldConsensus.nHeightEffective = 2000;
+        digishieldConsensus.nHeightEffective = 5;
         digishieldConsensus.fDigishieldDifficultyCalculation = true;
         digishieldConsensus.nPowTargetTimespan = 60; // post-digishield: 1 minute
         digishieldConsensus.nCoinbaseMaturity = 30;
@@ -277,7 +277,7 @@ public:
         auxpowConsensus.fAllowLegacyBlocks = true;
 
         simplerewardsConsensus = auxpowConsensus;
-        simplerewardsConsensus.nHeightEffective = 10;
+        simplerewardsConsensus.nHeightEffective = 14;
         simplerewardsConsensus.fSimplifiedRewards = true;
         simplerewardsConsensus.nSubsidyHalvingInterval = 3;
 		consensus.fAllowLegacyBlocks = false;
