@@ -130,16 +130,9 @@ public:
 
         // Blocks 100000+ are AuxPoW or PoW
         auxpowConsensus = digishieldConsensus;
-		
 		auxpowConsensus.nAuxpowChainId = 0x0042; // 73s
-		
         auxpowConsensus.nHeightEffective = 100000;
         auxpowConsensus.fAllowLegacyBlocks = false;
-
-        // Assemble the binary search tree of consensus parameters
-        pConsensusRoot = &digishieldConsensus;
-        digishieldConsensus.pLeft = &consensus;
-        digishieldConsensus.pRight = &auxpowConsensus;
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -218,6 +211,7 @@ private:
     Consensus::Params digishieldConsensus;
     Consensus::Params auxpowConsensus;
     Consensus::Params minDifficultyConsensus;
+    Consensus::Params simplerewardsConsensus;
 public:
     CTestNetParams() {
         strNetworkID = "test";
@@ -268,7 +262,7 @@ public:
 
         // Blocks 10 - 100000 are Digishield without AuxPoW
         digishieldConsensus = consensus;
-        digishieldConsensus.nHeightEffective = 10;
+        digishieldConsensus.nHeightEffective = 2000;
         digishieldConsensus.fDigishieldDifficultyCalculation = true;
         digishieldConsensus.nPowTargetTimespan = 60; // post-digishield: 1 minute
         digishieldConsensus.nCoinbaseMaturity = 30;
@@ -282,10 +276,18 @@ public:
         auxpowConsensus.nHeightEffective = 101;
         auxpowConsensus.fAllowLegacyBlocks = true;
 
+        simplerewardsConsensus = auxpowConsensus;
+        simplerewardsConsensus.nHeightEffective = 10;
+        simplerewardsConsensus.fSimplifiedRewards = true;
+        simplerewardsConsensus.nSubsidyHalvingInterval = 3;
+		consensus.fAllowLegacyBlocks = false;
+
         // Assemble the binary search tree of consensus parameters
         pConsensusRoot = &digishieldConsensus;
         digishieldConsensus.pLeft = &consensus;
-        digishieldConsensus.pRight = &auxpowConsensus;
+        digishieldConsensus.pRight = &simplerewardsConsensus;
+        simplerewardsConsensus.pRight = &auxpowConsensus;
+        simplerewardsConsensus.pLeft = &minDifficultyConsensus;
 
         pchMessageStart[0] = 0xf2;
         pchMessageStart[1] = 0xc1;
