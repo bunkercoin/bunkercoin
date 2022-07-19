@@ -221,7 +221,7 @@ public:
         strNetworkID = "test";
 
         // Blocks 0 - 10 are conventional difficulty calculation
-        consensus.nSubsidyHalvingInterval = 11;
+        consensus.nSubsidyHalvingInterval = 6;
         consensus.nMajorityEnforceBlockUpgrade = 1;
         consensus.nMajorityRejectBlockOutdated = 2;
         consensus.nMajorityWindow = 100;
@@ -281,9 +281,9 @@ public:
         auxpowConsensus.fAllowLegacyBlocks = true;
 
         simplerewardsConsensus = auxpowConsensus;
-        simplerewardsConsensus.nHeightEffective = 14;
+        simplerewardsConsensus.nHeightEffective = 12;
         simplerewardsConsensus.fSimplifiedRewards = true;
-        simplerewardsConsensus.nSubsidyHalvingInterval = 3;
+        simplerewardsConsensus.nSubsidyHalvingInterval = 7;
 		consensus.fAllowLegacyBlocks = false;
 
         // Assemble the binary search tree of consensus parameters
