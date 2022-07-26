@@ -1,5 +1,5 @@
 // Copyright (c) 2015-2022 The Dogecoin Core developers
-// Copyright (c) 2021-2022 The Dogecoin Core developers
+// Copyright (c) 2021-2022 The Bunkercoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -140,7 +140,7 @@ CAmount GetDogecoinBlockSubsidy(int nHeight, const Consensus::Params& consensusP
         return (1 + rand) * COIN;
     } else if (nHeight < (2 * consensusParams.nSubsidyHalvingInterval)) {
         // New-style constant rewards for each halving interval
-        return (500000 * COIN) >> halvings;
+        return (8008 * COIN) >> halvings;
     } else {
         // Constant inflation
         return 10000 * COIN;

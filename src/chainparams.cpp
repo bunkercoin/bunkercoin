@@ -214,14 +214,14 @@ class CTestNetParams : public CChainParams {
 private:
     Consensus::Params digishieldConsensus;
     Consensus::Params auxpowConsensus;
-    Consensus::Params minDifficultyConsensus;
-    Consensus::Params simplerewardsConsensus;
+    Consensus::Params newDiffConsensus;
+
 public:
     CTestNetParams() {
         strNetworkID = "test";
 
         // Blocks 0 - 10 are conventional difficulty calculation
-        consensus.nSubsidyHalvingInterval = 6;
+        consensus.nSubsidyHalvingInterval = 3;
         consensus.nMajorityEnforceBlockUpgrade = 1;
         consensus.nMajorityRejectBlockOutdated = 2;
         consensus.nMajorityWindow = 100;
@@ -280,18 +280,16 @@ public:
         auxpowConsensus.nHeightEffective = 2;
         auxpowConsensus.fAllowLegacyBlocks = true;
 
-        simplerewardsConsensus = auxpowConsensus;
-        simplerewardsConsensus.nHeightEffective = 12;
-        simplerewardsConsensus.fSimplifiedRewards = true;
-        simplerewardsConsensus.nSubsidyHalvingInterval = 7;
+        auxpowConsensus.pRight = &newDiffConsensus;
+        newDiffConsensus.fSimplifiedRewards = true;
+        newDiffConsensus.nHeightEffective = 6;
+        newDiffConsensus.nSubsidyHalvingInterval = 2;
 		consensus.fAllowLegacyBlocks = false;
 
         // Assemble the binary search tree of consensus parameters
         pConsensusRoot = &digishieldConsensus;
         digishieldConsensus.pLeft = &consensus;
-        digishieldConsensus.pRight = &simplerewardsConsensus;
-        simplerewardsConsensus.pRight = &auxpowConsensus;
-        simplerewardsConsensus.pLeft = &minDifficultyConsensus;
+        digishieldConsensus.pRight = &auxpowConsensus;
 
         pchMessageStart[0] = 0xf2;
         pchMessageStart[1] = 0xc1;
@@ -304,7 +302,6 @@ public:
         genesis = CreateGenesisBlock(1651427697, 707474, 0x1e0ffff0, 1, 88 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-        minDifficultyConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         assert(consensus.hashGenesisBlock == uint256S("0xf9bbe878f5d839abc89cddd05e9716070542bf4c13cd46fb275b494d76a17161"));
         assert(genesis.hashMerkleRoot == uint256S("0xd80699e741a6ad2478044ad7f71642f6263b0b3d9c0af2c531ca79c7f5648fec"));
