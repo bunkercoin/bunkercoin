@@ -214,6 +214,7 @@ class CTestNetParams : public CChainParams {
 private:
     Consensus::Params digishieldConsensus;
     Consensus::Params auxpowConsensus;
+    Consensus::Params minDifficultyConsensus;
     Consensus::Params newDiffConsensus;
 
 public:
@@ -270,7 +271,7 @@ public:
         digishieldConsensus.fDigishieldDifficultyCalculation = true;
         digishieldConsensus.nPowTargetTimespan = 60; // post-digishield: 1 minute
         digishieldConsensus.nCoinbaseMaturity = 30;
-	consensus.fAllowLegacyBlocks = false;
+	    consensus.fAllowLegacyBlocks = false;
 
         // Blocks 100000+ are AuxPoW or PoW
         auxpowConsensus = digishieldConsensus;
@@ -290,6 +291,7 @@ public:
         pConsensusRoot = &digishieldConsensus;
         digishieldConsensus.pLeft = &consensus;
         digishieldConsensus.pRight = &auxpowConsensus;
+        auxpowConsensus.pRight = &newDiffConsensus;
 
         pchMessageStart[0] = 0xf2;
         pchMessageStart[1] = 0xc1;
