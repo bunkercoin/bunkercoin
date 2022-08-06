@@ -334,7 +334,7 @@ public:
             ( 0, uint256S("0xf9bbe878f5d839abc89cddd05e9716070542bf4c13cd46fb275b494d76a17161"))
             ( 1, uint256S("0x52ea6009b51622d311d09d9ab1469badc4e5177478b5011a4c017dc3dd025cc5"))
             ( 5, uint256S("0x32353b4f278dca8350660bd1fea21e0f0a94565d35a176e8eb54a6a4c9eaf888"))
-            ( 10, unint256S("0x79bdeefbb3f4b90d8aaf69f021b3314f2bf5bcdb9a0d346d1b80cd2be86d60a4"))
+            ( 10, uint256S("0x79bdeefbb3f4b90d8aaf69f021b3314f2bf5bcdb9a0d346d1b80cd2be86d60a4"))
             ( 15, uint256S("0xf9a146f4284d458b8ecd7d358c6a23dfe91f2bbed90436bcb850a8082e3c4dc9"))
             ( 20, uint256S("0x19e6261875990052e3db47342aeeb60e45e36d40a7d4cf915c02f0ef9b10b80f"))
             ( 25, uint256S("0x68d87209a76e91a7fb64ca49a2b2b2a6e6121d62a0ba6ab2d3acd293afa4f063"))
