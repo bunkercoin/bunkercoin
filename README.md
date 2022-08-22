@@ -34,26 +34,6 @@ Each subsequent block will grant a random amount of coins to encourage miners to
 
 Bunkercoin uses a simplified variant of the scrypt key derivation function as its proof of work with a target time of one minute per block and difficulty readjustment after every block. The block rewards are fixed and halve every 100,000 blocks. Starting with the 600,000th block, a permanent reward of 10,000 Bunkercoin per block will be paid.
 
-The current block reward schedule:
-
-1–99,000: 0–1,000,000 Bunkercoin
-
-100,000–144,999: 0–500,000 Bunkercoin
-
-145,000–199,999: 250,000 Bunkercoin
-
-200,000–299,999: 125,000 Bunkercoin
-
-300,000–399,999: 62,500 Bunkercoin
-
-400,000–499,999: 31,250 Bunkercoin
-
-500,000–599,999: 15,625 Bunkercoin
-
-600,000+: 10,000 Bunkercoin
-
-
-
 ### How can I help the network?
 
 The solid best way is to mine. You can use any guide and miner that supports scrypt coins like Dogecoin, Litecoin, etc.
