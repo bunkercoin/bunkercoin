@@ -254,8 +254,6 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - Release sticky on Bunkercoin Forums: http://forum.bunkercoin.xyz/forum/news-community/community-announcements
 
-  - Bunkercoin-development mailing list
-
   - Twitter, @bunkercoin
 
   - Update title of #bunkercoin on Libera IRC
