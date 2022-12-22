@@ -1,6 +1,7 @@
-
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copyright (c) 2022 The Dogecoin Core developers
+// Copyright (c) 2022 The Bunkercoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -118,7 +119,7 @@ public:
         consensus.BIP66Height = 85000;
 		
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000024bd8abee5945be");
+        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000002a112b111a1bcab");
 
  
 
@@ -136,12 +137,13 @@ public:
         auxpowConsensus.nHeightEffective = 100000;
         auxpowConsensus.fAllowLegacyBlocks = false;
 
-        // Blocks X+ on testnet are AuxPoW with improved rewards.
+        // Blocks 600000+ on mainnet are AuxPoW (or PoW) with improved rewards.
         improvedrewardsConsensus = auxpowConsensus;
         improvedrewardsConsensus.fSimplifiedRewards = false;
         improvedrewardsConsensus.nHeightEffective = 600000;
 
         // Assemble the binary search tree of consensus parameters
+        // Reminder (IMPORTANT!!): Remember to add a root here in case of future hardforks!
         pConsensusRoot = &digishieldConsensus;
         digishieldConsensus.pLeft = &consensus;
         digishieldConsensus.pRight = &auxpowConsensus;

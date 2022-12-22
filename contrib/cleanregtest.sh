@@ -1,6 +1,6 @@
-# Cleans the regtest datadir
+# Cleans the regtest datadir by deleting it
 
-#rm -rf /home/$HOME/.bunkercoin/regtest
+rm -rf /home/$HOME/.bunkercoin/regtest
 
-# Used by matty
-rm -rf /mnt/mattyhdd/bunkercoindatadir/regtest
+# Used by idotmaster1
+#rm -rf /mnt/mattyhdd/bunkercoindatadir/regtest
