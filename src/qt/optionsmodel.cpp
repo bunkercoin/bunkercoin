@@ -74,7 +74,7 @@ void OptionsModel::Init(bool resetSettings)
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
-        settings.setValue("strThirdPartyTxUrls", "https://explorer.bunkercoin.xyz/?action=blockhash&v=%s");
+        settings.setValue("strThirdPartyTxUrls", "https://explorer.bunkercoin.org/?action=blockhash&v=%s");
     strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "").toString();
 
     if (!settings.contains("fCoinControlFeatures"))

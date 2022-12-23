@@ -1,4 +1,5 @@
-// Copyright (c) 2015 The Dogecoin Core developers
+// Copyright (c) 2015-2022 The Dogecoin Core developers
+// Copyright (c) 2021-2022 The Bunkercoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -129,7 +130,6 @@ CAmount GetDogecoinBlockSubsidy(int nHeight, const Consensus::Params& consensusP
 
     if (!consensusParams.fSimplifiedRewards)
     {
-        // Old-style rewards derived from the previous block hash
         const std::string cseed_str = prevHash.ToString().substr(7, 7);
         const char* cseed = cseed_str.c_str();
         char* endp = NULL;
@@ -138,12 +138,12 @@ CAmount GetDogecoinBlockSubsidy(int nHeight, const Consensus::Params& consensusP
         int rand = generateMTRandom(seed, maxReward);
 
         return (1 + rand) * COIN;
-    } else if (nHeight < (6 * consensusParams.nSubsidyHalvingInterval)) {
+    } else if (nHeight < (5 * consensusParams.nSubsidyHalvingInterval)) { // 5 * consensusParams.nSubsidyHalvingInterval (210000) = 1050000
         // New-style constant rewards for each halving interval
-        return (500000 * COIN) >> halvings;
+        return (100000 * COIN) >> halvings; // Currently we have around 500000 blocks and the halving interval is 210000. 500000/210000 is around 2, so 50000 x 2 is 100000.
     } else {
         // Constant inflation
-        return 10000 * COIN;
+        return 6900 * COIN;
     }
 }
 
