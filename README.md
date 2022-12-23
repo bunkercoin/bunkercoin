@@ -30,9 +30,10 @@ As much as your heart desires
 
 Each subsequent block will grant a random amount of coins to encourage miners to continue to secure the network and make up for lost wallets on hard drives/lost encryption passwords/etc.
 
-### How to get bunkercoin?
+### How can I bunkercoin?
 
-Bunkercoin uses a simplified variant of the scrypt key derivation function as its proof of work with a target time of one minute per block and difficulty readjustment after every block. The block rewards are fixed and halve every 100,000 blocks. Starting with the 600,000th block, a permanent reward of 10,000 Bunkercoin per block will be paid.
+Bunkercoin uses a simplified variant of the scrypt key derivation function as its proof of work with a target time of one minute per block and difficulty readjustment after every block. The block rewards are fixed and halve every 210,000 blocks. To get Bunkercoin, you have to use a Scrypt miner and
+follow the instructions on https://bunkercoin.org
 
 ### How can I help the network?
 
