@@ -26,7 +26,7 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: http://bunkercoin.xyz/
+Homepage: http://bunkercoin.org/
 Vcs-Git: git://github.com/bunkercoin-project/bunkercoin.git
 Vcs-Browser: http://github.com/bunkercoin-project/bunkercoin
 
