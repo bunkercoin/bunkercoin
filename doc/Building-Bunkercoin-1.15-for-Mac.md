@@ -1,5 +1,7 @@
 ### Building bunkercoin-qt 1.15 on modern macs. ###
 
+WARNING! THIS HAS NEVER BEEN TRIED BEFORE AND THERE IS NO REPO FOR IT!
+
 Note that this requires changes made by michilumin on the 1.14-dev branch as well as some changes to BDB.
 
 Tested on OSX 10.11 El Capitan, 10.13 High Sierra and 11.1 Big Sur.
@@ -10,7 +12,7 @@ Tested on OSX 10.11 El Capitan, 10.13 High Sierra and 11.1 Big Sur.
 
 For this purpose, just indicating the 1.14-branding branch in my repo.
 
-	$git clone -b 1.15-branding --single-branch https://github.com/michilumin/bunkercoin.git
+	$git clone -b 1.15-branding --single-branch TOBEDONE
 
 ### Set up OSX basic build dependencies. ##
 
