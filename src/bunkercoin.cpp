@@ -138,17 +138,12 @@ CAmount GetDogecoinBlockSubsidy(int nHeight, const Consensus::Params& consensusP
         int rand = generateMTRandom(seed, maxReward);
 
         return (1 + rand) * COIN;
-    } 
-    else if (nHeight < (5)) {
+    } else if (nHeight < (5 * consensusParams.nSubsidyHalvingInterval)) { // 5 * consensusParams.nSubsidyHalvingInterval (210000) = 1050000
         // New-style constant rewards for each halving interval
-        return (169420 * COIN) >> halvings;
-    }
-    else if (nHeight < (10)) {
-        return 69420 * COIN;
-    }
-    else {
+        return (100000 * COIN) >> halvings; // Currently we have around 500000 blocks and the halving interval is 210000. 500000/210000 is around 2, so 50000 x 2 is 100000.
+    } else {
         // Constant inflation
-        return 5 * COIN;
+        return 6900 * COIN;
     }
 }
 

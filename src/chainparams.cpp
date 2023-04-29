@@ -1,6 +1,7 @@
-
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copyright (c) 2022 The Dogecoin Core developers
+// Copyright (c) 2022 The Bunkercoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -73,6 +74,7 @@ class CMainParams : public CChainParams {
 private:
     Consensus::Params digishieldConsensus;
     Consensus::Params auxpowConsensus;
+    Consensus::Params improvedrewardsConsensus;
 public:
     CMainParams() {
         strNetworkID = "main";
@@ -117,7 +119,7 @@ public:
         consensus.BIP66Height = 85000;
 		
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000005c67c01740d53b");
+        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000002a112b111a1bcab");
 
  
 
@@ -131,16 +133,21 @@ public:
 
         // Blocks 100000+ are AuxPoW or PoW
         auxpowConsensus = digishieldConsensus;
-		
 		auxpowConsensus.nAuxpowChainId = 0x0042; // 73s
-		
         auxpowConsensus.nHeightEffective = 100000;
         auxpowConsensus.fAllowLegacyBlocks = false;
 
+        // Blocks 600000+ on mainnet are AuxPoW (or PoW) with improved rewards.
+        improvedrewardsConsensus = auxpowConsensus;
+        improvedrewardsConsensus.fSimplifiedRewards = false;
+        improvedrewardsConsensus.nHeightEffective = 600000;
+
         // Assemble the binary search tree of consensus parameters
+        // Reminder (IMPORTANT!!): Remember to add a root here in case of future hardforks!
         pConsensusRoot = &digishieldConsensus;
         digishieldConsensus.pLeft = &consensus;
         digishieldConsensus.pRight = &auxpowConsensus;
+        auxpowConsensus.pRight = &improvedrewardsConsensus;
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -161,6 +168,7 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
+        improvedrewardsConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         assert(consensus.hashGenesisBlock == uint256S("0x405d1f6dda6196fc4fc4f2d28a8a199a6206149556cc30ddfaa0a26c04c6c9c2"));
         assert(genesis.hashMerkleRoot == uint256S("0xd80699e741a6ad2478044ad7f71642f6263b0b3d9c0af2c531ca79c7f5648fec"));
 
@@ -197,15 +205,21 @@ public:
 			(     100000, uint256S("0xffcd62ddf782a04e1f9b51c537b5e080ee0f99030803465eecaeb653c41c01fb"))
             (     239930, uint256S("0x58b8b23586a2e05f0c62b731cc5bb5f30754979a550c097220142278ed3c39a1"))
             (     239961, uint256S("0x7fd21781aa2d1e4d1887790f9c60e6350b95ed1aafaccbd767d40e52de0d89db"))
+            (     270000, uint256S("0x6504b341c2f47fefffa448facb4131627f256e3ac0105ff3a17fd1684a752b6e"))
+            (     300000, uint256S("0xe4d3262d8b29cb1892cfe1af0b5bd049df8c554a11188cf4555bda35e76860af"))
+            (     350000, uint256S("0xa40bbfaf23ba6f43573b754b5446eb7facd84bfcd80966d8138c78baccd914a9"))
+            (     400000, uint256S("0x2ffd920cc8ec3d618ce2592f0a8ce474464b818770aa2cca048eaa89818650a6"))
+            (     450000, uint256S("0xd16725fc99e329edae781c0a8665e0c2f6bdc9a6275692efdb2e04aa7e287288"))
+            (     464413, uint256S("0xb4ace6d2ed4368ee566028ff6faf884aef8e45bb0bd48ab9ad6261b34a0da151"))
         };
 
         chainTxData = ChainTxData{
             // Data as of block 0xffcd62ddf782a04e1f9b51c537b5e080ee0f99030803465eecaeb653c41c01fb (height 100000).
             // Tx estimate based on average of year 2022 (~40k transactions per day)
-            1653082501, // * UNIX timestamp of last checkpoint block
-            249309,   // * total number of transactions between genesis and last checkpoint
+            1668211686, // * UNIX timestamp of last checkpoint block
+            477579,   // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
-            0.3        // * estimated number of transactions per second after checkpoint
+            0.04        // * estimated number of transactions per second after checkpoint
         };
     }
 };
@@ -435,6 +449,7 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
+        // This fucker. This was why the older code never worked.
         improvedrewardsConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
 		
 		assert(consensus.hashGenesisBlock == uint256S("0xe08a885e4191632633276ee13f8627849340187fc267610038aa9fe478bc7fab"));
