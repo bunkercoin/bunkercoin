@@ -1,4 +1,4 @@
-Bunkercoin core 1.15.4
+Bunkercoin core 1.1.0
 =====================
 
 Intro

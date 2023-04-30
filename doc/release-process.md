@@ -18,7 +18,6 @@ Before every minor and major release:
   - Testnet should be set some tens of thousands back from the tip due to reorgs there.
   - This update should be reviewed with a reindex-chainstate with assumevalid=0 to catch any defect
      that causes rejection of blocks in the past history.
-* Update the logo in `src/qt/res/icons/wallet_bgcoin.png` to show the newer version.
 
 Before every major release:
 
@@ -253,6 +252,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
 - Announce the release:
 
+  - Release sticky on Bunkercoin Forums: http://forum.bunkercoin.xyz/forum/news-community/community-announcements
+
+  - Bunkercoin-development mailing list
+
   - Twitter, @bunkercoin
 
   - Update title of #bunkercoin on Libera IRC
@@ -261,5 +264,5 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
 - Add release notes for the new version to the directory `doc/release-notes` in git master
 
-- To the bunker!
+- To the moon!
 

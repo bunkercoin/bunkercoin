@@ -1,15 +1,10 @@
-Bunkercoin Core version 1.15.4 is now available from:
+Dogecoin Core version 1.15.0 is now available from:
 
-  <https://github.com/bunkercoin/bunkercoin/releases/tag/v1.15.4/>
+  <https://github.com/bunkercoin/bunkercoin/releases/tag/v1.15.0/>
 
-This is a major update to the Bunkercoin Core. It includes a hardfork that will
-reduce the blockreward to reduce the anount of inflation. This update also backports
-some commits from Bitcoin (See https://github.com/bunkercoin/bunkercoin/pull/14).
-
-People who helped make this update:
-IdotMaster1
-sys-256
-krlnokrl (He helped IdotMaster1 (me) on Discord.)
+This is a new minor version release, including important security updates and
+changes to network policies. All Dogecoin Core users, miners, services, relay
+operators and wallet users are strongly recommended to upgrade.
 
 Please report bugs using the issue tracker at github:
 
@@ -19,13 +14,15 @@ To receive security and update notifications, please watch reddit or Twitter:
 
   * https://www.reddit.com/r/bunkercoinbkc/
   * @bunkercoin on Twitter for high priority announcements
+  * @dogecoin\_devs on Twitter for updates on development work. Non existant.. yet...
 
 Compatibility
 ==============
 
-Bunkercoin Core is tested on Arch Linux, Debian 11 and Raspberry Pi OS
+Bunkercoin Core is extensively tested on Ubuntu Server LTS, Intel-based macOS
+and Windows 10.
 
-Bunkercoin Core should also work well on Windows 7, 8, 8.1 and 10
-systems but is not frequently tested on them.
+Bunkercoin Core should also work on most other Unix-like systems but is not
+frequently tested on them.
 
 
