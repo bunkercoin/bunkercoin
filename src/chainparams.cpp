@@ -238,7 +238,7 @@ public:
         strNetworkID = "test";
 
         // Blocks 0 - 10 are conventional difficulty calculation
-        consensus.nSubsidyHalvingInterval = 150;
+        consensus.nSubsidyHalvingInterval = 100000;
         consensus.nMajorityEnforceBlockUpgrade = 1;
         consensus.nMajorityRejectBlockOutdated = 2;
         consensus.nMajorityWindow = 100;
@@ -299,7 +299,7 @@ public:
 
         // Blocks 169+ on testnet are AuxPoW with improved rewards.
         improvedrewardsConsensus = auxpowConsensus;
-        improvedrewardsConsensus.fSimplifiedRewards = true;
+        improvedrewardsConsensus.fSimplifiedRewards = true; // On testnet, this is true so it never activates. 
         improvedrewardsConsensus.nHeightEffective = 169;
 
         // Assemble the binary search tree of consensus parameters
@@ -316,13 +316,14 @@ public:
         nDefaultPort = 28200;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1651427697, 707474, 0x1e0ffff0, 1, 88 * COIN);
+                                //  Unix Time    Nonce  Bits
+        genesis = CreateGenesisBlock(1682883765, 3283191, 0x1e0ffff0, 1, 88 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         minDifficultyConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         improvedrewardsConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-        assert(consensus.hashGenesisBlock == uint256S("0xf9bbe878f5d839abc89cddd05e9716070542bf4c13cd46fb275b494d76a17161"));
+        assert(consensus.hashGenesisBlock == uint256S("0x3de0d9c0e1b3e7cfaac4527d8ab8a72e118e6052feb27ca536ac3b69d5528258"));
         assert(genesis.hashMerkleRoot == uint256S("0xd80699e741a6ad2478044ad7f71642f6263b0b3d9c0af2c531ca79c7f5648fec"));
 
         vSeeds.clear();
@@ -344,21 +345,14 @@ public:
 		
         checkpointData = (CCheckpointData){
             boost::assign::map_list_of
-            ( 0, uint256S("0xf9bbe878f5d839abc89cddd05e9716070542bf4c13cd46fb275b494d76a17161"))
-            ( 1, uint256S("0x52ea6009b51622d311d09d9ab1469badc4e5177478b5011a4c017dc3dd025cc5"))
-            ( 5, uint256S("0x32353b4f278dca8350660bd1fea21e0f0a94565d35a176e8eb54a6a4c9eaf888"))
-            ( 10, uint256S("0x79bdeefbb3f4b90d8aaf69f021b3314f2bf5bcdb9a0d346d1b80cd2be86d60a4"))
-            ( 15, uint256S("0xf9a146f4284d458b8ecd7d358c6a23dfe91f2bbed90436bcb850a8082e3c4dc9"))
-            ( 20, uint256S("0x19e6261875990052e3db47342aeeb60e45e36d40a7d4cf915c02f0ef9b10b80f"))
-            ( 25, uint256S("0x68d87209a76e91a7fb64ca49a2b2b2a6e6121d62a0ba6ab2d3acd293afa4f063"))
-            ( 26, uint256S("0xacefbe5f29292d053221539933d3dfdb98754803b6f2c699cd83656b71ed42b3"))
+            ( 0, uint256S("0x1740b77425279dd67d20d6895db32a13049f528b933f65fc0804a88feff93030"))
         };
 		
         chainTxData = ChainTxData{
             // Data as of block 07fef07a255d510297c9189dc96da5f4e41a8184bc979df8294487f07fee1cf3 (height 3286675)
-            1659702317, // * UNIX timestamp of last checkpoint block
-            27,    // * total number of transactions between genesis and last checkpoint
-            0.01       // * estimated number of transactions per second after that timestamp
+            1682812703, // * UNIX timestamp of last checkpoint block
+            0,    // * total number of transactions between genesis and last checkpoint
+            0.001       // * estimated number of transactions per second after that timestamp
         };
 
     }
