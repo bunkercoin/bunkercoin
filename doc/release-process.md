@@ -249,7 +249,7 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
 - Create a [new GitHub release](https://github.com/bunkercoin-project/bunkercoin/releases/new) with a link to the archived release notes.
 
-- Update bunkercoin.xyz version - Langerhans to do
+- Update bunkercoin.org version
 
 - Announce the release:
 

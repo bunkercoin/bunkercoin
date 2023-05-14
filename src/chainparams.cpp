@@ -119,7 +119,7 @@ public:
         consensus.BIP66Height = 85000;
 		
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000002a112b111a1bcab");
+        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000003148efd33f1734f");
 
  
 
@@ -210,15 +210,20 @@ public:
             (     400000, uint256S("0x2ffd920cc8ec3d618ce2592f0a8ce474464b818770aa2cca048eaa89818650a6"))
             (     450000, uint256S("0xd16725fc99e329edae781c0a8665e0c2f6bdc9a6275692efdb2e04aa7e287288"))
             (     464413, uint256S("0xb4ace6d2ed4368ee566028ff6faf884aef8e45bb0bd48ab9ad6261b34a0da151"))
+            (     500000, uint256S("0x716fa7279a7a7d91726fd5f4a54a38cc1096d3975270aa2b837bf485215d6b16"))
+            (     550000, uint256S("0x3a3b48f2737fa68b16c864c61e151dc5a3b9b8c1b44ba274de2e1e521b4d844d"))
+            (     600000, uint256S("0x119e7b594adf62706c893f160f3cf7f87d52f072d2a9b69236c785c6ab82f92e"))
+            (     650000, uint256S("0xec020af36278e0e23199a60d8d796c4d7af6597f73092e503bf85cfe4966562f"))
+            (     692535, uint256S("0xbd04cdd8708da953dfe5069983dcb589e78a65511982983d1a49debd496491e7"))
         };
 
         chainTxData = ChainTxData{
             // Data as of block 0xffcd62ddf782a04e1f9b51c537b5e080ee0f99030803465eecaeb653c41c01fb (height 100000).
             // Tx estimate based on average of year 2022 (~40k transactions per day)
-            1668211686, // * UNIX timestamp of last checkpoint block
-            477579,   // * total number of transactions between genesis and last checkpoint
+            1684026589, // * UNIX timestamp of last checkpoint block
+            709795,   // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
-            0.04        // * estimated number of transactions per second after checkpoint
+            0.02        // * estimated number of transactions per second after checkpoint
         };
     }
 };
