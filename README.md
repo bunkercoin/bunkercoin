@@ -54,4 +54,5 @@ The solid best way is to mine. You can use any guide and miner that supports scr
 
 
 Hi. if IdotMaster1 keeps this that would be pretty cool - therandomspoon
+
 ![image](https://github.com/therandomspoon/bunkercoin/assets/107148755/17f3de16-681c-4f12-9637-b9eed0af50a4)
